@@ -4,14 +4,13 @@
 /* Settings */
 /* Background Colors */
 body,
-.header-site,
-.main-banner {
+.header-site {
   background-color: #FFFFFF;
 }
 .clients {
   background-color: #F4F0EB;
 }
-.button {
+.primary-btn {
   background-color: #00D4A4;
 }
 /* Text Colors */

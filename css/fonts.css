@@ -57,12 +57,12 @@
   src: local('Archivo Bold'), local('Archivo-Bold'), url(https://fonts.gstatic.com/s/archivo/v6/k3kVo8UDI-1M0wlSdWLNO0bhKQ.ttf) format('truetype');
 }
 /* Body & HTML */
-/* Font Weight */
 /* Headings & Titles */
 .heading-xl {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: "font-weight: 700";
+  font-weight: 700;
+  /* Bold */
   font-size: 52.5px;
   font-size: 5.25rem;
   line-height: 92px;
@@ -70,15 +70,17 @@
 .heading-l {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: "font-weight: 500";
-  font-size: 42px;
-  font-size: 4.2rem;
+  font-weight: 500;
+  /* Medium */
+  font-size: 26.5px;
+  font-size: 2.65rem;
   line-height: 52px;
 }
 .heading-m {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: "font-weight: 500";
+  font-weight: 500;
+  /* Medium */
   font-size: 20px;
   font-size: 2rem;
   line-height: 42px;
@@ -86,15 +88,17 @@
 .heading-s {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: "font-weight: 500";
-  font-size: 20px;
-  font-size: 2rem;
+  font-weight: 500;
+  /* Medium */
+  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 42px;
 }
 .heading-xs {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: "font-weight: 400";
+  font-weight: 400;
+  /* Regular */
   font-size: 12.5px;
   font-size: 1.25rem;
   line-height: 28px;
@@ -103,7 +107,8 @@
 .body {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: "font-weight: 400";
+  font-weight: 400;
+  /* Regular */
   font-size: 10px;
   font-size: 1rem;
   line-height: 28px;
@@ -111,7 +116,8 @@
 .body-bold {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: "font-weight: 700";
+  font-weight: 400;
+  /* Regular */
   font-size: 10px;
   font-size: 1rem;
   line-height: 28px;

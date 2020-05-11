@@ -13,19 +13,12 @@
     font-size: ~"@{remValue}rem";
   }
 
-/* Font Weight */
-
-@regular: "font-weight: 400";
-@medium: "font-weight: 500";
-@bold: "font-weight: 700";
-
-
 /* Headings & Titles */
 
 .heading-xl {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: @bold;
+    font-weight: 700; /* Bold */
     .font-size(5.25);
     line-height: 92px;
 }
@@ -33,15 +26,15 @@
 .heading-l {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: @medium;
-    .font-size(4.2);
+    font-weight: 500; /* Medium */
+    .font-size(2.65);
     line-height: 52px;
 }
 
 .heading-m {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: @medium;
+    font-weight: 500; /* Medium */
     .font-size(2);
     line-height: 42px;
 }
@@ -49,15 +42,15 @@
 .heading-s {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: @medium;
-    .font-size(2);
+    font-weight: 500; /* Medium */
+    .font-size(1.5);
     line-height: 42px;
 }
 
 .heading-xs {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: @regular;
+    font-weight: 400; /* Regular */
     .font-size(1.25);
     line-height: 28px;
 }
@@ -67,7 +60,7 @@
 .body {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: @regular;
+    font-weight: 400; /* Regular */
     .font-size(1);
     line-height: 28px;
 }
@@ -75,7 +68,7 @@
 .body-bold {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: @bold;
+    font-weight: 400; /* Regular */
     .font-size(1);
     line-height: 28px;
 }

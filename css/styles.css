@@ -68,25 +68,65 @@
   font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 84px;
-  font-size: 8.4rem;
+  /* Bold */
+  font-size: 52.5px;
+  font-size: 5.25rem;
   line-height: 92px;
 }
 .heading-l {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 42px;
-  font-size: 4.2rem;
+  /* Medium */
+  font-size: 26.5px;
+  font-size: 2.65rem;
   line-height: 52px;
 }
 .heading-m {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  font-size: 3.2rem;
+  /* Medium */
+  font-size: 20px;
+  font-size: 2rem;
   line-height: 42px;
+}
+.heading-s {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  /* Medium */
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 42px;
+}
+.heading-xs {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  /* Regular */
+  font-size: 12.5px;
+  font-size: 1.25rem;
+  line-height: 28px;
+}
+/* Headings & Titles */
+.body {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  /* Regular */
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 28px;
+}
+.body-bold {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  /* Regular */
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 28px;
 }
 /* Structure */
 body {

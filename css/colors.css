@@ -2,9 +2,21 @@
 /* Primary */
 /* Secondary */
 /* Settings */
+/* Background Colors */
+body,
+.header-site,
+.main-banner {
+  background-color: #FFFFFF;
+}
+.clients {
+  background-color: #F4F0EB;
+}
 /* Text Colors */
 .main-banner h1 {
   color: #000000;
+}
+.main-banner h1 span {
+  color: #00D4A4;
 }
 .intro {
   color: #969696;

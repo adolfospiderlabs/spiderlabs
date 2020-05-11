@@ -5,10 +5,20 @@
 /* Primary */
 /* Secondary */
 /* Settings */
-/* Text Colors */
+/* Background Colors */
 @import url("reset.css");
+.main-banner {
+  background-color: #FFFFFF;
+}
+.clients {
+  background-color: #F4F0EB;
+}
+/* Text Colors */
 .main-banner h1 {
   color: #000000;
+}
+.main-banner h1 span {
+  color: #00D4A4;
 }
 .intro {
   color: #969696;
@@ -147,21 +157,20 @@
   line-height: 28px;
 }
 /* Text Alignment */
-.main-banner {
+.main-banner,
+.clients div h2 {
   text-align: center;
 }
 /* Structure */
-body {
-  background-color: #FFFFFF;
-}
 .header-site {
-  background-color: #FFFFFF;
   height: 100px;
 }
 .main-banner {
-  background-color: #FFFFFF;
   margin-top: 120px;
 }
 .main-banner p {
   margin-top: 60px;
+}
+.clients {
+  height: 577px;
 }

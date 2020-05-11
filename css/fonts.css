@@ -104,6 +104,15 @@
   line-height: 28px;
 }
 /* Headings & Titles */
+.intro {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  /* Regular */
+  font-size: 17.5px;
+  font-size: 1.75rem;
+  line-height: 52px;
+}
 .body {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -121,4 +130,8 @@
   font-size: 10px;
   font-size: 1rem;
   line-height: 28px;
+}
+/* Text Alignment */
+.main-banner {
+  text-align: center;
 }

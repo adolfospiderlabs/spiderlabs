@@ -2,3 +2,10 @@
 /* Primary */
 /* Secondary */
 /* Settings */
+/* Text Colors */
+.main-banner h1 {
+  color: #000000;
+}
+.intro {
+  color: #969696;
+}

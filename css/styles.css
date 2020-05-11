@@ -5,9 +5,16 @@
 /* Primary */
 /* Secondary */
 /* Settings */
+/* Text Colors */
+@import url("reset.css");
+.main-banner h1 {
+  color: #000000;
+}
+.intro {
+  color: #969696;
+}
 /* Spider Labs - Headings & Text */
 /* Archivo Google Font Import */
-@import url("reset.css");
 @font-face {
   font-family: 'Archivo';
   font-style: italic;
@@ -112,6 +119,15 @@
   line-height: 28px;
 }
 /* Headings & Titles */
+.intro {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  /* Regular */
+  font-size: 17.5px;
+  font-size: 1.75rem;
+  line-height: 52px;
+}
 .body {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -130,16 +146,22 @@
   font-size: 1rem;
   line-height: 28px;
 }
+/* Text Alignment */
+.main-banner {
+  text-align: center;
+}
 /* Structure */
 body {
   background-color: #FFFFFF;
 }
 .header-site {
-  background-color: white;
+  background-color: #FFFFFF;
   height: 100px;
 }
 .main-banner {
-  background-color: #00D4A4;
-  text-align: center;
+  background-color: #FFFFFF;
   margin-top: 120px;
+}
+.slogan {
+  margin-top: 60px;
 }

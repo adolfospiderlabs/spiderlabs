@@ -1,0 +1,10 @@
+@import url("bootstrap-grid.css");
+@import url("colors.scss");
+@import url("reset.scss");
+@import url("texts.scss");
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap');
+
+.container {
+    @include heading-xl;
+  background-color: $green;
+}

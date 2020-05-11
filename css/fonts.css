@@ -103,7 +103,7 @@
   font-size: 1.25rem;
   line-height: 28px;
 }
-/* Headings & Titles */
+/* Body, Buttons and Links */
 .intro {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -131,8 +131,20 @@
   font-size: 1rem;
   line-height: 28px;
 }
+.button {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  /* Bold */
+  font-size: 11.25px;
+  font-size: 1.125rem;
+}
 /* Text Alignment */
 .main-banner,
-.clients div h2 {
+.clients div h2,
+.button {
   text-align: center;
+}
+.textfield {
+  text-align: left;
 }

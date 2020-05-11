@@ -223,7 +223,15 @@ body,
 }
 .main_bg {
   background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
-  background-position-y: 460px;
+  background-position-y: 360px;
+  background-size: 100%;
+}
+@media only screen and (max-device-width: 1600px) {
+  .main_bg {
+    background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
+    background-position-y: 460px;
+    background-size: 100%;
+  }
 }
 .main-banner {
   margin-top: 120px;

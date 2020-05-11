@@ -1,8 +1,10 @@
 /* Spider Labs - Stylesheet */
 /* Imports */
+@import url("bootstrap-grid.css");
 /* Spider Labs - Color Palette */
 /* Primary */
 /* Secondary */
+/* Settings */
 /* Spider Labs - Headings & Text */
 /* Archivo Google Font Import */
 @import url("reset.css");
@@ -131,4 +133,13 @@
 /* Structure */
 body {
   background-color: #FFFFFF;
+}
+.header-site {
+  background-color: white;
+  height: 100px;
+}
+.main-banner {
+  background-color: #00D4A4;
+  text-align: center;
+  margin-top: 120px;
 }

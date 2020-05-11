@@ -13,20 +13,27 @@
     font-size: ~"@{remValue}rem";
   }
 
+/* Font Weight */
+
+@regular: "font-weight: 400";
+@medium: "font-weight: 500";
+@bold: "font-weight: 700";
+
+
 /* Headings & Titles */
 
 .heading-xl {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    .font-size(8.4);
+    font-weight: @bold;
+    .font-size(5.25);
     line-height: 92px;
 }
 
 .heading-l {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: @medium;
     .font-size(4.2);
     line-height: 52px;
 }
@@ -34,7 +41,41 @@
 .heading-m {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    .font-size(3.2);
+    font-weight: @medium;
+    .font-size(2);
     line-height: 42px;
+}
+
+.heading-s {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: @medium;
+    .font-size(2);
+    line-height: 42px;
+}
+
+.heading-xs {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: @regular;
+    .font-size(1.25);
+    line-height: 28px;
+}
+
+/* Headings & Titles */
+
+.body {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: @regular;
+    .font-size(1);
+    line-height: 28px;
+}
+
+.body-bold {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: @bold;
+    .font-size(1);
+    line-height: 28px;
 }

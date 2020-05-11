@@ -6,10 +6,6 @@
 
 /* Body & HTML */
 
-body, html {
-    font-family: 'Archivo', sans-serif;
-}
-
 .font-size(@sizeValue) {
     @remValue: @sizeValue;
     @pxValue: (@sizeValue * 10);
@@ -20,15 +16,25 @@ body, html {
 /* Headings & Titles */
 
 .heading-xl {
+    font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 700;
-    .font-size(9);
+    .font-size(8.4);
     line-height: 92px;
 }
 
 .heading-l {
+    font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 42px;
+    .font-size(4.2);
     line-height: 52px;
+}
+
+.heading-m {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    .font-size(3.2);
+    line-height: 42px;
 }

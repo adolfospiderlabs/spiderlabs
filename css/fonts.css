@@ -57,21 +57,28 @@
   src: local('Archivo Bold'), local('Archivo-Bold'), url(https://fonts.gstatic.com/s/archivo/v6/k3kVo8UDI-1M0wlSdWLNO0bhKQ.ttf) format('truetype');
 }
 /* Body & HTML */
-body,
-html {
-  font-family: 'Archivo', sans-serif;
-}
 /* Headings & Titles */
 .heading-xl {
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 90px;
-  font-size: 9rem;
+  font-size: 84px;
+  font-size: 8.4rem;
   line-height: 92px;
 }
 .heading-l {
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 42px;
+  font-size: 4.2rem;
   line-height: 52px;
+}
+.heading-m {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 42px;
 }

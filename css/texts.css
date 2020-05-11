@@ -1,0 +1,10 @@
+/* Font and text styles */
+
+/* Headings & Titles (Desktop) */
+
+.heading-xl {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    Font-size: 84pt;
+    line-height: 92pt;
+}

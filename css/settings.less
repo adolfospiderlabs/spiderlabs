@@ -53,6 +53,10 @@ body,
     background-color: @spider-green;
 }
 
+.primary-black-btn {
+    background-color: @black;
+}
+
 /* Text Colors */
 
 .nav-item,
@@ -63,12 +67,19 @@ body,
     color: @black;
 }
 
+.green
 .nav-item a:hover,
 .main-banner h1 span
 {
     color: @spider-green;
 }
 
+.gray
+{
+    color: @gray;
+}
+
+.gray2,
 .sub-header,
 .textfield,
 .helper-txt
@@ -83,11 +94,20 @@ input {
 }
 
 input,
-.primary-btn
+.primary-btn,
+.primary-black-btn
 {
     transition: box-shadow .3s ease-out;
 }
 
 .nav-item a {
     transition: color .15s ease-out;
+}
+
+input:hover,
+input:focus,
+.primary-btn:hover,
+.primary-black-btn:hover
+{
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }

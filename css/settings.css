@@ -31,7 +31,8 @@ body,
 .main-banner h1 {
   color: #000000;
 }
-.green .nav-item a:hover,
+.green,
+.nav-item a:hover,
 .main-banner h1 span {
   color: #00D4A4;
 }

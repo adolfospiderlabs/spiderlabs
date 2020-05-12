@@ -5,13 +5,18 @@
 @import url("reset.css");
 @import url("forms.less");
 @import url("fonts.less");
-@import url("colors.less");
+@import url("settings.less");
 @import url("bootstrap-grid.css");
 
 /* Structure */
 
 .header-site {
     height: 100px;
+    padding-top: @s-spacing;
+}
+
+.nav-wrapper {
+    height: 36px;
 }
 
 .main_bg {
@@ -20,14 +25,25 @@
     background-size: 100%;
 }
 
+.main_bg > div {
+    padding-bottom: 220px;
+}
+
+
+/* Media Query for Macbook Pro and Retina displays */
+
 @media only screen and (max-device-width: 1600px) {
 
     .main_bg {
         background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
-        background-position-y: 460px;
+        background-position-y: 360px;
         background-size: 100%;
     }
 
+    .main_bg > div {
+        padding-bottom: 120px;
+    }
+    
 }
 
 .main-banner {
@@ -35,14 +51,25 @@
 }
 
 .main-banner p {
-    margin-top: @m-spacing;
+    margin-top: @s-spacing;
+}
+
+.slabs-form-wrapper {
+    padding: 0;
+    width: 540px;
+    margin: 60px auto 0 auto;
+}
+
+#slabs-info p {
+    margin-top: 20px;
+    padding-left: 0;
 }
 
 .clients {
     height: 577px;
     display: block;
     position: relative;
-    padding: 15px;
+    padding: @xs-spacing;
     margin-top: 40px;
 }
 

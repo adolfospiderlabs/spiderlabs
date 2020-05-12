@@ -1,7 +1,14 @@
-/* Spider Labs - Color Palette */
-/* Primary */
-/* Secondary */
-/* Settings */
+/* Spider Labs - Settings */
+/* Color Palette - Primary */
+/* Color Palette - Primary */
+/* Spacings and Margins */
+/* Floats */
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
 /* Background Colors */
 body,
 .header-site {
@@ -21,6 +28,7 @@ body,
   color: #00D4A4;
 }
 .intro,
-.textfield {
+.textfield,
+.helper-txt {
   color: #969696;
 }

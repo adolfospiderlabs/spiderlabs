@@ -56,7 +56,7 @@
   font-display: swap;
   src: local('Archivo Bold'), local('Archivo-Bold'), url(https://fonts.gstatic.com/s/archivo/v6/k3kVo8UDI-1M0wlSdWLNO0bhKQ.ttf) format('truetype');
 }
-/* Body & HTML */
+/* PX to REM */
 /* Headings & Titles */
 .heading-xl {
   font-family: 'Archivo', sans-serif;
@@ -113,7 +113,7 @@
   font-size: 1.75rem;
   line-height: 52px;
 }
-.body {
+.body-txt {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -139,12 +139,24 @@
   font-size: 11.25px;
   font-size: 1.125rem;
 }
+.helper-txt {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  /* Regular */
+  font-size: 7.5px;
+  font-size: 0.75rem;
+  line-height: 18px;
+  letter-spacing: 0.32px;
+}
 /* Text Alignment */
 .main-banner,
 .clients div h2,
 .button {
   text-align: center;
 }
-.textfield {
+.textfield,
+.helper-txt,
+.main-banner form {
   text-align: left;
 }

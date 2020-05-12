@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap');
 
-/* Body & HTML */
+/* PX to REM */
 
 .font-size(@sizeValue) {
     @remValue: @sizeValue;
@@ -65,7 +65,7 @@
     line-height: 52px;
 }
 
-.body {
+.body-txt {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 400; /* Regular */
@@ -88,6 +88,15 @@
     .font-size(1.125);
 }
 
+.helper-txt {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    .font-size(0.75);
+    line-height: 18px;
+    letter-spacing: 0.32px;
+}
+
 /* Text Alignment */
 
 .main-banner,
@@ -97,7 +106,10 @@
     text-align: center;
 }
 
-.textfield {
+.textfield,
+.helper-txt,
+.main-banner form
+{
     text-align: left;
 }
 

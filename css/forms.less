@@ -1,27 +1,35 @@
 /* Spider Labs - Form Fields and Buttons */
 
-@import url("colors.less");
+@import url("settings.less");
 
 /* Inputs */
+
+#slabs-info input {
+  width: 350px;
+}
 
 input {
     height: 50px;
     box-sizing: border-box;
     border: 1px solid @gray2;
     border-radius: 8px;
+    padding: 15px;
     transition: border .3s ease-out;
+    transition: box-shadow .3s ease-out;
 }
 
 input:focus {
     outline-width: 0;
     border: 1px solid @gray;
     color: @gray;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
 
 input:hover {
     outline-width: 0;
     border: 1px solid @gray;
     color: @gray;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
 
   /* Buttons */
@@ -38,7 +46,7 @@ input:hover {
     text-align: center;
     border: 1px solid @spider-green;
     cursor: pointer;
-    margin-left: @s-spacing;
+    margin-left: 26px;
     transition: box-shadow .3s ease-out;
   }
 

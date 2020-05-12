@@ -21,9 +21,12 @@ body,
   background-color: #00D4A4;
 }
 /* Text Colors */
+.nav-item,
+.nav-item a,
 .main-banner h1 {
   color: #000000;
 }
+.nav-item a:hover,
 .main-banner h1 span {
   color: #00D4A4;
 }
@@ -31,4 +34,15 @@ body,
 .textfield,
 .helper-txt {
   color: #969696;
+}
+/* Transitions & Effects */
+input {
+  transition: border 0.3s ease-out;
+}
+input,
+.primary-btn {
+  transition: box-shadow 0.3s ease-out;
+}
+.nav-item a {
+  transition: color 0.15s ease-out;
 }

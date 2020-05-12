@@ -122,6 +122,13 @@
   font-size: 1rem;
   line-height: 28px;
 }
+.nav-item,
+.nav-item a {
+  font-family: 'Archivo', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
 .body-bold {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -149,7 +156,7 @@
   line-height: 18px;
   letter-spacing: 0.32px;
 }
-/* Text Alignment */
+/* Text Alignment and Decoration */
 .main-banner,
 .clients div h2,
 .button {
@@ -159,4 +166,7 @@
 .helper-txt,
 .main-banner form {
   text-align: left;
+}
+.nav-item a {
+  text-decoration: none;
 }

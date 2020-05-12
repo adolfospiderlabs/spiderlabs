@@ -41,7 +41,7 @@
     }
 
     .main_bg > div {
-        padding-bottom: 120px;
+        padding-bottom: @xl-spacing;
     }
     
 }
@@ -57,11 +57,11 @@
 .slabs-form-wrapper {
     padding: 0;
     width: 540px;
-    margin: 60px auto 0 auto;
+    margin: @m-spacing auto 0 auto;
 }
 
 #slabs-info p {
-    margin-top: 20px;
+    margin-top: calc(@s-spacing - 10px);
     padding-left: 0;
 }
 
@@ -70,7 +70,7 @@
     display: block;
     position: relative;
     padding: @xs-spacing;
-    margin-top: 40px;
+    margin-top: calc(@m-spacing - 20px);
 }
 
 .clients::after {

@@ -2,9 +2,9 @@
 
 /* Color Palette - Primary */
 
+@spider-green: #00D4A4;
 @black: #000000;
 @white: #FFFFFF;
-@spider-green: #00D4A4;
 
 /* Color Palette - Primary */
 
@@ -51,11 +51,16 @@ body,
 
 /* Text Colors */
 
-.main-banner h1 {
+.nav-item,
+.nav-item a,
+.main-banner h1
+{
     color: @black;
 }
 
-.main-banner h1 span {
+.nav-item a:hover,
+.main-banner h1 span
+{
     color: @spider-green;
 }
 
@@ -64,4 +69,20 @@ body,
 .helper-txt
 {
     color: @gray2;
+}
+
+/* Transitions & Effects */
+
+input {
+    transition: border .3s ease-out;
+}
+
+input,
+.primary-btn
+{
+    transition: box-shadow .3s ease-out;
+}
+
+.nav-item a {
+    transition: color .15s ease-out;
 }

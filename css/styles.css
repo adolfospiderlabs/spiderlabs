@@ -158,6 +158,11 @@ input:hover {
   font-size: 1.75rem;
   line-height: 52px;
 }
+.input,
+.input:hover,
+.input:focus,
+.input:enabled,
+.input::selection,
 .body-txt {
   font-family: 'Archivo', sans-serif;
   font-style: normal;

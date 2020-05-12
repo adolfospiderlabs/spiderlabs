@@ -1,6 +1,7 @@
 /* Spider Labs - Settings */
 /* Color Palette - Primary */
 /* Color Palette - Primary */
+/* Color Palette - Opacity Tints */
 /* Spacings and Margins */
 /* Floats */
 .f-left {
@@ -22,6 +23,7 @@ body,
 }
 /* Text Colors */
 .nav-item,
+.intro-txt,
 .nav-item a,
 .main-banner h1 {
   color: #000000;
@@ -30,7 +32,7 @@ body,
 .main-banner h1 span {
   color: #00D4A4;
 }
-.intro,
+.sub-header,
 .textfield,
 .helper-txt {
   color: #969696;

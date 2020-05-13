@@ -138,8 +138,7 @@ a.read-btn,
     color: @spider-green;
 }
 
-.gray
-{
+.gray {
     color: @gray;
 }
 
@@ -163,15 +162,15 @@ a.read-btn::after {
     transition: padding .15s ease-out;
 }
 
-input,
+input {
+    transition: border .3s ease-out, color .3s ease-out, box-shadow .3s ease-out;
+}
+
+.card,
 .primary-btn,
 .primary-black-btn
 {
     transition: box-shadow .3s ease-out;
-}
-
-input {
-    transition: border .3s ease-out;
 }
 
 .nav-item a,
@@ -181,7 +180,8 @@ a.read-btn,
     transition: color .15s ease-out;
 }
 
-input:hover,
+.card:hover,
+input:focus,
 .primary-btn:hover,
 .primary-black-btn:hover
 {

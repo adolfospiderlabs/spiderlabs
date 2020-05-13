@@ -94,20 +94,21 @@ ul.c-profile li span {
 a.read-btn::after {
   transition: padding 0.15s ease-out;
 }
-input,
+input {
+  transition: border 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.card,
 .primary-btn,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
-}
-input {
-  transition: border 0.3s ease-out;
 }
 .nav-item a,
 a.read-btn,
 .heading-xs a {
   transition: color 0.15s ease-out;
 }
-input:hover,
+.card:hover,
+input:focus,
 .primary-btn:hover,
 .primary-black-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);

@@ -1,5 +1,5 @@
 /* Spider Labs - Headings & Text */
-/* Archivo Google Font Import */
+/* -------------------------- Archivo Google Font Import -------------------------- */
 @font-face {
   font-family: 'Archivo';
   font-style: italic;
@@ -56,7 +56,7 @@
   font-display: swap;
   src: local('Archivo Bold'), local('Archivo-Bold'), url(https://fonts.gstatic.com/s/archivo/v6/k3kVo8UDI-1M0wlSdWLNO0bhKQ.ttf) format('truetype');
 }
-/* PX to REM */
+/* -------------------------- PX to REM -------------------------- */
 html,
 body {
   font-family: 'Archivo', sans-serif !important;
@@ -64,7 +64,7 @@ body {
   /* Regular */
   font-style: normal;
 }
-/* Headings & Titles */
+/* -------------------------- Headings & Titles -------------------------- */
 .heading-xl {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -101,7 +101,8 @@ body {
   font-size: 1.5rem;
   line-height: 42px;
 }
-.heading-xs {
+.heading-xs,
+.heading-xs a {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -110,7 +111,7 @@ body {
   font-size: 1.25rem;
   line-height: 28px;
 }
-/* Body, Buttons and Links */
+/* -------------------------- Body, Buttons and Links -------------------------- */
 .sub-header {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -168,6 +169,7 @@ input::selection,
   font-size: 11.25px;
   font-size: 1.125rem;
 }
+.badge,
 .helper-txt {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -178,9 +180,10 @@ input::selection,
   line-height: 18px;
   letter-spacing: 0.32px;
 }
-/* Text Alignment and Decoration */
+/* -------------------------- Text Alignment and Decoration -------------------------- */
 .main-banner,
 .clients div h2,
+.resources div h2,
 .button {
   text-align: center;
 }
@@ -189,6 +192,11 @@ input::selection,
 .main-banner form {
   text-align: left;
 }
-.nav-item a {
+.heading-xs a,
+.nav-item a,
+a.read-btn {
   text-decoration: none;
+}
+.badge {
+  text-transform: uppercase;
 }

@@ -1,10 +1,11 @@
 /* Spider Labs - Headings & Text */
 
-/* Archivo Google Font Import */
+/* -------------------------- Archivo Google Font Import -------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap');
 
-/* PX to REM */
+
+/* -------------------------- PX to REM -------------------------- */
 
 .font-size(@sizeValue) {
     @remValue: @sizeValue;
@@ -20,7 +21,8 @@
     font-style: normal;
   }
 
-/* Headings & Titles */
+  
+/* -------------------------- Headings & Titles -------------------------- */
 
 .heading-xl {
     font-family: 'Archivo', sans-serif;
@@ -54,7 +56,9 @@
     line-height: 42px;
 }
 
-.heading-xs {
+.heading-xs,
+.heading-xs a
+{
     font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 400; /* Regular */
@@ -62,7 +66,8 @@
     line-height: 28px;
 }
 
-/* Body, Buttons and Links */
+
+/* -------------------------- Body, Buttons and Links -------------------------- */
 
 .sub-header {
     font-family: 'Archivo', sans-serif;
@@ -118,7 +123,9 @@ input::selection,
     .font-size(1.125);
 }
 
-.helper-txt {
+.badge,
+.helper-txt
+{
     font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 400; /* Regular */
@@ -127,10 +134,12 @@ input::selection,
     letter-spacing: 0.32px;
 }
 
-/* Text Alignment and Decoration */
+
+/* -------------------------- Text Alignment and Decoration -------------------------- */
 
 .main-banner,
 .clients div h2,
+.resources div h2,
 .button
 {
     text-align: center;
@@ -143,7 +152,14 @@ input::selection,
     text-align: left;
 }
 
-.nav-item a {
+.heading-xs a,
+.nav-item a,
+a.read-btn
+{
     text-decoration: none;
+}
+
+.badge {
+    text-transform: uppercase;
 }
 

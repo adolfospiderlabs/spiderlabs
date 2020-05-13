@@ -1,12 +1,14 @@
 /* Spider Labs - Settings */
 
-/* Color Palette - Primary */
+
+/* -------------------------- Color Palette (Primary) -------------------------- */
 
 @spider-green: #00D4A4;
 @black: #000000;
 @white: #FFFFFF;
 
-/* Color Palette - Primary */
+
+/* -------------------------- Color Palette (Secondary) -------------------------- */
 
 @pink: #B146C2;
 @gray: #444444;
@@ -16,11 +18,13 @@
 @light-gray: #F6F6F6;
 @light-brown: #F4F0EB;
 
-/* Color Palette - Opacity Tints */
+
+/* -------------------------- Color Palette (Opacity Tints) -------------------------- */
 
 @violet10: rgba(68,0,153,0.1);
 
-/* Spacings and Margins */
+
+/* -------------------------- Spacings and Margins -------------------------- */
 
 @xl-spacing: 120px;
 @l-spacing: 90px;
@@ -28,7 +32,46 @@
 @s-spacing: 30px;
 @xs-spacing: 15px;
 
-/* Floats */
+
+/* -------------------------- Margin Top -------------------------- */
+
+.mtop-120 {
+    margin-top: @xl-spacing;
+}
+
+.mtop-90 {
+    margin-top: @l-spacing;
+}
+
+.mtop-60 {
+    margin-top: @m-spacing;
+}
+
+.mtop-30 {
+    margin-top: @s-spacing;
+}
+
+
+/* -------------------------- Margin Bottom -------------------------- */
+
+.mbottom-120 {
+    margin-bottom: @xl-spacing;
+}
+
+.mbottom-90 {
+    margin-bottom: @l-spacing;
+}
+
+.mbottom-60 {
+    margin-bottom: @m-spacing;
+}
+
+.mbottom-30 {
+    margin-bottom: @s-spacing;
+}
+
+
+/* -------------------------- Floats -------------------------- */
 
 .f-left {
     float: left;
@@ -38,17 +81,22 @@
     float: right;
 }
 
-/* Background Colors */
+
+/* -------------------------- Background Colors -------------------------- */
 
 body,
+.card,
 .header-site {
     background-color: @white;
 }
 
-.clients {
+.clients,
+.resources
+{
     background-color: @light-brown;
 }
 
+.badge,
 .primary-btn {
     background-color: @spider-green;
 }
@@ -57,18 +105,25 @@ body,
     background-color: @black;
 }
 
-/* Text Colors */
 
+/* -------------------------- Text Colors -------------------------- */
+
+.black,
 .nav-item,
 .intro-txt,
 .nav-item a,
-.main-banner h1
+.heading-xs a,
+.main-banner h1,
+a.read-btn:hover
+
 {
     color: @black;
 }
 
 .green,
+a.read-btn,
 .nav-item a:hover,
+.heading-xs a:hover,
 .main-banner h1 span
 {
     color: @spider-green;
@@ -87,11 +142,21 @@ body,
     color: @gray2;
 }
 
-/* Transitions & Effects */
+.badge {
+    color: @white;
+}
+
+
+/* -------------------------- Transitions & Effects -------------------------- */
 
 input {
     transition: border .3s ease-out;
 }
+
+a.read-btn::after {
+    transition: padding .15s ease-out;
+}
+
 
 input,
 .primary-btn,
@@ -100,7 +165,10 @@ input,
     transition: box-shadow .3s ease-out;
 }
 
-.nav-item a {
+.nav-item a,
+a.read-btn,
+.heading-xs a
+{
     transition: color .15s ease-out;
 }
 

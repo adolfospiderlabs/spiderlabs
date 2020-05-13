@@ -1,6 +1,6 @@
 /* Spider Labs - Stylesheet */
 
-/* Imports */
+/* -------------------------- Imports -------------------------- */
 
 @import url("reset.css");
 @import url("forms.less");
@@ -8,7 +8,8 @@
 @import url("settings.less");
 @import url("bootstrap-grid.css");
 
-/* Structure */
+
+/* -------------------------- Structure -------------------------- */
 
 .header-site {
     height: 100px;
@@ -19,7 +20,8 @@
     height: 36px;
 }
 
-/* Main Navigation */
+
+/* -------------------------- Main Navigation --------------------------  */
 
 .nav-container {
     height: 36px;
@@ -47,25 +49,8 @@ ul.nav-list li {
     background-size: 100%;
 }
 
-.main_bg > div {
+.main_bg > .banner-container {
     padding-bottom: 260px;
-}
-
-
-/* Media Query for Macbook Pro and Retina displays */
-
-@media only screen and (max-device-width: 1600px) {
-
-    .main_bg {
-        background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
-        background-position-y: 360px;
-        background-size: 100%;
-    }
-
-    .main_bg > div {
-        padding-bottom: @xl-spacing;
-    }
-    
 }
 
 .main-banner {
@@ -87,15 +72,27 @@ ul.nav-list li {
     padding-left: 0;
 }
 
-.clients {
+.clients
+{
     height: 577px;
+}
+
+.resources {
+    padding-bottom: @l-spacing !important;
+}
+
+.clients,
+.resources
+{
     display: block;
     position: relative;
     padding: @xs-spacing;
     margin-top: calc(@m-spacing - 20px);
 }
 
-.clients::after {
+.clients::after,
+.resources::after
+{
     content: '';
     display: block;
     position: absolute;
@@ -106,10 +103,66 @@ ul.nav-list li {
     background-image: url("../imgs/Triangles_BG.svg");
 }
 
-.clients div h2 {
+.clients div h2,
+.resources div h2
+{
     margin-top: @l-spacing;
 }
 
 .spider-security {
     background-color: @violet10;
 }
+
+
+/* -------------------------- News & Resources - Cards -------------------------- */
+
+.articles {
+    margin-top: @m-spacing;
+}
+
+.inner-card {
+    padding: 0 @s-spacing;
+}
+
+.badge {
+    height: 23px;
+    line-height: 24px;
+    border-radius: 43px;
+    display: inline-block;
+    padding: 0 calc(@s-spacing - 20px);
+}
+
+a.read-btn::after {
+    content: url(../imgs/arrow.svg);
+    padding-left: 8px;
+}
+
+a.read-btn:hover::after {
+    content: url(../imgs/arrow_black.svg);
+    padding-left: 14px;
+}
+
+.card {
+    border-radius: 8px;
+    padding: @s-spacing 0 @s-spacing 0;
+}
+
+
+/* Media Queries for Responsive */
+
+/* -------------------------- Media Query for Macbook Pro and Retina displays -------------------------- */
+
+@media only screen and (max-device-width: 1600px) {
+
+    .main_bg {
+        background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
+        background-position-y: 360px;
+        background-size: 100%;
+    }
+
+    .main_bg > .banner-container {
+        padding-bottom: @xl-spacing;
+    }
+    
+}
+

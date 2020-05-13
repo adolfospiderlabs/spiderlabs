@@ -1,8 +1,8 @@
 /* Spider Labs - Stylesheet */
-/* Imports */
+/* -------------------------- Imports -------------------------- */
 @import url("reset.css");
 /* Spider Labs - Form Fields and Buttons */
-/* Inputs */
+/* -------------------------- Inputs -------------------------- */
 @import url("bootstrap-grid.css");
 #slabs-info input {
   width: 350px;
@@ -22,7 +22,7 @@ input:focus,
 input:hover {
   outline-width: 0;
 }
-/* Buttons */
+/* -------------------------- Buttons & Links -------------------------- */
 .primary-btn {
   height: 50px;
   color: white;
@@ -49,7 +49,7 @@ input:hover {
   margin-left: 26px;
 }
 /* Spider Labs - Headings & Text */
-/* Archivo Google Font Import */
+/* -------------------------- Archivo Google Font Import -------------------------- */
 @font-face {
   font-family: 'Archivo';
   font-style: italic;
@@ -106,7 +106,7 @@ input:hover {
   font-display: swap;
   src: local('Archivo Bold'), local('Archivo-Bold'), url(https://fonts.gstatic.com/s/archivo/v6/k3kVo8UDI-1M0wlSdWLNO0bhKQ.ttf) format('truetype');
 }
-/* PX to REM */
+/* -------------------------- PX to REM -------------------------- */
 html,
 body {
   font-family: 'Archivo', sans-serif !important;
@@ -114,7 +114,7 @@ body {
   /* Regular */
   font-style: normal;
 }
-/* Headings & Titles */
+/* -------------------------- Headings & Titles -------------------------- */
 .heading-xl {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -151,7 +151,8 @@ body {
   font-size: 1.5rem;
   line-height: 42px;
 }
-.heading-xs {
+.heading-xs,
+.heading-xs a {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -160,7 +161,7 @@ body {
   font-size: 1.25rem;
   line-height: 28px;
 }
-/* Body, Buttons and Links */
+/* -------------------------- Body, Buttons and Links -------------------------- */
 .sub-header {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -218,6 +219,7 @@ input::selection,
   font-size: 11.25px;
   font-size: 1.125rem;
 }
+.badge,
 .helper-txt {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -228,9 +230,10 @@ input::selection,
   line-height: 18px;
   letter-spacing: 0.32px;
 }
-/* Text Alignment and Decoration */
+/* -------------------------- Text Alignment and Decoration -------------------------- */
 .main-banner,
 .clients div h2,
+.resources div h2,
 .button {
   text-align: center;
 }
@@ -239,44 +242,83 @@ input::selection,
 .main-banner form {
   text-align: left;
 }
-.nav-item a {
+.heading-xs a,
+.nav-item a,
+a.read-btn {
   text-decoration: none;
 }
+.badge {
+  text-transform: uppercase;
+}
 /* Spider Labs - Settings */
-/* Color Palette - Primary */
-/* Color Palette - Primary */
-/* Color Palette - Opacity Tints */
-/* Spacings and Margins */
-/* Floats */
+/* -------------------------- Color Palette (Primary) -------------------------- */
+/* -------------------------- Color Palette (Secondary) -------------------------- */
+/* -------------------------- Color Palette (Opacity Tints) -------------------------- */
+/* -------------------------- Spacings and Margins -------------------------- */
+/* -------------------------- Margin Top -------------------------- */
+.mtop-120 {
+  margin-top: 120px;
+}
+.mtop-90 {
+  margin-top: 90px;
+}
+.mtop-60 {
+  margin-top: 60px;
+}
+.mtop-30 {
+  margin-top: 30px;
+}
+/* -------------------------- Margin Bottom -------------------------- */
+.mbottom-120 {
+  margin-bottom: 120px;
+}
+.mbottom-90 {
+  margin-bottom: 90px;
+}
+.mbottom-60 {
+  margin-bottom: 60px;
+}
+.mbottom-30 {
+  margin-bottom: 30px;
+}
+/* -------------------------- Floats -------------------------- */
 .f-left {
   float: left;
 }
 .f-right {
   float: right;
 }
-/* Background Colors */
+/* -------------------------- Background Colors -------------------------- */
 body,
+.card,
 .header-site {
   background-color: #FFFFFF;
 }
-.clients {
+.clients,
+.resources {
   background-color: #F4F0EB;
 }
+.badge,
 .primary-btn {
   background-color: #00D4A4;
 }
 .primary-black-btn {
   background-color: #000000;
 }
-/* Text Colors */
+/* -------------------------- Text Colors -------------------------- */
+.black,
 .nav-item,
 .intro-txt,
 .nav-item a,
-.main-banner h1 {
+.heading-xs a,
+.main-banner h1,
+a.read-btn:hover {
   color: #000000;
 }
 .green,
+a.read-btn,
 .nav-item a:hover,
+.heading-xs a:hover,
 .main-banner h1 span {
   color: #00D4A4;
 }
@@ -289,16 +331,24 @@ body,
 .helper-txt {
   color: #969696;
 }
-/* Transitions & Effects */
+.badge {
+  color: #FFFFFF;
+}
+/* -------------------------- Transitions & Effects -------------------------- */
 input {
   transition: border 0.3s ease-out;
+}
+a.read-btn::after {
+  transition: padding 0.15s ease-out;
 }
 input,
 .primary-btn,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
 }
-.nav-item a {
+.nav-item a,
+a.read-btn,
+.heading-xs a {
   transition: color 0.15s ease-out;
 }
 input:hover,
@@ -311,7 +361,7 @@ input:focus,
 .spider-security {
     box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.25);
 }*/
-/* Structure */
+/* -------------------------- Structure -------------------------- */
 .header-site {
   height: 100px;
   padding-top: 30px;
@@ -319,7 +369,7 @@ input:focus,
 .nav-wrapper {
   height: 36px;
 }
-/* Main Navigation */
+/* -------------------------- Main Navigation --------------------------  */
 .nav-container {
   height: 36px;
   line-height: 36px;
@@ -340,19 +390,8 @@ ul.nav-list li {
   background-position-y: 360px;
   background-size: 100%;
 }
-.main_bg > div {
+.main_bg > .banner-container {
   padding-bottom: 260px;
-}
-/* Media Query for Macbook Pro and Retina displays */
-@media only screen and (max-device-width: 1600px) {
-  .main_bg {
-    background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
-    background-position-y: 360px;
-    background-size: 100%;
-  }
-  .main_bg > div {
-    padding-bottom: 120px;
-  }
 }
 .main-banner {
   margin-top: 120px;
@@ -371,12 +410,19 @@ ul.nav-list li {
 }
 .clients {
   height: 577px;
+}
+.resources {
+  padding-bottom: 90px !important;
+}
+.clients,
+.resources {
   display: block;
   position: relative;
   padding: 15px;
   margin-top: calc(60px - 20px);
 }
-.clients::after {
+.clients::after,
+.resources::after {
   content: '';
   display: block;
   position: absolute;
@@ -386,9 +432,48 @@ ul.nav-list li {
   height: 25px;
   background-image: url("../imgs/Triangles_BG.svg");
 }
-.clients div h2 {
+.clients div h2,
+.resources div h2 {
   margin-top: 90px;
 }
 .spider-security {
   background-color: rgba(68, 0, 153, 0.1);
+}
+/* -------------------------- News & Resources - Cards -------------------------- */
+.articles {
+  margin-top: 60px;
+}
+.inner-card {
+  padding: 0 30px;
+}
+.badge {
+  height: 23px;
+  line-height: 24px;
+  border-radius: 43px;
+  display: inline-block;
+  padding: 0 calc(30px - 20px);
+}
+a.read-btn::after {
+  content: url(../imgs/arrow.svg);
+  padding-left: 8px;
+}
+a.read-btn:hover::after {
+  content: url(../imgs/arrow_black.svg);
+  padding-left: 14px;
+}
+.card {
+  border-radius: 8px;
+  padding: 30px 0 30px 0;
+}
+/* Media Queries for Responsive */
+/* -------------------------- Media Query for Macbook Pro and Retina displays -------------------------- */
+@media only screen and (max-device-width: 1600px) {
+  .main_bg {
+    background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
+    background-position-y: 360px;
+    background-size: 100%;
+  }
+  .main_bg > .banner-container {
+    padding-bottom: 120px;
+  }
 }

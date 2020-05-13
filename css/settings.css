@@ -1,38 +1,72 @@
 /* Spider Labs - Settings */
-/* Color Palette - Primary */
-/* Color Palette - Primary */
-/* Color Palette - Opacity Tints */
-/* Spacings and Margins */
-/* Floats */
+/* -------------------------- Color Palette (Primary) -------------------------- */
+/* -------------------------- Color Palette (Secondary) -------------------------- */
+/* -------------------------- Color Palette (Opacity Tints) -------------------------- */
+/* -------------------------- Spacings and Margins -------------------------- */
+/* -------------------------- Margin Top -------------------------- */
+.mtop-120 {
+  margin-top: 120px;
+}
+.mtop-90 {
+  margin-top: 90px;
+}
+.mtop-60 {
+  margin-top: 60px;
+}
+.mtop-30 {
+  margin-top: 30px;
+}
+/* -------------------------- Margin Bottom -------------------------- */
+.mbottom-120 {
+  margin-bottom: 120px;
+}
+.mbottom-90 {
+  margin-bottom: 90px;
+}
+.mbottom-60 {
+  margin-bottom: 60px;
+}
+.mbottom-30 {
+  margin-bottom: 30px;
+}
+/* -------------------------- Floats -------------------------- */
 .f-left {
   float: left;
 }
 .f-right {
   float: right;
 }
-/* Background Colors */
+/* -------------------------- Background Colors -------------------------- */
 body,
+.card,
 .header-site {
   background-color: #FFFFFF;
 }
-.clients {
+.clients,
+.resources {
   background-color: #F4F0EB;
 }
+.badge,
 .primary-btn {
   background-color: #00D4A4;
 }
 .primary-black-btn {
   background-color: #000000;
 }
-/* Text Colors */
+/* -------------------------- Text Colors -------------------------- */
+.black,
 .nav-item,
 .intro-txt,
 .nav-item a,
-.main-banner h1 {
+.heading-xs a,
+.main-banner h1,
+a.read-btn:hover {
   color: #000000;
 }
 .green,
+a.read-btn,
 .nav-item a:hover,
+.heading-xs a:hover,
 .main-banner h1 span {
   color: #00D4A4;
 }
@@ -45,16 +79,24 @@ body,
 .helper-txt {
   color: #969696;
 }
-/* Transitions & Effects */
+.badge {
+  color: #FFFFFF;
+}
+/* -------------------------- Transitions & Effects -------------------------- */
 input {
   transition: border 0.3s ease-out;
+}
+a.read-btn::after {
+  transition: padding 0.15s ease-out;
 }
 input,
 .primary-btn,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
 }
-.nav-item a {
+.nav-item a,
+a.read-btn,
+.heading-xs a {
   transition: color 0.15s ease-out;
 }
 input:hover,

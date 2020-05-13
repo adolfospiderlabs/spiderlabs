@@ -29,12 +29,15 @@
 .mbottom-30 {
   margin-bottom: 30px;
 }
-/* -------------------------- Floats -------------------------- */
+/* -------------------------- Floats & Overflows -------------------------- */
 .f-left {
   float: left;
 }
 .f-right {
   float: right;
+}
+.ov-hidden {
+  overflow: hidden;
 }
 /* -------------------------- Background Colors -------------------------- */
 body,
@@ -58,9 +61,10 @@ body,
 .nav-item,
 .intro-txt,
 .nav-item a,
+ul.c-profile,
 .heading-xs a,
 .main-banner h1,
-a.read-btn:hover {
+.about-us div h2 .resources div h2 a.read-btn:hover {
   color: #000000;
 }
 .green,
@@ -76,7 +80,8 @@ a.read-btn,
 .gray2,
 .sub-header,
 .textfield,
-.helper-txt {
+.helper-txt,
+ul.c-profile li span {
   color: #969696;
 }
 .badge {

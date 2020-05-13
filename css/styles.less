@@ -111,6 +111,38 @@ ul.nav-list li {
 
 .spider-security {
     background-color: @violet10;
+    overflow: hidden;
+    padding: @l-spacing 0;
+    border-radius: 8px;
+}
+
+.text-container {
+    width: 540px;
+    margin-left: calc(@xl-spacing - 20px);
+    margin-right: @s-spacing;
+}
+
+.img-container {
+    width: 380px;
+    height: 380px;
+}
+
+
+/* -------------------------- Mission Elements -------------------------- */
+
+.txt-left {
+    margin-top: calc(@xl-spacing - 10px);
+    padding-right: calc(@m-spacing + 10px);
+}
+
+.txt-right {
+    margin-top: 82px;
+    margin-bottom: calc(@xl-spacing + 40px);
+    padding-left: calc(@m-spacing + 10px);
+}
+
+.img-height {
+    height: 540px;
 }
 
 
@@ -132,20 +164,23 @@ ul.nav-list li {
     padding: 0 calc(@s-spacing - 20px);
 }
 
-a.read-btn::after {
-    content: url(../imgs/arrow.svg);
-    padding-left: 8px;
-}
-
-a.read-btn:hover::after {
-    content: url(../imgs/arrow_black.svg);
-    padding-left: 14px;
-}
-
 .card {
     border-radius: 8px;
     padding: @s-spacing 0 @s-spacing 0;
 }
+
+
+/* About Us */
+
+ul.c-profile {
+    list-style: none;
+}
+
+ul.c-profile li {
+    margin-bottom: 18px;
+}
+
+
 
 
 /* Media Queries for Responsive */

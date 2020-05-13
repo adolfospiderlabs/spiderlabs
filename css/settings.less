@@ -17,6 +17,7 @@
 @violet: #440099;
 @light-gray: #F6F6F6;
 @light-brown: #F4F0EB;
+@red: #E74C3C;
 
 
 /* -------------------------- Color Palette (Opacity Tints) -------------------------- */
@@ -71,7 +72,7 @@
 }
 
 
-/* -------------------------- Floats -------------------------- */
+/* -------------------------- Floats & Overflows -------------------------- */
 
 .f-left {
     float: left;
@@ -79,6 +80,10 @@
 
 .f-right {
     float: right;
+}
+
+.ov-hidden {
+    overflow: hidden;
 }
 
 
@@ -112,8 +117,11 @@ body,
 .nav-item,
 .intro-txt,
 .nav-item a,
+ul.c-profile,
 .heading-xs a,
 .main-banner h1,
+.about-us div h2
+.resources div h2
 a.read-btn:hover
 
 {
@@ -137,7 +145,8 @@ a.read-btn,
 .gray2,
 .sub-header,
 .textfield,
-.helper-txt
+.helper-txt,
+ul.c-profile li span
 {
     color: @gray2;
 }

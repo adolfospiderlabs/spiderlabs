@@ -14,7 +14,7 @@
   margin-top: 60px;
 }
 .mtop-30 {
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
 /* -------------------------- Margin Bottom -------------------------- */
 .mbottom-120 {
@@ -46,7 +46,8 @@ body,
   background-color: #FFFFFF;
 }
 .clients,
-.resources {
+.resources,
+.office-card {
   background-color: #F4F0EB;
 }
 .badge,
@@ -64,7 +65,9 @@ body,
 ul.c-profile,
 .heading-xs a,
 .main-banner h1,
-.about-us div h2 .resources div h2 a.read-btn:hover {
+.about-us div h2,
+.resources div h2,
+a.read-btn:hover {
   color: #000000;
 }
 .green,
@@ -88,9 +91,6 @@ ul.c-profile li span {
   color: #FFFFFF;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
-input {
-  transition: border 0.3s ease-out;
-}
 a.read-btn::after {
   transition: padding 0.15s ease-out;
 }
@@ -99,18 +99,16 @@ input,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
 }
+input {
+  transition: border 0.3s ease-out;
+}
 .nav-item a,
 a.read-btn,
 .heading-xs a {
   transition: color 0.15s ease-out;
 }
 input:hover,
-input:focus,
 .primary-btn:hover,
 .primary-black-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
-/*
-.spider-security {
-    box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.25);
-}*/

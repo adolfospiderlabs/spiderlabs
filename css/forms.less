@@ -17,13 +17,21 @@ input {
     padding: 15px;
 }
 
-input:focus {
+input:hover
+{
     border: 1px solid @gray !important;
     color: @gray;
 }
 
-input:focus,
-input:hover {
+input:focus
+{
+    border: 1px solid @black !important;
+    color: @black;
+}
+
+input:hover,
+input:focus
+{
     outline-width: 0;
 }
 
@@ -70,4 +78,8 @@ a.read-btn:hover::after {
 a.primary-black-btn {
   line-height: 50px;
   margin: 60px auto 0 auto;
+}
+
+.offices a.primary-black-btn {
+  line-height: 50px;
 }

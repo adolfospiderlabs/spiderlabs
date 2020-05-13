@@ -15,7 +15,7 @@
   margin-top: 60px;
 }
 .mtop-30 {
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
 /* -------------------------- Margin Bottom -------------------------- */
 .mbottom-120 {
@@ -47,7 +47,8 @@ body,
   background-color: #FFFFFF;
 }
 .clients,
-.resources {
+.resources,
+.office-card {
   background-color: #F4F0EB;
 }
 .badge,
@@ -62,8 +63,11 @@ body,
 .nav-item,
 .intro-txt,
 .nav-item a,
+ul.c-profile,
 .heading-xs a,
 .main-banner h1,
+.about-us div h2,
+.resources div h2,
 a.read-btn:hover {
   color: #000000;
 }
@@ -80,16 +84,14 @@ a.read-btn,
 .gray2,
 .sub-header,
 .textfield,
-.helper-txt {
+.helper-txt,
+ul.c-profile li span {
   color: #969696;
 }
 .badge {
   color: #FFFFFF;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
-input {
-  transition: border 0.3s ease-out;
-}
 a.read-btn::after {
   transition: padding 0.15s ease-out;
 }
@@ -98,21 +100,19 @@ input,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
 }
+input {
+  transition: border 0.3s ease-out;
+}
 .nav-item a,
 a.read-btn,
 .heading-xs a {
   transition: color 0.15s ease-out;
 }
 input:hover,
-input:focus,
 .primary-btn:hover,
 .primary-black-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
-/*
-.spider-security {
-    box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.25);
-}*/
 /* -------------------------- Inputs -------------------------- */
 #slabs-info input {
   width: 350px;
@@ -124,12 +124,16 @@ input {
   border-radius: 8px;
   padding: 15px;
 }
-input:focus {
+input:hover {
   border: 1px solid #444444 !important;
   color: #444444;
 }
-input:focus,
-input:hover {
+input:focus {
+  border: 1px solid #000000 !important;
+  color: #000000;
+}
+input:hover,
+input:focus {
   outline-width: 0;
 }
 /* -------------------------- Buttons & Links -------------------------- */
@@ -169,4 +173,7 @@ a.read-btn:hover::after {
 a.primary-black-btn {
   line-height: 50px;
   margin: 60px auto 0 auto;
+}
+.offices a.primary-black-btn {
+  line-height: 50px;
 }

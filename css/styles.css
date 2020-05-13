@@ -7,6 +7,9 @@
 #slabs-info input {
   width: 350px;
 }
+#security-info input {
+  width: 320px;
+}
 input {
   height: 50px;
   box-sizing: border-box;
@@ -478,6 +481,12 @@ ul.nav-list li {
   padding: 90px 0;
   border-radius: 8px;
 }
+.security-banner {
+  background-color: rgba(68, 0, 153, 0.1);
+  border-radius: 8px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
 .text-container {
   width: 540px;
   margin-left: calc(120px - 20px);
@@ -489,7 +498,7 @@ ul.nav-list li {
 }
 /* -------------------------- Mission Elements -------------------------- */
 .txt-left {
-  margin-top: calc(120px - 10px);
+  margin-top: 90px;
   padding-right: calc(60px + 10px);
 }
 .txt-right {
@@ -541,6 +550,12 @@ ul.awards li h4 {
 }
 .office-card {
   border-radius: 8px;
+}
+.careers-banner {
+  background-color: rgba(0, 212, 165, 0.3);
+  border-radius: 8px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 /* Media Queries for Responsive */
 /* -------------------------- Media Query for Macbook Pro and Retina displays -------------------------- */

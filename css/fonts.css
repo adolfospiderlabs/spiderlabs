@@ -159,7 +159,8 @@ input::selection,
   font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 10px;
+  font-size: 1rem;
 }
 .body-bold {
   font-family: 'Archivo', sans-serif;
@@ -196,6 +197,7 @@ input::selection,
 .main-banner,
 .clients div h2,
 .about-us div h2,
+.contacts div h2,
 .resources div h2 {
   text-align: center;
 }
@@ -212,4 +214,33 @@ a.read-btn {
 }
 .badge {
   text-transform: uppercase;
+}
+/* Media Queries for Responsive */
+/* -------------------------- Media Query for Mobile -------------------------- */
+@media only screen and (max-width: 480px) {
+  .heading-xl {
+    font-size: 26.5px;
+    font-size: 2.65rem;
+    line-height: 52px;
+  }
+  .heading-l {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 42px;
+  }
+  .heading-m {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+  .sub-header {
+    font-size: 12.5px;
+    font-size: 1.25rem;
+    line-height: 32px;
+  }
+  .intro-txt {
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 32px;
+  }
 }

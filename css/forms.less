@@ -80,6 +80,22 @@ a.read-btn:hover::after {
     padding-left: 14px;
 }
 
+a.outline-btn {
+  padding: 0 20px 0 20px;
+  border: 1px solid @spider-green;
+  border-radius: 8px;
+  background-color: white;
+  color: @spider-green;
+  height: 50px;
+  line-height: 50px;
+  display: table;
+}
+
+a.outline-btn::before {
+  content: url(../imgs/chat_icon.svg);
+  padding-right: 10px;
+}
+
 a.primary-black-btn {
   line-height: 50px;
   margin: 60px auto 0 auto;

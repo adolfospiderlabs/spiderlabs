@@ -100,6 +100,7 @@ input {
 }
 .card,
 .primary-btn,
+a.outline-btn,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
 }
@@ -111,6 +112,7 @@ a.read-btn,
 .card:hover,
 input:focus,
 .primary-btn:hover,
+a.outline-btn:hover,
 .primary-black-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
@@ -173,6 +175,20 @@ a.read-btn::after {
 a.read-btn:hover::after {
   content: url(../imgs/arrow_black.svg);
   padding-left: 14px;
+}
+a.outline-btn {
+  padding: 0 20px 0 20px;
+  border: 1px solid #00D4A4;
+  border-radius: 8px;
+  background-color: white;
+  color: #00D4A4;
+  height: 50px;
+  line-height: 50px;
+  display: table;
+}
+a.outline-btn::before {
+  content: url(../imgs/chat_icon.svg);
+  padding-right: 10px;
 }
 a.primary-black-btn {
   line-height: 50px;

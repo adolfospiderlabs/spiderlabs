@@ -165,8 +165,8 @@ input::selection,
 .body-bold {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  /* Regular */
+  font-weight: 700;
+  /* Bold */
   font-size: 10px;
   font-size: 1rem;
   line-height: 28px;
@@ -207,6 +207,7 @@ ul.c-profile,
 .main-banner form {
   text-align: left;
 }
+a.outline-btn,
 .heading-xs a,
 .nav-item a,
 a.read-btn {

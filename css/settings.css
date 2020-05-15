@@ -29,6 +29,32 @@
 .mbottom-30 {
   margin-bottom: 30px;
 }
+/* -------------------------- Margin Right -------------------------- */
+.mright-120 {
+  margin-right: 120px;
+}
+.mright-90 {
+  margin-right: 90px;
+}
+.mright-60 {
+  margin-right: 60px;
+}
+.mright-30 {
+  margin-right: 30px;
+}
+/* -------------------------- Margin Left -------------------------- */
+.mleft-120 {
+  margin-left: 120px;
+}
+.mleft-90 {
+  margin-left: 90px;
+}
+.mleft-60 {
+  margin-left: 60px;
+}
+.mleft-30 {
+  margin-left: 30px;
+}
 /* -------------------------- Floats & Overflows -------------------------- */
 .f-left {
   float: left;
@@ -79,7 +105,8 @@ a.read-btn,
 .main-banner h1 span {
   color: #00D4A4;
 }
-.gray {
+.gray,
+.footer-nav ul li a:hover {
   color: #444444;
 }
 label,
@@ -94,7 +121,11 @@ ul.c-profile li span,
 option:first-of-type {
   color: #969696;
 }
-.badge {
+.badge,
+ul.lang-nav,
+.footer-nav ul li,
+.footer-nav ul li a,
+.footer-nav .credits {
   color: #FFFFFF;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
@@ -114,7 +145,8 @@ a.outline-btn,
 }
 .nav-item a,
 a.read-btn,
-.heading-xs a {
+.heading-xs a,
+.footer-nav ul li a {
   transition: color 0.15s ease-out;
 }
 .card:hover,

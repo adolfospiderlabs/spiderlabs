@@ -110,18 +110,36 @@ ul.nav-list li {
 }
 
 
-.spider-security {
+.security-txt {
+    padding-left: 90px;
+}
+
+/*.spider-security {
     background-color: @violet10;
     overflow: hidden;
     padding: @l-spacing 0;
     border-radius: 8px;
-}
+}*/
 
 .security-banner {
     background-color: @violet10;
     border-radius: 8px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: @l-spacing;
+    padding-bottom: @l-spacing;
+}
+
+.security-txt h2 {
+    margin-bottom: 20px;
+}
+
+.security-img {
+    width: 340px;
+    height: 340px;
+    margin-left: 10px;
+}
+
+.security-img img {
+    width: 100%;
 }
 
 
@@ -140,14 +158,21 @@ ul.nav-list li {
 /* -------------------------- Mission Elements -------------------------- */
 
 .txt-left {
-    margin-top: @l-spacing;
-    padding-right: calc(@m-spacing + 10px);
+    padding-top: 100px;
+}
+
+.txt-left p {
+    padding-right: @m-spacing;
+}
+
+.img-right img {
+    width: 540px;
+    height: 540px;
 }
 
 .txt-right {
-    margin-top: 82px;
-    margin-bottom: calc(@xl-spacing + 40px);
-    padding-left: calc(@m-spacing + 10px);
+    padding-top: 69px;
+    padding-left: @m-spacing;
 }
 
 .img-height {
@@ -179,7 +204,7 @@ ul.nav-list li {
 }
 
 
-/* About Us */
+/* -------------------------- About Us -------------------------- */
 
 ul.c-profile {
     list-style: none;
@@ -215,9 +240,140 @@ ul.awards li h4 {
 .careers-banner {
     background-color: @s-green30;
     border-radius: 8px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: @l-spacing;
+    padding-bottom: @l-spacing;
 }
+
+.inner-office {
+    display: inline-block;
+    padding: @m-spacing;
+}
+
+.office-info h4 {
+    margin-bottom: 10px;
+}
+
+.office-icon {
+    width: 93px;
+    height: 123px;
+    float: left;
+}
+
+
+/* -------------------------- Work With Us - Banner -------------------------- */
+
+.careers-banner div .txt-wrapper {
+    padding-left: 90px;
+    margin-right: 48px;
+    margin-top: 48px;
+}
+
+.txt-wrapper h2 {
+    margin-bottom: 20px;
+}
+
+.careers-img {
+    width: 534px;
+    height: 306px;
+}
+
+
+/* -------------------------- Contact Us -------------------------- */
+
+.lets-talk p,
+ul.schedule-info
+{
+    margin-top: @xs-spacing;
+}
+
+ul.schedule-info {
+    list-style: none;
+}
+
+.form-box {
+    border-radius: 8px;
+}
+
+.form-wrapper {
+    padding: 60px;
+}
+
+.form-wrapper h3 {
+    margin-top: -20px;
+}
+
+.field-wrapper {
+    margin-top: @xs-spacing;
+}
+
+
+/* -------------------------- Footer -------------------------- */
+
+.footer {
+    background-color: @black;
+    margin-top: @xl-spacing;
+    padding: @l-spacing 0 calc(@xl-spacing + 40px) 0;
+}
+
+ul.social-nav {
+    list-style: none;
+    text-align: center;
+}
+
+ul.social-nav li {
+    display: inline-block;
+    margin-left: @s-spacing;
+}
+
+ul.social-nav li:first-child {
+    margin-left: 0;
+}
+
+.footer-nav {
+    margin-top: @l-spacing;
+}
+
+.footer-nav ul {
+    list-style: none;
+    margin-bottom: @s-spacing;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+}
+
+.footer-nav ul li::after {
+    content: "|";
+    padding: 0 15px;
+}
+
+.footer-nav ul li:last-child::after {
+    content: none;
+}
+
+.lang-container {
+    margin-top: @l-spacing;
+    border-top: 1px solid @gray;
+}
+
+ul.lang-nav {
+    list-style: none;
+    float: right;
+}
+
+ul.lang-nav li {
+    margin-left: @s-spacing;
+    display: inline-block;
+}
+
+ul.lang-nav li:first-child {
+    margin-left: 0;
+}
+
+ul.lang-nav li img {
+    margin-right: 10px;
+}
+
 
 
 /* Media Queries for Responsive */

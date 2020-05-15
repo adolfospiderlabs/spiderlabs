@@ -109,7 +109,22 @@ a.primary-black-btn {
 .offices a.primary-black-btn {
   line-height: 50px;
 }
+.form-wrapper .primary-btn {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 30px;
+}
 /* -------------------------- Contact Form -------------------------- */
+.field-wrapper input,
+.field-wrapper select,
+.field-wrapper textarea {
+  width: 100%;
+  margin-top: 5px;
+}
+.field-wrapper textarea {
+  height: 104px;
+  margin-top: 5px;
+}
 /* -------------------------- Media Query for Mobile -------------------------- */
 @media only screen and (max-width: 480px) {
   #slabs-info input {
@@ -262,6 +277,9 @@ body {
   font-size: 1.125rem;
   line-height: 32px;
 }
+select {
+  line-height: 18px !important;
+}
 input,
 select,
 textarea,
@@ -278,9 +296,6 @@ input::selection,
   font-size: 10px !important;
   font-size: 1rem !important;
   line-height: 28px;
-}
-select {
-  line-height: 18px !important;
 }
 .nav-item,
 .nav-item a {
@@ -320,14 +335,20 @@ label,
   letter-spacing: 0.32px;
 }
 /* -------------------------- Text Alignment and Decoration -------------------------- */
+::selection {
+  background-color: #00D4A4;
+  color: white;
+}
 .button,
 .intro-p,
 .offices h3,
 .main-banner,
+.footer-nav ul,
 .clients div h2,
 .about-us div h2,
 .contacts div h2,
-.resources div h2 {
+.resources div h2,
+.footer-nav .credits {
   text-align: center;
 }
 .textfield,
@@ -339,7 +360,8 @@ ul.c-profile,
 a.outline-btn,
 .heading-xs a,
 .nav-item a,
-a.read-btn {
+a.read-btn,
+.footer-nav ul li a:hover {
   text-decoration: none;
 }
 .badge {
@@ -405,6 +427,32 @@ a.read-btn {
 .mbottom-30 {
   margin-bottom: 30px;
 }
+/* -------------------------- Margin Right -------------------------- */
+.mright-120 {
+  margin-right: 120px;
+}
+.mright-90 {
+  margin-right: 90px;
+}
+.mright-60 {
+  margin-right: 60px;
+}
+.mright-30 {
+  margin-right: 30px;
+}
+/* -------------------------- Margin Left -------------------------- */
+.mleft-120 {
+  margin-left: 120px;
+}
+.mleft-90 {
+  margin-left: 90px;
+}
+.mleft-60 {
+  margin-left: 60px;
+}
+.mleft-30 {
+  margin-left: 30px;
+}
 /* -------------------------- Floats & Overflows -------------------------- */
 .f-left {
   float: left;
@@ -455,7 +503,8 @@ a.read-btn,
 .main-banner h1 span {
   color: #00D4A4;
 }
-.gray {
+.gray,
+.footer-nav ul li a:hover {
   color: #444444;
 }
 label,
@@ -470,7 +519,11 @@ ul.c-profile li span,
 option:first-of-type {
   color: #969696;
 }
-.badge {
+.badge,
+ul.lang-nav,
+.footer-nav ul li,
+.footer-nav ul li a,
+.footer-nav .credits {
   color: #FFFFFF;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
@@ -490,7 +543,8 @@ a.outline-btn,
 }
 .nav-item a,
 a.read-btn,
-.heading-xs a {
+.heading-xs a,
+.footer-nav ul li a {
   transition: color 0.15s ease-out;
 }
 .card:hover,
@@ -577,17 +631,31 @@ ul.nav-list li {
 .resources div h2 {
   margin-top: 90px;
 }
-.spider-security {
-  background-color: rgba(68, 0, 153, 0.1);
-  overflow: hidden;
-  padding: 90px 0;
-  border-radius: 8px;
+.security-txt {
+  padding-left: 90px;
 }
+/*.spider-security {
+    background-color: @violet10;
+    overflow: hidden;
+    padding: @l-spacing 0;
+    border-radius: 8px;
+}*/
 .security-banner {
   background-color: rgba(68, 0, 153, 0.1);
   border-radius: 8px;
   padding-top: 90px;
   padding-bottom: 90px;
+}
+.security-txt h2 {
+  margin-bottom: 20px;
+}
+.security-img {
+  width: 340px;
+  height: 340px;
+  margin-left: 10px;
+}
+.security-img img {
+  width: 100%;
 }
 .text-container {
   width: 540px;
@@ -600,13 +668,18 @@ ul.nav-list li {
 }
 /* -------------------------- Mission Elements -------------------------- */
 .txt-left {
-  margin-top: 90px;
-  padding-right: calc(60px + 10px);
+  padding-top: 100px;
+}
+.txt-left p {
+  padding-right: 60px;
+}
+.img-right img {
+  width: 540px;
+  height: 540px;
 }
 .txt-right {
-  margin-top: 82px;
-  margin-bottom: calc(120px + 40px);
-  padding-left: calc(60px + 10px);
+  padding-top: 69px;
+  padding-left: 60px;
 }
 .img-height {
   height: 540px;
@@ -629,7 +702,7 @@ ul.nav-list li {
   border-radius: 8px;
   padding: 30px 0 30px 0;
 }
-/* About Us */
+/* -------------------------- About Us -------------------------- */
 ul.c-profile {
   list-style: none;
 }
@@ -658,6 +731,103 @@ ul.awards li h4 {
   border-radius: 8px;
   padding-top: 90px;
   padding-bottom: 90px;
+}
+.inner-office {
+  display: inline-block;
+  padding: 60px;
+}
+.office-info h4 {
+  margin-bottom: 10px;
+}
+.office-icon {
+  width: 93px;
+  height: 123px;
+  float: left;
+}
+/* -------------------------- Work With Us - Banner -------------------------- */
+.careers-banner div .txt-wrapper {
+  padding-left: 90px;
+  margin-right: 48px;
+  margin-top: 48px;
+}
+.txt-wrapper h2 {
+  margin-bottom: 20px;
+}
+.careers-img {
+  width: 534px;
+  height: 306px;
+}
+/* -------------------------- Contact Us -------------------------- */
+.lets-talk p,
+ul.schedule-info {
+  margin-top: 15px;
+}
+ul.schedule-info {
+  list-style: none;
+}
+.form-box {
+  border-radius: 8px;
+}
+.form-wrapper {
+  padding: 60px;
+}
+.form-wrapper h3 {
+  margin-top: -20px;
+}
+.field-wrapper {
+  margin-top: 15px;
+}
+/* -------------------------- Footer -------------------------- */
+.footer {
+  background-color: #000000;
+  margin-top: 120px;
+  padding: 90px 0 calc(120px + 40px) 0;
+}
+ul.social-nav {
+  list-style: none;
+  text-align: center;
+}
+ul.social-nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
+ul.social-nav li:first-child {
+  margin-left: 0;
+}
+.footer-nav {
+  margin-top: 90px;
+}
+.footer-nav ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.footer-nav ul li {
+  display: inline-block;
+}
+.footer-nav ul li::after {
+  content: "|";
+  padding: 0 15px;
+}
+.footer-nav ul li:last-child::after {
+  content: none;
+}
+.lang-container {
+  margin-top: 90px;
+  border-top: 1px solid #444444;
+}
+ul.lang-nav {
+  list-style: none;
+  float: right;
+}
+ul.lang-nav li {
+  margin-left: 30px;
+  display: inline-block;
+}
+ul.lang-nav li:first-child {
+  margin-left: 0;
+}
+ul.lang-nav li img {
+  margin-right: 10px;
 }
 /* Media Queries for Responsive */
 /* -------------------------- Media Query for Macbook Pro and Retina displays -------------------------- */

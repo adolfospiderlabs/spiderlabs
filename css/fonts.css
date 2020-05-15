@@ -1,4 +1,164 @@
 /* Spider Labs - Headings & Text */
+/* Spider Labs - Settings */
+/* -------------------------- Color Palette (Primary) -------------------------- */
+/* -------------------------- Color Palette (Secondary) -------------------------- */
+/* -------------------------- Color Palette (Opacity Tints) -------------------------- */
+/* -------------------------- Spacings and Margins -------------------------- */
+/* -------------------------- Margin Top -------------------------- */
+.mtop-120 {
+  margin-top: 120px;
+}
+.mtop-90 {
+  margin-top: 90px;
+}
+.mtop-60 {
+  margin-top: 60px;
+}
+.mtop-30 {
+  margin-top: 30px !important;
+}
+/* -------------------------- Margin Bottom -------------------------- */
+.mbottom-120 {
+  margin-bottom: 120px;
+}
+.mbottom-90 {
+  margin-bottom: 90px;
+}
+.mbottom-60 {
+  margin-bottom: 60px;
+}
+.mbottom-30 {
+  margin-bottom: 30px;
+}
+/* -------------------------- Margin Right -------------------------- */
+.mright-120 {
+  margin-right: 120px;
+}
+.mright-90 {
+  margin-right: 90px;
+}
+.mright-60 {
+  margin-right: 60px;
+}
+.mright-30 {
+  margin-right: 30px;
+}
+/* -------------------------- Margin Left -------------------------- */
+.mleft-120 {
+  margin-left: 120px;
+}
+.mleft-90 {
+  margin-left: 90px;
+}
+.mleft-60 {
+  margin-left: 60px;
+}
+.mleft-30 {
+  margin-left: 30px;
+}
+/* -------------------------- Floats & Overflows -------------------------- */
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.ov-hidden {
+  overflow: hidden;
+}
+/* -------------------------- Background Colors -------------------------- */
+body,
+.card,
+select,
+.header-site {
+  background-color: #FFFFFF;
+}
+.clients,
+.form-box,
+.resources,
+.office-card {
+  background-color: #F4F0EB;
+}
+.badge,
+.primary-btn {
+  background-color: #00D4A4;
+}
+.primary-black-btn {
+  background-color: #000000;
+}
+/* -------------------------- Text Colors -------------------------- */
+.black,
+.nav-item,
+.intro-txt,
+.nav-item a,
+ul.c-profile,
+.heading-xs a,
+.main-banner h1,
+.about-us div h2,
+.resources div h2,
+a.read-btn:hover {
+  color: #000000;
+}
+.green,
+a.read-btn,
+.nav-item a:hover,
+.heading-xs a:hover,
+.main-banner h1 span {
+  color: #00D4A4;
+}
+.gray,
+.footer-nav ul li a:hover {
+  color: #444444;
+}
+label,
+.gray2,
+select,
+.sub-header,
+.textfield,
+.helper-txt,
+input::placeholder,
+textarea::placeholder,
+ul.c-profile li span,
+option:first-of-type {
+  color: #969696;
+}
+.badge,
+ul.lang-nav,
+.footer-nav ul li,
+.footer-nav ul li a,
+.footer-nav .credits {
+  color: #FFFFFF;
+}
+/* -------------------------- Transitions & Effects -------------------------- */
+a.read-btn::after {
+  transition: padding 0.15s ease-out;
+}
+input,
+select,
+textarea {
+  transition: border 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.card,
+.primary-btn,
+a.outline-btn,
+.primary-black-btn {
+  transition: box-shadow 0.3s ease-out;
+}
+.nav-item a,
+a.read-btn,
+.heading-xs a,
+.footer-nav ul li a {
+  transition: color 0.15s ease-out;
+}
+.card:hover,
+input:focus,
+select:focus,
+textarea:focus,
+.primary-btn:hover,
+a.outline-btn:hover,
+.primary-black-btn:hover {
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
+}
 /* -------------------------- Archivo Google Font Import -------------------------- */
 @font-face {
   font-family: 'Archivo';
@@ -197,14 +357,20 @@ label,
   letter-spacing: 0.32px;
 }
 /* -------------------------- Text Alignment and Decoration -------------------------- */
+::selection {
+  background-color: #00D4A4;
+  color: white;
+}
 .button,
 .intro-p,
 .offices h3,
 .main-banner,
+.footer-nav ul,
 .clients div h2,
 .about-us div h2,
 .contacts div h2,
-.resources div h2 {
+.resources div h2,
+.footer-nav .credits {
   text-align: center;
 }
 .textfield,
@@ -216,7 +382,8 @@ ul.c-profile,
 a.outline-btn,
 .heading-xs a,
 .nav-item a,
-a.read-btn {
+a.read-btn,
+.footer-nav ul li a:hover {
   text-decoration: none;
 }
 .badge {

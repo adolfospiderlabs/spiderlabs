@@ -1,5 +1,7 @@
 /* Spider Labs - Headings & Text */
 
+@import url("settings.less");
+
 /* -------------------------- Archivo Google Font Import -------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap');
@@ -152,14 +154,21 @@ label,
 
 /* -------------------------- Text Alignment and Decoration -------------------------- */
 
+::selection {
+    background-color: @spider-green;
+    color: white;
+}
+
 .button,
 .intro-p,
 .offices h3,
 .main-banner,
+.footer-nav ul,
 .clients div h2,
 .about-us div h2,
 .contacts div h2,
-.resources div h2
+.resources div h2,
+.footer-nav .credits
 {
     text-align: center;
 }
@@ -175,7 +184,8 @@ ul.c-profile,
 a.outline-btn,
 .heading-xs a,
 .nav-item a,
-a.read-btn
+a.read-btn,
+.footer-nav ul li a:hover
 {
     text-decoration: none;
 }

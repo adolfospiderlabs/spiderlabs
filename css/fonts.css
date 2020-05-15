@@ -140,6 +140,8 @@ body {
   line-height: 32px;
 }
 input,
+select,
+textarea,
 input:hover,
 input:focus,
 input:enabled,
@@ -179,6 +181,7 @@ input::selection,
   font-size: 11.25px;
   font-size: 1.125rem;
 }
+label,
 .badge,
 .helper-txt {
   font-family: 'Archivo', sans-serif;

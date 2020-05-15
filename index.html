@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spider Labs - Building a safer future with automation.</title>
+    <title>Spider Labs - Building a safer and happier future with automation.</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="shortcut icon" type="image/png" href="imgs/favicon.png"/>
 </head>
@@ -17,13 +17,15 @@
                             <img src="imgs/SpiderLabs_Logo.svg" alt="Spider Labs"/>
                         </a>
                     </div>
-                    <div class="col-lg-6 pr-0 f-right nav-container">
+                    <div class="col-lg-8 pr-0 f-right nav-container">
                         <ul class="nav-list nav-item">
                             <li><a href="#" title="Home" alt="Home">Home</a></li>
                             <li><a href="#" title="About Us" alt="About Us">About Us</a></li>
                             <li><a href="#" title="Products" alt="Products">Products</a></li>
+                            <li><a href="#" title="News" alt="News">News</a></li>
+                            <li><a href="#" title="Media Kit" alt="Media Kit">Media Kit</a></li>
                             <li><a href="#" title="Careers" alt="Careers">Careers</a></li>
-                            <li><a href="#" title="Contacts" alt="Contacts">Contacts</a></li>
+                            <li><a href="#contacts" title="Contacts" alt="Contacts">Contacts</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -32,7 +34,7 @@
             <div class="container main-banner">
                 <h1 class="col-lg-12 heading-xl">Building a <span>safer</span> future with automation.</h1>
                 <p class="col-lg-6 offset-lg-3 sub-header">Let's Fight Ad Fraud Together!</p>
-                <div class="slabs-form-wrapper" style="background-color: aquas;"> 
+                <div class="slabs-form-wrapper"> 
                     <form id="slabs-info">
                         <input type="email" name="email_txt" id="email_txt" class="body-txt" placeholder="Your email address">
                         <button class="primary-btn button-txt" type="submit" value="Get more info">Get more info</button>
@@ -239,24 +241,67 @@
         </div>
     </div>
     <!-- Spider Labs - Contacts -->
-    <div class="container mtop-90 contacts">
+    <div class="container mtop-90 contacts" id="contacts">
         <div class="container-lg">
             <h2 class="col-lg-8 offset-lg-2 heading-l">Talk to an expert</h2>
             <p class="col-lg-6 offset-lg-3 intro-txt gray2 mtop-30 intro-p">Get help with technical issues and general questions by sending us a message or chatting with our team.</p>
             <div class="row mtop-90">
-                <div class="col-lg-6 p-0" style="background-color: burlywoods;">
+                <div class="col-lg-6 p-0 mtop-60">
                     <h3 class="heading-m">Let's talk</h3>
-                    <p class="gray mbottom-30" style="margin-top: 15px;">Our Customer Success team is available to help you by chat.</p>
-                    <a href="#" class="outline-btn button-txt">Let's chat</a>
+                    <p class="body-txt gray mbottom-30" style="margin-top: 15px;">Our Customer Success team is available to help you by chat.</p>
+                    <a href="#" class="outline-btn button-txt">Chat with us</a>
                         <div class="mtop-30">
-                            <h4 class="body-bold">Live chat available from Monday to Friday</h4>
-                            <ul class="gray body-txt" style="margin-top: 15px;">
+                            <h4 class="body-bold black">Live chat available from Monday to Friday</h4>
+                            <ul class="gray2 body-txt" style="margin-top: 15px;">
                                 <li>- 10am to 7pm (JST)</li>
                                 <li>- 1am to 10am (UTC)</li>
                             </ul>
                         </div>
                 </div>
-                <div class="col-lg-6 p-0" style="background-color: red; border-radius: 8px;">left</div>
+                <div class="col-lg-6 p-0 form-box" style=" border-radius: 8px;">
+                    <div style="padding: 60px;">
+                        <h3 class="heading-s">Send us your message</h4>
+                        <form name="contact" action="#" method="post">
+                            <fieldset>
+                                <div style="margin-top: 15px;">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name_txt" id="name_txt" class="body-txt" placeholder="Your name" style="width: 100%; margin-top: 5px;" required>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <label for="name">E-mail</label>
+                                    <input type="text" name="name_txt" id="name_txt" class="body-txt" placeholder="Your work email" style="width: 100%; margin-top: 5px;" required>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <label for="name">Phone (Optional)</label>
+                                    <input type="text" name="name_txt" id="name_txt" class="body-txt" placeholder="Your phone number" style="width: 100%; margin-top: 5px;">
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <label for="country">Country</label>
+                                    <select name="country" id="country" class="body-txt" style="width: 100%; margin-top: 5px;">
+                                        <option value="0">Select your country...</option>
+                                        <option value="1">Audi</option>
+                                        <option value="2">BMW</option>
+                                        <option value="3">Citroen</option>
+                                        <option value="4">Ford</option>
+                                        <option value="5">Honda</option>
+                                        <option value="6">Jaguar</option>
+                                        <option value="7">Land Rover</option>
+                                        <option value="8">Mercedes</option>
+                                        <option value="9">Mini</option>
+                                        <option value="10">Nissan</option>
+                                        <option value="11">Toyota</option>
+                                        <option value="12">Volvo</option>
+                                      </select>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" type="text" name="message" placeholder="Type your message..." style="width: 100%; height: 104px; margin-top: 5px;" ></textarea>
+                                </div>
+                                <button class="primary-btn button-txt" type="submit" value="Get more info" style="margin-top: 30px; width: 100%; margin-left: 0;">Send your message</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

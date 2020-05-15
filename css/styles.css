@@ -10,23 +10,35 @@
 #security-info input {
   width: 320px;
 }
-input {
+input,
+select {
   height: 50px;
+}
+input,
+select,
+textarea {
   box-sizing: border-box;
   border: 1px solid #969696;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 15px;
 }
-input:hover {
+input:hover,
+select:hover,
+textarea:hover {
   border: 1px solid #444444;
-  color: #444444;
 }
-input:focus {
+input:focus,
+select:focus,
+textarea:focus {
   border: 1px solid #000000;
   color: #000000;
 }
 input:hover,
-input:focus {
+input:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus {
   outline-width: 0;
 }
 /* -------------------------- Buttons & Links -------------------------- */
@@ -84,6 +96,7 @@ a.primary-black-btn {
 .offices a.primary-black-btn {
   line-height: 50px;
 }
+/* -------------------------- Contact Form -------------------------- */
 /* -------------------------- Media Query for Mobile -------------------------- */
 @media only screen and (max-width: 480px) {
   #slabs-info input {
@@ -237,6 +250,8 @@ body {
   line-height: 32px;
 }
 input,
+select,
+textarea,
 input:hover,
 input:focus,
 input:enabled,
@@ -276,6 +291,7 @@ input::selection,
   font-size: 11.25px;
   font-size: 1.125rem;
 }
+label,
 .badge,
 .helper-txt {
   font-family: 'Archivo', sans-serif;
@@ -390,6 +406,7 @@ body,
   background-color: #FFFFFF;
 }
 .clients,
+.form-box,
 .resources,
 .office-card {
   background-color: #F4F0EB;
@@ -424,10 +441,13 @@ a.read-btn,
 .gray {
   color: #444444;
 }
+label,
 .gray2,
 .sub-header,
 .textfield,
 .helper-txt,
+input::placeholder,
+textarea::placeholder,
 ul.c-profile li span {
   color: #969696;
 }
@@ -438,7 +458,9 @@ ul.c-profile li span {
 a.read-btn::after {
   transition: padding 0.15s ease-out;
 }
-input {
+input,
+select,
+textarea {
   transition: border 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 .card,
@@ -454,6 +476,8 @@ a.read-btn,
 }
 .card:hover,
 input:focus,
+select:focus,
+textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
 .primary-black-btn:hover {

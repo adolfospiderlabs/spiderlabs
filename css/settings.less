@@ -96,6 +96,7 @@ body,
 }
 
 .clients,
+.form-box,
 .resources,
 .office-card
 {
@@ -114,6 +115,7 @@ body,
 
 /* -------------------------- Text Colors -------------------------- */
 
+
 .black,
 .nav-item,
 .intro-txt,
@@ -124,7 +126,6 @@ ul.c-profile,
 .about-us div h2,
 .resources div h2,
 a.read-btn:hover
-
 {
     color: @black;
 }
@@ -142,10 +143,13 @@ a.read-btn,
     color: @gray;
 }
 
+label,
 .gray2,
 .sub-header,
 .textfield,
 .helper-txt,
+input::placeholder,
+textarea::placeholder,
 ul.c-profile li span
 {
     color: @gray2;
@@ -162,7 +166,10 @@ a.read-btn::after {
     transition: padding .15s ease-out;
 }
 
-input {
+input,
+select,
+textarea
+{
     transition: border .3s ease-out, color .3s ease-out, box-shadow .3s ease-out;
 }
 
@@ -183,6 +190,8 @@ a.read-btn,
 
 .card:hover,
 input:focus,
+select:focus,
+textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
 .primary-black-btn:hover

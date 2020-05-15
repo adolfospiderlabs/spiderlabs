@@ -13,29 +13,43 @@
   width: 320px;
 }
 
-
-input {
+input,
+select
+{
     height: 50px;
+}
+
+input,
+select,
+textarea
+{
     box-sizing: border-box;
     border: 1px solid @gray2;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 15px;
 }
 
-input:hover
+input:hover,
+select:hover,
+textarea:hover
 {
     border: 1px solid @gray;
-    color: @gray;
 }
 
-input:focus
+input:focus,
+select:focus,
+textarea:focus
 {
     border: 1px solid @black;
     color: @black;
 }
 
 input:hover,
-input:focus
+input:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus
 {
     outline-width: 0;
 }
@@ -104,6 +118,11 @@ a.primary-black-btn {
 .offices a.primary-black-btn {
   line-height: 50px;
 }
+
+
+/* -------------------------- Contact Form -------------------------- */
+
+
 
 
 /* -------------------------- Media Query for Mobile -------------------------- */

@@ -139,6 +139,9 @@ body {
   font-size: 1.125rem;
   line-height: 32px;
 }
+select {
+  line-height: 18px !important;
+}
 input,
 select,
 textarea,

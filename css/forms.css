@@ -43,6 +43,7 @@
 /* -------------------------- Background Colors -------------------------- */
 body,
 .card,
+select,
 .header-site {
   background-color: #FFFFFF;
 }
@@ -84,10 +85,14 @@ a.read-btn,
 }
 label,
 .gray2,
+select,
 .sub-header,
 .textfield,
 .helper-txt,
-ul.c-profile li span {
+input::placeholder,
+textarea::placeholder,
+ul.c-profile li span,
+option:first-of-type {
   color: #969696;
 }
 .badge {
@@ -159,6 +164,19 @@ select:focus,
 textarea:hover,
 textarea:focus {
   outline-width: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 15px;
+  line-height: 50px;
+}
+select {
+  padding-right: 15px;
+  -webkit-appearance: none;
+  background-position-x: 95%;
+  background: url("../imgs/chevron.svg") no-repeat right;
 }
 /* -------------------------- Buttons & Links -------------------------- */
 .primary-btn {

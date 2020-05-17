@@ -106,7 +106,8 @@ a.read-btn,
 .main-banner h1 span {
   color: #00D4A4;
 }
-.gray {
+.gray,
+.footer-nav ul li a:hover {
   color: #444444;
 }
 label,
@@ -121,7 +122,12 @@ ul.c-profile li span,
 option:first-of-type {
   color: #969696;
 }
-.badge {
+.badge,
+ul.lang-nav,
+.footer-nav ul li,
+.lang-container h5,
+.footer-nav ul li a,
+.footer-nav .credits {
   color: #FFFFFF;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
@@ -141,7 +147,8 @@ a.outline-btn,
 }
 .nav-item a,
 a.read-btn,
-.heading-xs a {
+.heading-xs a,
+.footer-nav ul li a {
   transition: color 0.15s ease-out;
 }
 .card:hover,
@@ -284,5 +291,8 @@ a.primary-black-btn {
     width: 100%;
     margin-left: 0;
     margin-top: 15px;
+  }
+  .lets-talk a.outline-btn {
+    margin: 0 auto;
   }
 }

@@ -135,6 +135,9 @@ a.primary-black-btn {
     margin-left: 0;
     margin-top: 15px;
   }
+  .lets-talk a.outline-btn {
+    margin: 0 auto;
+  }
 }
 /* Spider Labs - Headings & Text */
 /* -------------------------- Archivo Google Font Import -------------------------- */
@@ -391,6 +394,7 @@ a.read-btn,
     font-size: 1.25rem;
     line-height: 32px;
   }
+  ul.awards li h4,
   .intro-txt {
     font-size: 10px;
     font-size: 1rem;
@@ -407,6 +411,9 @@ a.read-btn,
     line-height: 18px;
     letter-spacing: 0.32px;
   }
+  .lets-talk,
+  .about-us h3,
+  .inner-office,
   ul.lang-nav li,
   .lang-container h5 {
     text-align: center;
@@ -573,6 +580,12 @@ a.outline-btn:hover,
 .primary-black-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
+/* -------------------------- Media Query for Mobile -------------------------- */
+@media only screen and (max-width: 480px) {
+  .mtop-90 {
+    margin-top: calc(60px - 20px);
+  }
+}
 /* -------------------------- Structure -------------------------- */
 .header-site {
   height: 100px;
@@ -699,7 +712,7 @@ ul.nav-list li {
   padding-left: 60px;
 }
 .img-height {
-  height: 540px;
+  height: 100%;
 }
 /* -------------------------- News & Resources - Cards -------------------------- */
 .articles {
@@ -896,6 +909,50 @@ ul.lang-nav li img {
   .clients div h2,
   .resources div h2 {
     margin-top: 30px;
+  }
+  ul.awards {
+    list-style: none;
+    text-align: left;
+  }
+  ul.awards li:first-child {
+    margin-left: 0;
+  }
+  ul.awards li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  ul.awards li img {
+    width: auto;
+    height: 83px;
+  }
+  .office-info {
+    float: none !important;
+    margin-left: 0 !important;
+  }
+  .inner-office {
+    display: block;
+  }
+  #tokyo {
+    margin-bottom: 30px;
+  }
+  .office-icon {
+    float: none;
+    margin: 0 auto 15px auto;
+  }
+  .careers-banner {
+    padding: 60px 0 60px 0;
+  }
+  .careers-banner div .txt-wrapper {
+    padding: 0 60px 0 60px;
+    margin: 0;
+    text-align: center;
+  }
+  .careers-img {
+    display: none;
+  }
+  .lets-talk {
+    margin-top: 0 !important;
+    margin-bottom: 60px;
   }
   .form-wrapper {
     padding: 60px 30px;

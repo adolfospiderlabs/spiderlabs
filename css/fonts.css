@@ -160,6 +160,12 @@ a.outline-btn:hover,
 .primary-black-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
+/* -------------------------- Media Query for Mobile -------------------------- */
+@media only screen and (max-width: 480px) {
+  .mtop-90 {
+    margin-top: calc(60px - 20px);
+  }
+}
 /* -------------------------- Archivo Google Font Import -------------------------- */
 @font-face {
   font-family: 'Archivo';
@@ -414,6 +420,7 @@ a.read-btn,
     font-size: 1.25rem;
     line-height: 32px;
   }
+  ul.awards li h4,
   .intro-txt {
     font-size: 10px;
     font-size: 1rem;
@@ -430,6 +437,9 @@ a.read-btn,
     line-height: 18px;
     letter-spacing: 0.32px;
   }
+  .lets-talk,
+  .about-us h3,
+  .inner-office,
   ul.lang-nav li,
   .lang-container h5 {
     text-align: center;

@@ -176,7 +176,7 @@ ul.nav-list li {
 }
 
 .img-height {
-    height: 540px;
+    height: 100%;
 }
 
 
@@ -445,6 +445,62 @@ ul.lang-nav li img {
     .resources div h2
     {
         margin-top: @s-spacing;
+    }
+
+    ul.awards {
+        list-style: none;
+        text-align: left;
+    }
+    
+    ul.awards li:first-child {
+        margin-left: 0;
+    }
+    
+    ul.awards li {
+        display: inline-block;
+        margin-left: @s-spacing;
+    }
+
+    ul.awards li img {
+        width: auto;
+        height: 83px;
+    }
+
+    .office-info {
+        float: none !important;
+        margin-left: 0 !important;
+    }
+
+    .inner-office {
+        display: block;
+    }
+
+    #tokyo {
+        margin-bottom: @s-spacing;
+    }
+
+    .office-icon {
+        float: none;
+        margin: 0 auto @xs-spacing auto;
+    }
+
+    .careers-banner {
+        padding: @m-spacing 0 @m-spacing 0;
+    }
+
+    .careers-banner div .txt-wrapper {
+        padding: 0 @m-spacing 0 @m-spacing;
+        margin: 0;
+        text-align: center;
+    }
+
+    .careers-img {
+        display: none;
+    }
+
+    .lets-talk {
+        margin-top: 0 !important;
+        margin-bottom: @m-spacing;
     }
 
     .form-wrapper {

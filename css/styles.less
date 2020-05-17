@@ -165,7 +165,9 @@ ul.nav-list li {
     padding-right: @m-spacing;
 }
 
-.img-right img {
+.img-right img,
+.img-mobile img
+{
     width: 100%;
 }
 
@@ -460,6 +462,10 @@ ul.lang-nav li img {
         margin-top: @m-spacing;
     }
 
+    .articles {
+        margin-top: @s-spacing;
+    }
+
     .card {
         margin-bottom: @s-spacing;
     }
@@ -523,8 +529,10 @@ ul.lang-nav li img {
         margin: 0;
     }
 
+    .no-show,
     .careers-img,
-    .security-img
+    .security-img,
+    .nav-container
     {
         display: none;
     }

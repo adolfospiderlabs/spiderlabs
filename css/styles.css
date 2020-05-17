@@ -706,7 +706,8 @@ ul.nav-list li {
 .txt-left p {
   padding-right: 60px;
 }
-.img-right img {
+.img-right img,
+.img-mobile img {
   width: 100%;
 }
 .txt-right {
@@ -923,6 +924,9 @@ ul.lang-nav li img {
   .resources div h2 {
     margin-top: 60px;
   }
+  .articles {
+    margin-top: 30px;
+  }
   .card {
     margin-bottom: 30px;
   }
@@ -971,8 +975,10 @@ ul.lang-nav li img {
     padding: 0 60px 0 60px;
     margin: 0;
   }
+  .no-show,
   .careers-img,
-  .security-img {
+  .security-img,
+  .nav-container {
     display: none;
   }
   .lets-talk {

@@ -18,6 +18,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 62.5%; /* Sets up the Base 10 stuff */
 	font: inherit;
+	scroll-behavior: smooth;
 	vertical-align: baseline;
 }
 

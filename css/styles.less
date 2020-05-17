@@ -74,7 +74,12 @@ ul.nav-list li {
 
 .clients
 {
-    height: 577px;
+    /*height: 577px;*/
+    padding-bottom: 120px !important;
+}
+
+.clients .logos-list {
+    margin-top: @m-spacing
 }
 
 .resources {
@@ -169,6 +174,10 @@ ul.nav-list li {
 .img-mobile img
 {
     width: 100%;
+}
+
+.img-mobile {
+    display: none;
 }
 
 .txt-right {
@@ -438,8 +447,16 @@ ul.lang-nav li img {
         left: 0;
         bottom: 100%;
         width: 100%;
-        height: 23px;
+        height: 20px;
         background-image: url("../imgs/Triangles_Mobile_BG.svg");
+    }
+
+    .clients {
+        padding-bottom: @s-spacing !important;
+    }
+
+    .clients .logos-list {
+        margin-top: @s-spacing
     }
 
     .txt-left {
@@ -454,6 +471,12 @@ ul.lang-nav li img {
     .txt-right {
         padding-top: @s-spacing;
         padding-left: @xs-spacing;
+    }
+
+    .img-right,
+    .img-mobile
+    {
+        padding: 0 15px !important;
     }
 
     .clients div h2,
@@ -496,7 +519,11 @@ ul.lang-nav li img {
 
     ul.awards li img {
         width: auto;
-        height: 83px;
+        height: 72px;
+    }
+
+    .offices-list {
+        margin-top: @s-spacing
     }
 
     .office-info {
@@ -506,6 +533,7 @@ ul.lang-nav li img {
 
     .inner-office {
         display: block;
+        padding: 54px;
     }
 
     #tokyo {
@@ -527,6 +555,10 @@ ul.lang-nav li img {
     .careers-banner div .txt-wrapper {
         padding: 0 @m-spacing 0 @m-spacing;
         margin: 0;
+    }
+
+    .img-mobile {
+        display: initial;
     }
 
     .no-show,

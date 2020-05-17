@@ -356,6 +356,14 @@ ul.social-nav li:first-child {
     border-top: 1px solid @gray;
 }
 
+.lang-container .lang-wrapper {
+    margin-top: @s-spacing;
+}
+
+.lang-container h5 {
+    float: left;
+}
+
 ul.lang-nav {
     list-style: none;
     float: right;
@@ -437,5 +445,44 @@ ul.lang-nav li img {
     .resources div h2
     {
         margin-top: @s-spacing;
+    }
+
+    .footer {
+        margin-top: @m-spacing;
+    }
+
+    .footer-nav {
+        margin-top: @m-spacing;
+    }
+
+    .lang-container {
+        margin-top: @m-spacing;
+    }
+
+    .lang-container h5 {
+        float: none;
+    }
+
+    .lang-container .lang-wrapper {
+        margin-top: @m-spacing;
+    }
+
+    ul.lang-nav {
+        list-style: none;
+        float: none;
+    }
+    
+    ul.lang-nav li {
+        display: block;
+        margin-left: 0;
+        margin-top: @s-spacing;
+    }
+    
+    ul.lang-nav li:first-child {
+        margin-left: 0;
+    }
+    
+    ul.lang-nav li img {
+        margin-right: 10px;
     }
 }

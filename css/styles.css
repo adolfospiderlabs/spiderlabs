@@ -282,13 +282,14 @@ select {
 }
 input,
 select,
+.footer,
 textarea,
+.body-txt,
 input:hover,
 input:focus,
 input:enabled,
 input:visited,
-input::selection,
-.body-txt {
+input::selection {
   font-family: 'Archivo', sans-serif !important;
   font-style: normal;
   font-weight: 400;
@@ -394,6 +395,21 @@ a.read-btn,
     font-size: 10px;
     font-size: 1rem;
     line-height: 32px;
+  }
+  .footer,
+  .lang-wrapper {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /* Regular */
+    font-size: 8.75px !important;
+    font-size: 0.875rem !important;
+    line-height: 18px;
+    letter-spacing: 0.32px;
+  }
+  ul.lang-nav li,
+  .lang-container h5 {
+    text-align: center;
   }
 }
 /* Spider Labs - Settings */
@@ -522,6 +538,7 @@ option:first-of-type {
 .badge,
 ul.lang-nav,
 .footer-nav ul li,
+.lang-container h5,
 .footer-nav ul li a,
 .footer-nav .credits {
   color: #FFFFFF;
@@ -815,6 +832,12 @@ ul.social-nav li:first-child {
   margin-top: 90px;
   border-top: 1px solid #444444;
 }
+.lang-container .lang-wrapper {
+  margin-top: 30px;
+}
+.lang-container h5 {
+  float: left;
+}
 ul.lang-nav {
   list-style: none;
   float: right;
@@ -873,5 +896,35 @@ ul.lang-nav li img {
   .clients div h2,
   .resources div h2 {
     margin-top: 30px;
+  }
+  .footer {
+    margin-top: 60px;
+  }
+  .footer-nav {
+    margin-top: 60px;
+  }
+  .lang-container {
+    margin-top: 60px;
+  }
+  .lang-container h5 {
+    float: none;
+  }
+  .lang-container .lang-wrapper {
+    margin-top: 60px;
+  }
+  ul.lang-nav {
+    list-style: none;
+    float: none;
+  }
+  ul.lang-nav li {
+    display: block;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  ul.lang-nav li:first-child {
+    margin-left: 0;
+  }
+  ul.lang-nav li img {
+    margin-right: 10px;
   }
 }

@@ -124,6 +124,7 @@ option:first-of-type {
 .badge,
 ul.lang-nav,
 .footer-nav ul li,
+.lang-container h5,
 .footer-nav ul li a,
 .footer-nav .credits {
   color: #FFFFFF;

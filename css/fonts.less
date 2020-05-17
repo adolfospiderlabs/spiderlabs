@@ -101,13 +101,15 @@ select {
 
 input,
 select,
+.footer,
 textarea,
+.body-txt,
 input:hover,
 input:focus,
 input:enabled,
 input:visited,
-input::selection,
-.body-txt {
+input::selection
+{
     font-family: 'Archivo', sans-serif !important;
     font-style: normal;
     font-weight: 400; /* Regular */
@@ -225,5 +227,22 @@ a.read-btn,
     .intro-txt {
         .font-size(1);
         line-height: 32px;
+    }
+
+    .footer,
+    .lang-wrapper
+    {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    .font-size(0.875) !important;
+    line-height: 18px;
+    letter-spacing: 0.32px;
+    }
+
+    ul.lang-nav li,
+    .lang-container h5
+    {
+        text-align: center;
     }
 }

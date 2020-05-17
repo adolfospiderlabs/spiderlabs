@@ -125,6 +125,7 @@ option:first-of-type {
 .badge,
 ul.lang-nav,
 .footer-nav ul li,
+.lang-container h5,
 .footer-nav ul li a,
 .footer-nav .credits {
   color: #FFFFFF;
@@ -304,13 +305,14 @@ select {
 }
 input,
 select,
+.footer,
 textarea,
+.body-txt,
 input:hover,
 input:focus,
 input:enabled,
 input:visited,
-input::selection,
-.body-txt {
+input::selection {
   font-family: 'Archivo', sans-serif !important;
   font-style: normal;
   font-weight: 400;
@@ -416,5 +418,20 @@ a.read-btn,
     font-size: 10px;
     font-size: 1rem;
     line-height: 32px;
+  }
+  .footer,
+  .lang-wrapper {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /* Regular */
+    font-size: 8.75px !important;
+    font-size: 0.875rem !important;
+    line-height: 18px;
+    letter-spacing: 0.32px;
+  }
+  ul.lang-nav li,
+  .lang-container h5 {
+    text-align: center;
   }
 }

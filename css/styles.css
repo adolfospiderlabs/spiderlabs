@@ -414,6 +414,7 @@ a.read-btn,
     letter-spacing: 0.32px;
   }
   .lets-talk,
+  .about-us h3,
   .inner-office,
   ul.lang-nav li,
   .lang-container h5,
@@ -927,6 +928,10 @@ ul.lang-nav li img {
   }
   .articles .primary-black-btn {
     margin-top: 30px;
+  }
+  ul.awards,
+  ul.c-profile {
+    padding-left: 15px !important;
   }
   ul.awards {
     list-style: none;

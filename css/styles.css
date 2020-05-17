@@ -127,10 +127,12 @@ a.primary-black-btn {
 }
 /* -------------------------- Media Query for Mobile -------------------------- */
 @media only screen and (max-width: 480px) {
-  #slabs-info input {
+  #slabs-info input,
+  #security-info input {
     width: 100%;
   }
-  .primary-btn {
+  .primary-btn,
+  #security-info .primary-black-btn {
     width: 100%;
     margin-left: 0;
     margin-top: 15px;
@@ -412,10 +414,10 @@ a.read-btn,
     letter-spacing: 0.32px;
   }
   .lets-talk,
-  .about-us h3,
   .inner-office,
   ul.lang-nav li,
-  .lang-container h5 {
+  .lang-container h5,
+  .careers-banner div .txt-wrapper {
     text-align: center;
   }
 }
@@ -704,8 +706,7 @@ ul.nav-list li {
   padding-right: 60px;
 }
 .img-right img {
-  width: 540px;
-  height: 540px;
+  width: 100%;
 }
 .txt-right {
   padding-top: 69px;
@@ -906,8 +907,25 @@ ul.lang-nav li img {
     height: 23px;
     background-image: url("../imgs/Triangles_Mobile_BG.svg");
   }
+  .txt-left {
+    padding-top: 0;
+    padding-left: 15px !important;
+  }
+  .txt-left p {
+    padding-right: 0;
+  }
+  .txt-right {
+    padding-top: 30px;
+    padding-left: 15px;
+  }
   .clients div h2,
   .resources div h2 {
+    margin-top: 60px;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  .articles .primary-black-btn {
     margin-top: 30px;
   }
   ul.awards {
@@ -939,15 +957,17 @@ ul.lang-nav li img {
     float: none;
     margin: 0 auto 15px auto;
   }
-  .careers-banner {
+  .careers-banner,
+  .security-banner {
     padding: 60px 0 60px 0;
   }
+  .security-txt,
   .careers-banner div .txt-wrapper {
     padding: 0 60px 0 60px;
     margin: 0;
-    text-align: center;
   }
-  .careers-img {
+  .careers-img,
+  .security-img {
     display: none;
   }
   .lets-talk {

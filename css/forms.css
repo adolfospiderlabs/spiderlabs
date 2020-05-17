@@ -160,6 +160,12 @@ a.outline-btn:hover,
 .primary-black-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
+/* -------------------------- Media Query for Mobile -------------------------- */
+@media only screen and (max-width: 480px) {
+  .mtop-90 {
+    margin-top: calc(60px - 20px);
+  }
+}
 /* -------------------------- Inputs -------------------------- */
 #slabs-info input {
   width: 350px;
@@ -284,10 +290,12 @@ a.primary-black-btn {
 }
 /* -------------------------- Media Query for Mobile -------------------------- */
 @media only screen and (max-width: 480px) {
-  #slabs-info input {
+  #slabs-info input,
+  #security-info input {
     width: 100%;
   }
-  .primary-btn {
+  .primary-btn,
+  #security-info .primary-black-btn {
     width: 100%;
     margin-left: 0;
     margin-top: 15px;

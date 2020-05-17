@@ -166,8 +166,7 @@ ul.nav-list li {
 }
 
 .img-right img {
-    width: 540px;
-    height: 540px;
+    width: 100%;
 }
 
 .txt-right {
@@ -441,9 +440,31 @@ ul.lang-nav li img {
         background-image: url("../imgs/Triangles_Mobile_BG.svg");
     }
 
+    .txt-left {
+        padding-top: 0;
+        padding-left: @xs-spacing !important;
+    }
+
+    .txt-left p {
+        padding-right: 0;
+    }
+
+    .txt-right {
+        padding-top: @s-spacing;
+        padding-left: @xs-spacing;
+    }
+
     .clients div h2,
     .resources div h2
     {
+        margin-top: @m-spacing;
+    }
+
+    .card {
+        margin-bottom: @s-spacing;
+    }
+
+    .articles .primary-black-btn {
         margin-top: @s-spacing;
     }
 
@@ -484,17 +505,21 @@ ul.lang-nav li img {
         margin: 0 auto @xs-spacing auto;
     }
 
-    .careers-banner {
+    .careers-banner,
+    .security-banner
+    {
         padding: @m-spacing 0 @m-spacing 0;
     }
 
+    .security-txt,
     .careers-banner div .txt-wrapper {
         padding: 0 @m-spacing 0 @m-spacing;
         margin: 0;
-        text-align: center;
     }
 
-    .careers-img {
+    .careers-img,
+    .security-img
+    {
         display: none;
     }
 

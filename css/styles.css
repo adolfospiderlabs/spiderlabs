@@ -897,11 +897,31 @@ ul.lang-nav li img {
   .resources div h2 {
     margin-top: 30px;
   }
+  .form-wrapper {
+    padding: 60px 30px;
+  }
   .footer {
     margin-top: 60px;
+    padding: 90px 0 90px 0;
   }
-  .footer-nav {
+  .footer-nav,
+  .footer-nav .credits {
     margin-top: 60px;
+  }
+  .footer-nav ul {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  .footer-nav ul li {
+    margin-top: 15px;
+    display: block;
+  }
+  .footer-nav ul li:first-child {
+    margin-top: 0;
+  }
+  .footer-nav ul li::after {
+    content: none;
+    padding: 0;
   }
   .lang-container {
     margin-top: 60px;

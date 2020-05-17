@@ -295,7 +295,7 @@ ul.schedule-info {
 }
 
 .form-wrapper {
-    padding: 60px;
+    padding: @m-spacing;
 }
 
 .form-wrapper h3 {
@@ -447,12 +447,38 @@ ul.lang-nav li img {
         margin-top: @s-spacing;
     }
 
+    .form-wrapper {
+        padding: @m-spacing @s-spacing;
+    }
+
     .footer {
+        margin-top: @m-spacing;
+        padding: @l-spacing 0 @l-spacing 0;
+    }
+
+    .footer-nav,
+    .footer-nav .credits
+    {
         margin-top: @m-spacing;
     }
 
-    .footer-nav {
-        margin-top: @m-spacing;
+    .footer-nav ul {
+        list-style: none;
+        margin-bottom: @s-spacing;
+    }
+    
+    .footer-nav ul li {
+        margin-top: @xs-spacing;
+        display: block;
+    }
+
+    .footer-nav ul li:first-child {
+        margin-top: 0;
+    }
+    
+    .footer-nav ul li::after {
+        content: none;
+        padding: 0;
     }
 
     .lang-container {

@@ -1020,6 +1020,10 @@ ul.lang-nav li img {
     margin-top: 0 !important;
     margin-bottom: 60px;
   }
+  .lets-talk {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
   .form-wrapper {
     padding: 60px 30px;
   }
@@ -1069,5 +1073,11 @@ ul.lang-nav li img {
   }
   ul.lang-nav li img {
     margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  ul.awards li img {
+    width: auto;
+    height: 62px;
   }
 }

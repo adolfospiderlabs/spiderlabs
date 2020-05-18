@@ -360,6 +360,7 @@ label,
 }
 .textfield,
 ul.c-profile,
+.txt-block h2,
 .our-mission > h2,
 .main-banner form {
   text-align: left !important;
@@ -417,11 +418,12 @@ a.read-btn,
   .lets-talk,
   .about-us h3,
   .inner-office,
+  .txt-block h2,
   ul.lang-nav li,
   .security-txt h2,
   .lang-container h5,
   .careers-banner div .txt-wrapper {
-    text-align: center;
+    text-align: center !important;
   }
 }
 /* Spider Labs - Settings */
@@ -720,6 +722,7 @@ ul.nav-list li {
 }
 .img-wrapper img {
   width: 100%;
+  padding: 15px;
 }
 /* -------------------------- News & Resources - Cards -------------------------- */
 .articles {
@@ -740,6 +743,9 @@ ul.nav-list li {
   padding: 30px 0 30px 0;
 }
 /* -------------------------- About Us -------------------------- */
+.img-mobile {
+  display: none;
+}
 ul.c-profile {
   list-style: none;
 }
@@ -923,14 +929,22 @@ ul.lang-nav li img {
   .clients .logos-list {
     margin-top: 30px;
   }
-  .block-left-txt .txt-block {
-    padding-right: 0;
+  .block-right-txt {
+    margin-bottom: 60px !important;
+  }
+  .block-left-txt .txt-block,
+  .block-right-txt .txt-block {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .img-wrapper {
-    padding: 15px !important;
+    padding: 30px !important;
   }
-  .block-right-txt .txt-block {
-    padding-left: 0;
+  .img-mobile {
+    display: initial;
+  }
+  .no-show {
+    display: none;
   }
   .clients div h2,
   .resources div h2 {
@@ -938,6 +952,8 @@ ul.lang-nav li img {
   }
   .articles {
     margin-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .card {
     margin-bottom: 30px;
@@ -959,6 +975,10 @@ ul.lang-nav li img {
   ul.awards li img {
     width: auto;
     height: 80px;
+  }
+  .offices {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .offices-list {
     margin-top: 30px;

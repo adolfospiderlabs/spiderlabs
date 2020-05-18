@@ -183,6 +183,7 @@ ul.nav-list li {
 
 .img-wrapper img {
     width: 100%;
+    padding: 15px;
 }
 
 /* -------------------------- News & Resources - Cards -------------------------- */
@@ -210,6 +211,10 @@ ul.nav-list li {
 
 
 /* -------------------------- About Us -------------------------- */
+
+.img-mobile {
+    display: none;
+}
 
 ul.c-profile {
     list-style: none;
@@ -459,19 +464,29 @@ ul.lang-nav li img {
     .clients .logos-list {
         margin-top: @s-spacing
     }
-
-    .block-left-txt .txt-block
+    
+    .block-right-txt
     {
-        padding-right: 0;
+        margin-bottom: @m-spacing !important;
+    }
+
+    .block-left-txt .txt-block,
+    .block-right-txt .txt-block
+    {
+        padding-left: @s-spacing;
+        padding-right: @s-spacing;
     }
 
     .img-wrapper {
-        padding: 15px !important;
+        padding: 30px !important;
     }
-    
-    .block-right-txt .txt-block
-    {
-        padding-left: 0;
+
+    .img-mobile {
+        display: initial;
+    }
+
+    .no-show {
+        display: none;
     }
 
     .clients div h2,
@@ -482,6 +497,8 @@ ul.lang-nav li img {
 
     .articles {
         margin-top: @s-spacing;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .card {
@@ -491,7 +508,6 @@ ul.lang-nav li img {
     .articles .primary-black-btn {
         margin-top: @s-spacing;
     }
-
 
     ul.awards {
         list-style: none;
@@ -510,6 +526,11 @@ ul.lang-nav li img {
     ul.awards li img {
         width: auto;
         height: 80px;
+    }
+
+    .offices {
+        padding-left: @xs-spacing;
+        padding-right: @xs-spacing;
     }
 
     .offices-list {

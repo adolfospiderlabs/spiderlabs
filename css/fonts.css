@@ -76,6 +76,7 @@ select,
 .clients,
 .form-box,
 .resources,
+.perks-card,
 .office-card {
   background-color: #F4F0EB;
 }
@@ -103,7 +104,8 @@ a.read-btn:hover {
 a.read-btn,
 .nav-item a:hover,
 .heading-xs a:hover,
-.main-banner h1 span {
+.main-banner h1 span,
+ul.nav-item li.nav-selected {
   color: #00D4A4;
 }
 .gray,
@@ -123,6 +125,8 @@ option:first-of-type {
   color: #969696;
 }
 .badge,
+.page-intro,
+.page-intro p,
 ul.lang-nav,
 .footer-nav ul li,
 .lang-container h5,
@@ -374,17 +378,21 @@ label,
 .offices h3,
 .main-banner,
 #slabs-info p,
+.page-intro,
+.c-values h2,
 .footer-nav ul,
 .clients div h2,
 .about-us div h2,
 .contacts div h2,
 .resources div h2,
-.footer-nav .credits {
+.footer-nav .credits,
+.cv-banner div .txt-wrapper {
   text-align: center;
 }
 .textfield,
 ul.c-profile,
 .txt-block h2,
+.perks-card h2,
 .our-mission > h2,
 .main-banner form {
   text-align: left !important;

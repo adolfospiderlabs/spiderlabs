@@ -1,9 +1,9 @@
 /* Spider Labs - Stylesheet */
 /* -------------------------- Imports -------------------------- */
+@import url("bootstrap-grid.css");
 @import url("reset.css");
 /* Spider Labs - Form Fields and Buttons */
 /* -------------------------- Inputs -------------------------- */
-@import url("bootstrap-grid.css");
 #slabs-info input {
   width: 350px;
 }
@@ -350,17 +350,21 @@ label,
 .offices h3,
 .main-banner,
 #slabs-info p,
+.page-intro,
+.c-values h2,
 .footer-nav ul,
 .clients div h2,
 .about-us div h2,
 .contacts div h2,
 .resources div h2,
-.footer-nav .credits {
+.footer-nav .credits,
+.cv-banner div .txt-wrapper {
   text-align: center;
 }
 .textfield,
 ul.c-profile,
 .txt-block h2,
+.perks-card h2,
 .our-mission > h2,
 .main-banner form {
   text-align: left !important;
@@ -503,6 +507,7 @@ select,
 .clients,
 .form-box,
 .resources,
+.perks-card,
 .office-card {
   background-color: #F4F0EB;
 }
@@ -530,7 +535,8 @@ a.read-btn:hover {
 a.read-btn,
 .nav-item a:hover,
 .heading-xs a:hover,
-.main-banner h1 span {
+.main-banner h1 span,
+ul.nav-item li.nav-selected {
   color: #00D4A4;
 }
 .gray,
@@ -550,6 +556,8 @@ option:first-of-type {
   color: #969696;
 }
 .badge,
+.page-intro,
+.page-intro p,
 ul.lang-nav,
 .footer-nav ul li,
 .lang-container h5,
@@ -674,12 +682,6 @@ ul.nav-list li {
 .security-txt {
   padding-left: 90px;
 }
-/*.spider-security {
-    background-color: @violet10;
-    overflow: hidden;
-    padding: @l-spacing 0;
-    border-radius: 8px;
-}*/
 .security-banner {
   background-color: rgba(68, 0, 153, 0.1);
   border-radius: 8px;
@@ -773,6 +775,7 @@ ul.awards li img {
 .office-card {
   border-radius: 8px;
 }
+.cv-banner,
 .careers-banner {
   background-color: rgba(0, 212, 165, 0.3);
   border-radius: 8px;
@@ -881,6 +884,31 @@ ul.lang-nav li:first-child {
 }
 ul.lang-nav li img {
   margin-right: 10px;
+}
+/* -------------------------- Secondary Pages -------------------------- */
+.sec-banner {
+  display: flex;
+  height: 50vw;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('../imgs/SpiderLabs_Careers_BG.png');
+}
+.page-intro p {
+  margin-top: 30px;
+}
+.perks-card {
+  border-radius: 8px;
+  padding: 50px;
+  min-height: 216px;
+}
+.perks-card p {
+  margin-top: 10px;
+}
+.perk-icon {
+  padding: 0;
+  text-align: center;
+  margin-right: 30px;
 }
 /* Media Queries for Responsive */
 /* -------------------------- Media Query for Macbook Pro and Retina displays -------------------------- */
@@ -998,6 +1026,7 @@ ul.lang-nav li img {
     float: none;
     margin: 0 auto 15px auto;
   }
+  .cv-banner,
   .careers-banner,
   .security-banner {
     padding: 60px 0 60px 0;

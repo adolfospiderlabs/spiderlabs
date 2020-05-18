@@ -2,11 +2,11 @@
 
 /* -------------------------- Imports -------------------------- */
 
+@import url("bootstrap-grid.css");
 @import url("reset.css");
 @import url("forms.less");
 @import url("fonts.less");
 @import url("settings.less");
-@import url("bootstrap-grid.css");
 
 
 /* -------------------------- Structure -------------------------- */
@@ -117,13 +117,6 @@ ul.nav-list li {
 .security-txt {
     padding-left: 90px;
 }
-
-/*.spider-security {
-    background-color: @violet10;
-    overflow: hidden;
-    padding: @l-spacing 0;
-    border-radius: 8px;
-}*/
 
 .security-banner {
     background-color: @violet10;
@@ -251,7 +244,7 @@ ul.awards li img {
     border-radius: 8px;
 }
 
-
+.cv-banner,
 .careers-banner {
     background-color: @s-green30;
     border-radius: 8px;
@@ -397,6 +390,36 @@ ul.lang-nav li img {
     margin-right: 10px;
 }
 
+/* -------------------------- Secondary Pages -------------------------- */
+
+.sec-banner {
+    display: flex;
+    height: 50vw;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-image: url('../imgs/SpiderLabs_Careers_BG.png');
+}
+
+.page-intro p {
+    margin-top: @s-spacing
+}
+
+.perks-card {
+    border-radius: 8px;
+    padding: 50px;
+    min-height: 216px;
+}
+
+.perks-card p {
+    margin-top: 10px;
+}
+
+.perk-icon {
+    padding: 0;
+    text-align: center;
+    margin-right: @s-spacing;
+}
 
 
 /* Media Queries for Responsive */
@@ -556,6 +579,7 @@ ul.lang-nav li img {
         margin: 0 auto @xs-spacing auto;
     }
 
+    .cv-banner,
     .careers-banner,
     .security-banner
     {

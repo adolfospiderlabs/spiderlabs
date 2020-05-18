@@ -68,8 +68,7 @@ ul.nav-list li {
 }
 
 #slabs-info p {
-    margin-top: calc(@s-spacing - 10px);
-    padding-left: 0;
+    margin-top: calc(@m-spacing - 20px);
 }
 
 .clients
@@ -162,33 +161,29 @@ ul.nav-list li {
 
 /* -------------------------- Mission Elements -------------------------- */
 
-.txt-left {
-    padding-top: 100px;
+
+.txt-block
+{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.txt-left p {
+.block-left-txt .txt-block
+{
     padding-right: @m-spacing;
 }
 
-.img-right img,
-.img-mobile img
+.block-right-txt .txt-block
 {
-    width: 100%;
-}
-
-.img-mobile {
-    display: none;
-}
-
-.txt-right {
-    padding-top: 69px;
     padding-left: @m-spacing;
 }
 
-.img-height {
-    height: 100%;
+.img-wrapper img {
+    width: 100%;
 }
-
 
 /* -------------------------- News & Resources - Cards -------------------------- */
 
@@ -235,11 +230,16 @@ ul.awards li:first-child {
 
 ul.awards li {
     display: inline-block;
-    margin-left: 80px;
+    margin-left: 64px;
 }
 
 ul.awards li h4 {
     margin-bottom: 20px;
+}
+
+ul.awards li img {
+    width: auto;
+    height: 106px;
 }
 
 .office-card {
@@ -396,6 +396,7 @@ ul.lang-nav li img {
 
 /* Media Queries for Responsive */
 
+
 /* -------------------------- Media Query for Macbook Pro and Retina displays -------------------------- */
 
 @media only screen and (max-device-width: 1600px) {
@@ -459,24 +460,18 @@ ul.lang-nav li img {
         margin-top: @s-spacing
     }
 
-    .txt-left {
-        padding-top: 0;
-        padding-left: @xs-spacing !important;
-    }
-
-    .txt-left p {
+    .block-left-txt .txt-block
+    {
         padding-right: 0;
     }
 
-    .txt-right {
-        padding-top: @s-spacing;
-        padding-left: @xs-spacing;
+    .img-wrapper {
+        padding: 15px !important;
     }
-
-    .img-right,
-    .img-mobile
+    
+    .block-right-txt .txt-block
     {
-        padding: 0 15px !important;
+        padding-left: 0;
     }
 
     .clients div h2,
@@ -497,11 +492,6 @@ ul.lang-nav li img {
         margin-top: @s-spacing;
     }
 
-    ul.awards,
-    ul.c-profile
-    {
-        padding-left: @xs-spacing !important;
-    }
 
     ul.awards {
         list-style: none;
@@ -519,7 +509,7 @@ ul.lang-nav li img {
 
     ul.awards li img {
         width: auto;
-        height: 72px;
+        height: 80px;
     }
 
     .offices-list {

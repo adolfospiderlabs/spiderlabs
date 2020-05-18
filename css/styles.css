@@ -349,6 +349,7 @@ label,
 .intro-p,
 .offices h3,
 .main-banner,
+#slabs-info p,
 .footer-nav ul,
 .clients div h2,
 .about-us div h2,
@@ -358,10 +359,10 @@ label,
   text-align: center;
 }
 .textfield,
-.helper-txt,
 ul.c-profile,
+.our-mission > h2,
 .main-banner form {
-  text-align: left;
+  text-align: left !important;
 }
 a.outline-btn,
 .heading-xs a,
@@ -417,6 +418,7 @@ a.read-btn,
   .about-us h3,
   .inner-office,
   ul.lang-nav li,
+  .security-txt h2,
   .lang-container h5,
   .careers-banner div .txt-wrapper {
     text-align: center;
@@ -633,8 +635,7 @@ ul.nav-list li {
   margin: 60px auto 0 auto;
 }
 #slabs-info p {
-  margin-top: calc(30px - 10px);
-  padding-left: 0;
+  margin-top: calc(60px - 20px);
 }
 .clients {
   /*height: 577px;*/
@@ -704,25 +705,21 @@ ul.nav-list li {
   height: 380px;
 }
 /* -------------------------- Mission Elements -------------------------- */
-.txt-left {
-  padding-top: 100px;
+.txt-block {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-.txt-left p {
+.block-left-txt .txt-block {
   padding-right: 60px;
 }
-.img-right img,
-.img-mobile img {
-  width: 100%;
-}
-.img-mobile {
-  display: none;
-}
-.txt-right {
-  padding-top: 69px;
+.block-right-txt .txt-block {
   padding-left: 60px;
 }
-.img-height {
-  height: 100%;
+.img-wrapper img {
+  width: 100%;
 }
 /* -------------------------- News & Resources - Cards -------------------------- */
 .articles {
@@ -758,10 +755,14 @@ ul.awards li:first-child {
 }
 ul.awards li {
   display: inline-block;
-  margin-left: 80px;
+  margin-left: 64px;
 }
 ul.awards li h4 {
   margin-bottom: 20px;
+}
+ul.awards li img {
+  width: auto;
+  height: 106px;
 }
 .office-card {
   border-radius: 8px;
@@ -922,20 +923,14 @@ ul.lang-nav li img {
   .clients .logos-list {
     margin-top: 30px;
   }
-  .txt-left {
-    padding-top: 0;
-    padding-left: 15px !important;
-  }
-  .txt-left p {
+  .block-left-txt .txt-block {
     padding-right: 0;
   }
-  .txt-right {
-    padding-top: 30px;
-    padding-left: 15px;
+  .img-wrapper {
+    padding: 15px !important;
   }
-  .img-right,
-  .img-mobile {
-    padding: 0 15px !important;
+  .block-right-txt .txt-block {
+    padding-left: 0;
   }
   .clients div h2,
   .resources div h2 {
@@ -950,10 +945,6 @@ ul.lang-nav li img {
   .articles .primary-black-btn {
     margin-top: 30px;
   }
-  ul.awards,
-  ul.c-profile {
-    padding-left: 15px !important;
-  }
   ul.awards {
     list-style: none;
     text-align: left;
@@ -967,7 +958,7 @@ ul.lang-nav li img {
   }
   ul.awards li img {
     width: auto;
-    height: 72px;
+    height: 80px;
   }
   .offices-list {
     margin-top: 30px;

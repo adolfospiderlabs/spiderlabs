@@ -176,41 +176,4 @@ a.outline-btn:hover,
   .mtop-90 {
     margin-top: calc(60px - 20px);
   }
-  ul.lang-nav li:first-child {
-    margin-left: 0;
-  }
-  ul.lang-nav li img {
-    margin-right: 10px;
-  }
-  .perks-box:last-child {
-    margin-bottom: 0 !important;
-  }
-  .perk-icon {
-    margin-right: 0 !important;
-    margin-bottom: 30px;
-  }
-  .jobs-listing {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .jobs-listing ul {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  a.apply-btn {
-    margin-left: 0;
-  }
-  .resources {
-    padding-bottom: 60px !important;
-  }
-  .jobs-listing ul li {
-    padding-top: 15px;
-  }
-  .jobs-listing .row {
-    margin-bottom: 15px;
-  }
-  .c-values {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
 }

@@ -615,6 +615,33 @@ a.outline-btn:hover,
   .mtop-90 {
     margin-top: calc(60px - 20px);
   }
+  ul.lang-nav li:first-child {
+    margin-left: 0;
+  }
+  ul.lang-nav li img {
+    margin-right: 10px;
+  }
+  .perks-box:last-child {
+    margin-bottom: 0 !important;
+  }
+  .perk-icon {
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+  .jobs-listing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .jobs-listing ul {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  a.apply-btn {
+    margin-left: 0;
+  }
+  .resources {
+    padding-bottom: 60px !important;
+  }
   .jobs-listing ul li {
     padding-top: 15px;
   }
@@ -1159,15 +1186,6 @@ a.apply-btn {
     margin-left: 0;
     margin-top: 30px;
   }
-  ul.lang-nav li:first-child {
-    margin-left: 0;
-  }
-  ul.lang-nav li img {
-    margin-right: 10px;
-  }
-  .perks-box:last-child {
-    margin-bottom: 0 !important;
-  }
   .sec-banner {
     display: flex;
     height: 100vw;
@@ -1175,23 +1193,6 @@ a.apply-btn {
     background-size: cover;
     justify-content: center;
     background-image: url('../imgs/SpiderLabs_Careers_Mobile_BG.png');
-  }
-  .perk-icon {
-    margin-right: 0;
-  }
-  .jobs-listing {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .jobs-listing ul {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  a.apply-btn {
-    margin-left: 0;
-  }
-  .resources {
-    padding-bottom: 60px !important;
   }
 }
 @media only screen and (max-width: 360px) {

@@ -82,7 +82,7 @@ ul.nav-list li {
 }
 
 .resources {
-    padding-bottom: @l-spacing !important;
+    padding-bottom: @xl-spacing !important;
 }
 
 .clients,
@@ -402,13 +402,17 @@ ul.lang-nav li img {
 }
 
 .page-intro p {
-    margin-top: @s-spacing
+    margin-top: @xs-spacing
+}
+
+.perks-box {
+    margin-bottom: @s-spacing;
 }
 
 .perks-card {
-    border-radius: 8px;
     padding: 50px;
-    min-height: 216px;
+    min-height: 236px;
+    border-radius: 8px;
 }
 
 .perks-card p {
@@ -419,6 +423,47 @@ ul.lang-nav li img {
     padding: 0;
     text-align: center;
     margin-right: @s-spacing;
+}
+
+
+.jobs-listing {
+    border-radius: 8px;
+    padding-top:@m-spacing;
+    padding-bottom: @m-spacing;
+}
+
+.jobs-listing ul,
+.listing-headers
+{
+    padding-left: @m-spacing;
+    padding-right: @m-spacing;
+}
+
+.jobs-listing ul {
+    list-style: none;
+}
+
+.jobs-listing ul li {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.jobs-listing ul li:first-child {
+    border-top: none;
+}
+
+.jobs-listing ul li > div {
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+a.apply-btn {
+    margin-left: @s-spacing;
+}
+
+.cv-banner {
+    margin-top: @xl-spacing;
 }
 
 
@@ -579,11 +624,15 @@ ul.lang-nav li img {
         margin: 0 auto @xs-spacing auto;
     }
 
-    .cv-banner,
     .careers-banner,
     .security-banner
     {
         padding: @m-spacing 0 @m-spacing 0;
+    }
+
+    .cv-banner {
+        margin-top: @s-spacing;
+        padding: @m-spacing;
     }
 
     .security-txt,
@@ -619,7 +668,7 @@ ul.lang-nav li img {
     }
 
     .footer {
-        margin-top: @m-spacing;
+        margin-top: @s-spacing;
         padding: @l-spacing 0 @l-spacing 0;
     }
 
@@ -677,6 +726,41 @@ ul.lang-nav li img {
     
     ul.lang-nav li img {
         margin-right: 10px;
+    }
+
+    .perks-box:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .sec-banner {
+        display: flex;
+        height: 100vw;
+        align-items: center;
+        background-size: cover;
+        justify-content: center;
+        background-image: url('../imgs/SpiderLabs_Careers_Mobile_BG.png');
+    }
+
+    .perk-icon {
+        margin-right: 0;
+    }
+
+    .jobs-listing {
+        padding-top:@s-spacing;
+        padding-bottom: @s-spacing;
+    }
+
+    .jobs-listing ul {
+        padding-left: @s-spacing;
+        padding-right: @s-spacing;
+    }
+
+    a.apply-btn {
+        margin-left: 0;
+    }
+
+    .resources {
+        padding-bottom: @m-spacing !important;
     }
 }
 

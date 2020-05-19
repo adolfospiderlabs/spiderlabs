@@ -99,12 +99,16 @@ select {
     margin-left: 26px;
   }
 
-  a.read-btn::after {
+  a.read-btn::after,
+  a.apply-btn::after
+  {
     content: url(../imgs/arrow.svg);
     padding-left: 8px;
 }
 
-a.read-btn:hover::after {
+a.read-btn:hover::after,
+a.apply-btn:hover::after
+{
     content: url(../imgs/arrow_black.svg);
     padding-left: 14px;
 }

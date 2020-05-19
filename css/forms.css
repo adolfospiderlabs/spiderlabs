@@ -76,6 +76,7 @@ select,
 .clients,
 .form-box,
 .resources,
+.perks-card,
 .office-card {
   background-color: #F4F0EB;
 }
@@ -96,14 +97,17 @@ ul.c-profile,
 .main-banner h1,
 .about-us div h2,
 .resources div h2,
-a.read-btn:hover {
+a.read-btn:hover,
+a.apply-btn:hover {
   color: #000000;
 }
 .green,
 a.read-btn,
+a.apply-btn,
 .nav-item a:hover,
 .heading-xs a:hover,
-.main-banner h1 span {
+.main-banner h1 span,
+ul.nav-item li.nav-selected {
   color: #00D4A4;
 }
 .gray,
@@ -123,6 +127,8 @@ option:first-of-type {
   color: #969696;
 }
 .badge,
+.page-intro,
+.page-intro p,
 ul.lang-nav,
 .footer-nav ul li,
 .lang-container h5,
@@ -131,7 +137,8 @@ ul.lang-nav,
   color: #FFFFFF;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
-a.read-btn::after {
+a.read-btn::after,
+a.apply-btn::after {
   transition: padding 0.15s ease-out;
 }
 input,
@@ -147,6 +154,7 @@ a.outline-btn,
 }
 .nav-item a,
 a.read-btn,
+a.apply.btn,
 .heading-xs a,
 .footer-nav ul li a {
   transition: color 0.15s ease-out;
@@ -243,11 +251,13 @@ select {
   cursor: pointer;
   margin-left: 26px;
 }
-a.read-btn::after {
+a.read-btn::after,
+a.apply-btn::after {
   content: url(../imgs/arrow.svg);
   padding-left: 8px;
 }
-a.read-btn:hover::after {
+a.read-btn:hover::after,
+a.apply-btn:hover::after {
   content: url(../imgs/arrow_black.svg);
   padding-left: 14px;
 }

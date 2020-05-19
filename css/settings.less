@@ -130,7 +130,9 @@
 body,
 .card,
 select,
-.header-site {
+.header-site,
+.jobs-listing
+{
     background-color: @white;
 }
 
@@ -158,19 +160,23 @@ select,
 .black,
 .nav-item,
 .intro-txt,
+.green-link,
 .nav-item a,
 ul.c-profile,
 .heading-xs a,
 .main-banner h1,
 .about-us div h2,
 .resources div h2,
-a.read-btn:hover
+a.read-btn:hover,
+a.apply-btn:hover
 {
     color: @black;
 }
 
 .green,
 a.read-btn,
+a.apply-btn,
+.green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
 .main-banner h1 span,
@@ -214,7 +220,9 @@ ul.lang-nav,
 
 /* -------------------------- Transitions & Effects -------------------------- */
 
-a.read-btn::after {
+a.read-btn::after,
+a.apply-btn::after
+{
     transition: padding .15s ease-out;
 }
 
@@ -233,8 +241,10 @@ a.outline-btn,
     transition: box-shadow .3s ease-out;
 }
 
+.green-link,
 .nav-item a,
 a.read-btn,
+a.apply.btn,
 .heading-xs a,
 .footer-nav ul li a
 {
@@ -259,6 +269,19 @@ a.outline-btn:hover,
 
     .mtop-90 {
         margin-top: calc(@m-spacing - 20px);
+    }
+
+    .jobs-listing ul li {
+        padding-top: @xs-spacing;
+    }
+
+    .jobs-listing .row {
+        margin-bottom: @xs-spacing;
+    }
+
+    .c-values {
+        margin-top: @m-spacing;
+        margin-bottom: @m-spacing;
     }
 
 }

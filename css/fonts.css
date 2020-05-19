@@ -70,7 +70,8 @@
 body,
 .card,
 select,
-.header-site {
+.header-site,
+.jobs-listing {
   background-color: #FFFFFF;
 }
 .clients,
@@ -91,17 +92,21 @@ select,
 .black,
 .nav-item,
 .intro-txt,
+.green-link,
 .nav-item a,
 ul.c-profile,
 .heading-xs a,
 .main-banner h1,
 .about-us div h2,
 .resources div h2,
-a.read-btn:hover {
+a.read-btn:hover,
+a.apply-btn:hover {
   color: #000000;
 }
 .green,
 a.read-btn,
+a.apply-btn,
+.green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
 .main-banner h1 span,
@@ -135,7 +140,8 @@ ul.lang-nav,
   color: #FFFFFF;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
-a.read-btn::after {
+a.read-btn::after,
+a.apply-btn::after {
   transition: padding 0.15s ease-out;
 }
 input,
@@ -149,8 +155,10 @@ a.outline-btn,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
 }
+.green-link,
 .nav-item a,
 a.read-btn,
+a.apply.btn,
 .heading-xs a,
 .footer-nav ul li a {
   transition: color 0.15s ease-out;
@@ -401,10 +409,13 @@ a.outline-btn,
 .heading-xs a,
 .nav-item a,
 a.read-btn,
+a.apply-btn,
+.green-link,
 .footer-nav ul li a:hover {
   text-decoration: none;
 }
-.badge {
+.badge,
+.listing-headers {
   text-transform: uppercase;
 }
 /* Media Queries for Responsive */
@@ -448,6 +459,8 @@ a.read-btn,
     letter-spacing: 0.32px;
   }
   .lets-talk,
+  .perks-card,
+  .perks-card h2,
   .about-us h3,
   .inner-office,
   .txt-block h2,

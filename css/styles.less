@@ -815,3 +815,28 @@ a.apply-btn {
     }
 
 }
+
+/* ----------- Non-Retina Screens ----------- */
+
+@media only screen and (max-width: 1200px) {
+
+    .main_bg {
+        background-position-y: 480px;
+    }
+    
+    .main_bg > .banner-container {
+        padding-bottom: 140px;
+    }
+
+    .clients::after,
+    .resources::after
+    {
+        height: 21px;
+    }
+
+    ul.awards li img {
+        width: auto;
+        height: 86px;
+    }
+
+}

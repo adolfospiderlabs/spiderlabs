@@ -42,15 +42,15 @@ ul.nav-list li {
     margin-left: calc(@m-spacing - 20px);
 }
 
-
 .main_bg {
     background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
+    background-size: 1920px;
+    background-position: center;
     background-position-y: 360px;
-    background-size: 100%;
 }
 
 .main_bg > .banner-container {
-    padding-bottom: 260px;
+    padding-bottom: 220px;
 }
 
 .main-banner {
@@ -91,7 +91,11 @@ ul.nav-list li {
     display: block;
     position: relative;
     padding: @xs-spacing;
+    background-size: 180px;
+    background-position: top;
+    background-repeat: repeat-x;
     margin-top: calc(@m-spacing - 20px);
+    background-image: url("../imgs/Triangles_BG.svg");
 }
 
 /*.clients::after,
@@ -110,7 +114,7 @@ ul.nav-list li {
 .clients div h2,
 .resources div h2
 {
-    margin-top: @l-spacing;
+    margin-top: @xl-spacing;
 }
 
 
@@ -119,10 +123,11 @@ ul.nav-list li {
 }
 
 .security-banner {
-    background-color: @violet10;
     border-radius: 8px;
+    margin-top: @xl-spacing;
     padding-top: @l-spacing;
     padding-bottom: @l-spacing;
+    background-color: @violet10;
 }
 
 .security-txt h2 {
@@ -467,12 +472,13 @@ a.apply-btn {
 }
 
 
+
 /* Media Queries for Responsive */
 
 
 /* -------------------------- Media Query for Macbook Pro and Retina displays -------------------------- */
 
-@media only screen and (max-device-width: 1600px) {
+/*@media only screen and (max-device-width: 1600px) {
 
     .main_bg {
         background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
@@ -481,10 +487,10 @@ a.apply-btn {
     }
 
     .main_bg > .banner-container {
-        padding-bottom: @xl-spacing;
+        padding-bottom: @l-spacing;
     }
     
-}
+}*/
 
 
 /* -------------------------- Media Query for Mobile -------------------------- */
@@ -512,7 +518,11 @@ a.apply-btn {
         margin: calc(@m-spacing - 20px) auto 0 auto;
     }
 
-    .clients::after,
+    .security-banner {
+        margin-top: @s-spacing;
+    }
+
+    /*.clients::after,
     .resources::after
     {
         content: '';
@@ -523,7 +533,7 @@ a.apply-btn {
         width: 100%;
         height: 20px;
         background-image: url("../imgs/Triangles_Mobile_BG.svg");
-    }
+    }*/
 
     .clients {
         padding-bottom: @s-spacing !important;
@@ -560,7 +570,7 @@ a.apply-btn {
     .clients div h2,
     .resources div h2
     {
-        margin-top: @m-spacing;
+        margin-top: @m-spacing !important;
     }
 
     .articles {
@@ -816,27 +826,36 @@ a.apply-btn {
 
 }
 
-/* ----------- Non-Retina Screens ----------- */
+/* -------------------------- Media Query 1600px -------------------------- */
+
+@media only screen and (max-width: 1600px) {
+
+    .main_bg {
+        background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
+        background-size: 1480px;
+        background-position: center;
+        background-position-y: 360px;
+    }
+
+    .main_bg > .banner-container {
+        padding-bottom: @l-spacing;
+    }
+
+}
+
+/* -------------------------- Media Query 1200px -------------------------- */
 
 @media only screen and (max-width: 1200px) {
 
     .main_bg {
-        background-position-y: 480px;
+        background: none;
+        background-position-y: 460px;
+        background-position-x: center;
+        background-size: 1140px;
     }
-    
+
     .main_bg > .banner-container {
-        padding-bottom: 140px;
-    }
-
-    .clients::after,
-    .resources::after
-    {
-        height: 21px;
-    }
-
-    ul.awards li img {
-        width: auto;
-        height: 86px;
+        padding-bottom: @l-spacing;
     }
 
 }

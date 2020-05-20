@@ -1302,6 +1302,32 @@ a.apply-btn {
     padding-bottom: 60px !important;
   }
 }
+/* -------------------------- Media Query 768px -------------------------- */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  #slabs-info .field-c {
+    width: 55%;
+  }
+  #slabs-info .button-c {
+    width: 39%;
+  }
+  .slabs-form-wrapper {
+    padding: 0;
+    width: 100%;
+    margin: 60px auto 0 auto;
+  }
+  .security-banner {
+    border-radius: 8px;
+    margin-top: 60px;
+    padding-left: 0 !important;
+    background-color: rgba(68, 0, 153, 0.1);
+  }
+  .security-txt {
+    padding-left: 60px !important;
+  }
+  .security-img {
+    display: none;
+  }
+}
 /* -------------------------- Media Query 1600px -------------------------- */
 @media only screen and (max-width: 1600px) {
   .main_bg {

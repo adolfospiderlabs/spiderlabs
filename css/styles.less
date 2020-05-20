@@ -895,6 +895,18 @@ a.apply-btn {
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
 
+    .clients {
+        padding-bottom: @s-spacing !important;
+    }
+
+    .clients div h2 {
+        margin-top: @m-spacing !important;
+    }
+
+    #slabs-info {
+        margin-top: @m-spacing;
+    }
+
     #slabs-info .field-c {
         width: 55%;
     }
@@ -912,7 +924,7 @@ a.apply-btn {
     .security-banner {
         border-radius: 8px;
         margin-top: @m-spacing;
-        padding-left: 0 !important;
+        padding: @m-spacing 0 !important;
         background-color: @violet10;
     }
 
@@ -922,6 +934,16 @@ a.apply-btn {
 
     .security-img {
         display: none;
+    }
+
+    #security-info input {
+        width: 232px !important;
+    }
+
+    .card,
+    .office-card
+    {
+        margin-bottom: @s-spacing;
     }
 
 }

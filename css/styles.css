@@ -1304,6 +1304,15 @@ a.apply-btn {
 }
 /* -------------------------- Media Query 768px -------------------------- */
 @media only screen and (max-width: 768px) and (orientation: landscape) {
+  .clients {
+    padding-bottom: 30px !important;
+  }
+  .clients div h2 {
+    margin-top: 60px !important;
+  }
+  #slabs-info {
+    margin-top: 60px;
+  }
   #slabs-info .field-c {
     width: 55%;
   }
@@ -1318,7 +1327,7 @@ a.apply-btn {
   .security-banner {
     border-radius: 8px;
     margin-top: 60px;
-    padding-left: 0 !important;
+    padding: 60px 0 !important;
     background-color: rgba(68, 0, 153, 0.1);
   }
   .security-txt {
@@ -1326,6 +1335,13 @@ a.apply-btn {
   }
   .security-img {
     display: none;
+  }
+  #security-info input {
+    width: 232px !important;
+  }
+  .card,
+  .office-card {
+    margin-bottom: 30px;
   }
 }
 /* -------------------------- Media Query 1600px -------------------------- */

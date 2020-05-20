@@ -924,7 +924,7 @@ ul.lang-nav li img {
 /* -------------------------- Secondary Pages -------------------------- */
 .sec-banner {
   display: flex;
-  height: 30vw;
+  height: 50vw;
   align-items: center;
   justify-content: center;
   background-image: url('../imgs/SpiderLabs_Careers_BG.png');

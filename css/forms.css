@@ -70,7 +70,8 @@
 body,
 .card,
 select,
-.header-site {
+.header-site,
+.jobs-listing {
   background-color: #FFFFFF;
 }
 .clients,
@@ -91,6 +92,7 @@ select,
 .black,
 .nav-item,
 .intro-txt,
+.green-link,
 .nav-item a,
 ul.c-profile,
 .heading-xs a,
@@ -104,6 +106,7 @@ a.apply-btn:hover {
 .green,
 a.read-btn,
 a.apply-btn,
+.green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
 .main-banner h1 span,
@@ -152,6 +155,7 @@ a.outline-btn,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
 }
+.green-link,
 .nav-item a,
 a.read-btn,
 a.apply.btn,
@@ -176,7 +180,11 @@ a.outline-btn:hover,
 }
 /* -------------------------- Inputs -------------------------- */
 #slabs-info input {
-  width: 350px;
+  /*width: 350px;*/
+  width: 100%;
+}
+#slabs-info .primary-btn {
+  width: 100%;
 }
 #security-info input {
   width: 320px;

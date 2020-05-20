@@ -67,6 +67,20 @@ ul.nav-list li {
     margin: @m-spacing auto 0 auto;
 }
 
+#slabs-info {
+    margin-top: @l-spacing;
+}
+
+#slabs-info .field-c {
+    width: 65%;
+    padding: 0;
+}
+
+#slabs-info .button-c {
+    width: 30%;
+    margin-left: 27px;
+}
+
 #slabs-info p {
     margin-top: calc(@m-spacing - 20px);
 }
@@ -91,9 +105,8 @@ ul.nav-list li {
     display: block;
     position: relative;
     padding: @xs-spacing;
-    background-size: 180px;
     background-position: top;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     margin-top: calc(@m-spacing - 20px);
     background-image: url("../imgs/Triangles_BG.svg");
 }
@@ -399,11 +412,11 @@ ul.lang-nav li img {
 
 .sec-banner {
     display: flex;
-    height: 50vw;
+    height: 30vw;
     align-items: center;
-    background-size: cover;
     justify-content: center;
     background-image: url('../imgs/SpiderLabs_Careers_BG.png');
+    background-size: cover;
 }
 
 .page-intro p {
@@ -518,8 +531,33 @@ a.apply-btn {
         margin: calc(@m-spacing - 20px) auto 0 auto;
     }
 
+    #slabs-info {
+        margin-top: @m-spacing;
+    }
+    
+    #slabs-info .field-c {
+        width: 100%;
+        padding: 0;
+    }
+    
+    #slabs-info .button-c {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .info-form {
+        background-color: brown;
+        margin-top: 90px;
+    }
+
     .security-banner {
         margin-top: @s-spacing;
+    }
+
+    .clients,
+    .resources
+    {
+        background-image: url("../imgs/Triangles_Mobile_BG.svg");
     }
 
     /*.clients::after,

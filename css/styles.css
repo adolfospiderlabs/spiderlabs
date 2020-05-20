@@ -5,7 +5,11 @@
 /* Spider Labs - Form Fields and Buttons */
 /* -------------------------- Inputs -------------------------- */
 #slabs-info input {
-  width: 350px;
+  /*width: 350px;*/
+  width: 100%;
+}
+#slabs-info .primary-btn {
+  width: 100%;
 }
 #security-info input {
   width: 320px;
@@ -660,6 +664,17 @@ ul.nav-list li {
   width: 540px;
   margin: 60px auto 0 auto;
 }
+#slabs-info {
+  margin-top: 90px;
+}
+#slabs-info .field-c {
+  width: 65%;
+  padding: 0;
+}
+#slabs-info .button-c {
+  width: 30%;
+  margin-left: 27px;
+}
 #slabs-info p {
   margin-top: calc(60px - 20px);
 }
@@ -678,9 +693,8 @@ ul.nav-list li {
   display: block;
   position: relative;
   padding: 15px;
-  background-size: 180px;
   background-position: top;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   margin-top: calc(60px - 20px);
   background-image: url("../imgs/Triangles_BG.svg");
 }
@@ -910,11 +924,11 @@ ul.lang-nav li img {
 /* -------------------------- Secondary Pages -------------------------- */
 .sec-banner {
   display: flex;
-  height: 50vw;
+  height: 30vw;
   align-items: center;
-  background-size: cover;
   justify-content: center;
   background-image: url('../imgs/SpiderLabs_Careers_BG.png');
+  background-size: cover;
 }
 .page-intro p {
   margin-top: 15px;
@@ -999,8 +1013,27 @@ a.apply-btn {
     width: 100%;
     margin: calc(60px - 20px) auto 0 auto;
   }
+  #slabs-info {
+    margin-top: 60px;
+  }
+  #slabs-info .field-c {
+    width: 100%;
+    padding: 0;
+  }
+  #slabs-info .button-c {
+    width: 100%;
+    margin-left: 0;
+  }
+  .info-form {
+    background-color: brown;
+    margin-top: 90px;
+  }
   .security-banner {
     margin-top: 30px;
+  }
+  .clients,
+  .resources {
+    background-image: url("../imgs/Triangles_Mobile_BG.svg");
   }
   /*.clients::after,
     .resources::after

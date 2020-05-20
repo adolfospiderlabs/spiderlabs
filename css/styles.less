@@ -95,12 +95,15 @@ ul.nav-list li {
     margin-top: @m-spacing
 }
 
-.resources {
+.resources,
+.guidelines
+{
     padding-bottom: @xl-spacing !important;
 }
 
 .clients,
-.resources
+.resources,
+.guidelines
 {
     display: block;
     position: relative;
@@ -419,6 +422,14 @@ ul.lang-nav li img {
     background-size: cover;
 }
 
+.media {
+    display: flex;
+    height: 40vw;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
 .page-intro p {
     margin-top: @xs-spacing
 }
@@ -510,6 +521,11 @@ a.apply-btn {
 
 @media only screen and (max-width: 480px) {
 
+    .navbar-brand img {
+        width: 188px;
+        margin-left: @xs-spacing;
+    }
+
     .main_bg {
         background: none;
     }
@@ -519,7 +535,7 @@ a.apply-btn {
     }
 
     .main-banner {
-        margin-top: @m-spacing;
+        margin-top: @s-spacing;
     }
 
     .main-banner p {
@@ -555,7 +571,8 @@ a.apply-btn {
     }
 
     .clients,
-    .resources
+    .resources,
+    .guidelines
     {
         background-image: url("../imgs/Triangles_Mobile_BG.svg");
     }
@@ -581,6 +598,7 @@ a.apply-btn {
         margin-top: @s-spacing
     }
     
+    .block-left-txt,
     .block-right-txt
     {
         margin-bottom: @m-spacing !important;
@@ -660,7 +678,7 @@ a.apply-btn {
 
     .inner-office {
         display: block;
-        padding: 54px;
+        padding: 50px;
     }
 
     #tokyo {
@@ -777,6 +795,11 @@ a.apply-btn {
         background-image: url('../imgs/SpiderLabs_Careers_Mobile_BG.png');
     }
 
+    .media {
+        height: 100vw;
+        background: none;
+    }
+
     ul.lang-nav li:first-child {
         margin-left: 0;
     }
@@ -809,7 +832,9 @@ a.apply-btn {
         margin-left: 0 !important;
     }
 
-    .resources {
+    .resources,
+    .guidelines
+    {
         padding-bottom: @m-spacing !important;
     }
 
@@ -858,7 +883,9 @@ a.apply-btn {
         height: 62px;
     }
 
-    .resources {
+    .resources,
+    .guidelines
+    {
         padding-bottom: @m-spacing !important;
     }
 

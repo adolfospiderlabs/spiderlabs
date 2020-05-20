@@ -108,6 +108,7 @@ a.outline-btn::before {
   content: url(../imgs/chat_icon.svg);
   padding-right: 10px;
 }
+a.primary-btn,
 a.primary-black-btn {
   line-height: 50px;
   margin: 60px auto 0 auto;
@@ -375,6 +376,7 @@ ul.c-profile,
 .main-banner form {
   text-align: left !important;
 }
+a:hover,
 a.outline-btn,
 .heading-xs a,
 .nav-item a,
@@ -520,6 +522,7 @@ select,
 .form-box,
 .resources,
 .perks-card,
+.guidelines,
 .office-card {
   background-color: #F4F0EB;
 }
@@ -536,15 +539,18 @@ select,
 .intro-txt,
 .green-link,
 .nav-item a,
+.intro-txt a,
 ul.c-profile,
 .heading-xs a,
 .main-banner h1,
 .about-us div h2,
 .resources div h2,
 a.read-btn:hover,
-a.apply-btn:hover {
+a.apply-btn:hover,
+.intro-txt a:hover {
   color: #000000;
 }
+a,
 .green,
 a.read-btn,
 a.apply-btn,
@@ -556,6 +562,7 @@ ul.nav-item li.nav-selected {
   color: #00D4A4;
 }
 .gray,
+a:hover,
 .footer-nav ul li a:hover {
   color: #444444;
 }
@@ -566,6 +573,7 @@ select,
 .textfield,
 .helper-txt,
 input::placeholder,
+.media .page-intro p,
 textarea::placeholder,
 ul.c-profile li span,
 option:first-of-type {
@@ -574,6 +582,7 @@ option:first-of-type {
 .badge,
 .page-intro,
 .page-intro p,
+.button-txt:hover,
 ul.lang-nav,
 .footer-nav ul li,
 .lang-container h5,
@@ -597,6 +606,7 @@ a.outline-btn,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
 }
+a,
 .green-link,
 .nav-item a,
 a.read-btn,
@@ -608,6 +618,7 @@ a.apply.btn,
 .card:hover,
 input:focus,
 select:focus,
+.guidelines img,
 textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
@@ -685,11 +696,13 @@ ul.nav-list li {
 .clients .logos-list {
   margin-top: 60px;
 }
-.resources {
+.resources,
+.guidelines {
   padding-bottom: 120px !important;
 }
 .clients,
-.resources {
+.resources,
+.guidelines {
   display: block;
   position: relative;
   padding: 15px;
@@ -930,6 +943,13 @@ ul.lang-nav li img {
   background-image: url('../imgs/SpiderLabs_Careers_BG.png');
   background-size: cover;
 }
+.media {
+  display: flex;
+  height: 40vw;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
 .page-intro p {
   margin-top: 15px;
 }
@@ -997,6 +1017,10 @@ a.apply-btn {
 }*/
 /* -------------------------- Media Query for Mobile -------------------------- */
 @media only screen and (max-width: 480px) {
+  .navbar-brand img {
+    width: 188px;
+    margin-left: 15px;
+  }
   .main_bg {
     background: none;
   }
@@ -1004,7 +1028,7 @@ a.apply-btn {
     padding-bottom: 60px;
   }
   .main-banner {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .main-banner p {
     margin-top: 15px;
@@ -1032,7 +1056,8 @@ a.apply-btn {
     margin-top: 30px;
   }
   .clients,
-  .resources {
+  .resources,
+  .guidelines {
     background-image: url("../imgs/Triangles_Mobile_BG.svg");
   }
   /*.clients::after,
@@ -1053,6 +1078,7 @@ a.apply-btn {
   .clients .logos-list {
     margin-top: 30px;
   }
+  .block-left-txt,
   .block-right-txt {
     margin-bottom: 60px !important;
   }
@@ -1113,7 +1139,7 @@ a.apply-btn {
   }
   .inner-office {
     display: block;
-    padding: 54px;
+    padding: 50px;
   }
   #tokyo {
     margin-bottom: 30px;
@@ -1204,6 +1230,10 @@ a.apply-btn {
     justify-content: center;
     background-image: url('../imgs/SpiderLabs_Careers_Mobile_BG.png');
   }
+  .media {
+    height: 100vw;
+    background: none;
+  }
   ul.lang-nav li:first-child {
     margin-left: 0;
   }
@@ -1229,7 +1259,8 @@ a.apply-btn {
     margin-top: 30px !important;
     margin-left: 0 !important;
   }
-  .resources {
+  .resources,
+  .guidelines {
     padding-bottom: 60px !important;
   }
   .resources div h2 {
@@ -1266,7 +1297,8 @@ a.apply-btn {
     width: auto;
     height: 62px;
   }
-  .resources {
+  .resources,
+  .guidelines {
     padding-bottom: 60px !important;
   }
 }

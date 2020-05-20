@@ -77,6 +77,7 @@ select,
 .form-box,
 .resources,
 .perks-card,
+.guidelines,
 .office-card {
   background-color: #F4F0EB;
 }
@@ -93,15 +94,18 @@ select,
 .intro-txt,
 .green-link,
 .nav-item a,
+.intro-txt a,
 ul.c-profile,
 .heading-xs a,
 .main-banner h1,
 .about-us div h2,
 .resources div h2,
 a.read-btn:hover,
-a.apply-btn:hover {
+a.apply-btn:hover,
+.intro-txt a:hover {
   color: #000000;
 }
+a,
 .green,
 a.read-btn,
 a.apply-btn,
@@ -113,6 +117,7 @@ ul.nav-item li.nav-selected {
   color: #00D4A4;
 }
 .gray,
+a:hover,
 .footer-nav ul li a:hover {
   color: #444444;
 }
@@ -123,6 +128,7 @@ select,
 .textfield,
 .helper-txt,
 input::placeholder,
+.media .page-intro p,
 textarea::placeholder,
 ul.c-profile li span,
 option:first-of-type {
@@ -131,6 +137,7 @@ option:first-of-type {
 .badge,
 .page-intro,
 .page-intro p,
+.button-txt:hover,
 ul.lang-nav,
 .footer-nav ul li,
 .lang-container h5,
@@ -154,6 +161,7 @@ a.outline-btn,
 .primary-black-btn {
   transition: box-shadow 0.3s ease-out;
 }
+a,
 .green-link,
 .nav-item a,
 a.read-btn,
@@ -165,6 +173,7 @@ a.apply.btn,
 .card:hover,
 input:focus,
 select:focus,
+.guidelines img,
 textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,

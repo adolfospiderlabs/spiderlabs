@@ -645,7 +645,11 @@ a.outline-btn:hover,
   height: 100px;
   position: sticky;
   background-color: #FFFFFF;
+  transition: all 0.15s linear;
   padding: 30px 60px 0 60px;
+}
+#header.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 #header .logo-container {
   float: left;

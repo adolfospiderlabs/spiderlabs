@@ -18,7 +18,12 @@
     height: 100px;
     position: sticky;
     background-color: @white;
+    transition: all 0.15s linear;
     padding: @s-spacing @m-spacing 0 @m-spacing;
+}
+
+#header.active {
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 #header .logo-container {

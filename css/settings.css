@@ -1,6 +1,7 @@
 /* Spider Labs - Settings */
 /* -------------------------- Color Palette (Primary) -------------------------- */
 /* -------------------------- Color Palette (Secondary) -------------------------- */
+/*@gray: #444444;*/
 /* -------------------------- Color Palette (Opacity Tints) -------------------------- */
 /* -------------------------- Spacings and Margins -------------------------- */
 /* -------------------------- Margin Top -------------------------- */
@@ -82,14 +83,15 @@ select,
   background-color: #F4F0EB;
 }
 .badge,
-.primary-btn {
+.primary-btn,
+#header .nav-wrap ul li a.careers-btn {
   background-color: #00D4A4;
 }
 .primary-black-btn {
-  background-color: #000000;
+  background-color: #3C3B40;
 }
 /* -------------------------- Text Colors -------------------------- */
-.black,
+.gray,
 .nav-item,
 .intro-txt,
 .green-link,
@@ -103,7 +105,7 @@ ul.c-profile,
 a.read-btn:hover,
 a.apply-btn:hover,
 .intro-txt a:hover {
-  color: #000000;
+  color: #3C3B40;
 }
 a,
 .green,
@@ -113,25 +115,25 @@ a.apply-btn,
 .nav-item a:hover,
 .heading-xs a:hover,
 .main-banner h1 span,
-ul.nav-item li.nav-selected {
+ul.nav-item li.nav-selected,
+.nav-item ul li .selected {
   color: #00D4A4;
-}
-.gray,
-a:hover,
-.footer-nav ul li a:hover {
-  color: #444444;
 }
 label,
 .gray2,
 select,
+.a:hover,
 .sub-header,
 .textfield,
 .helper-txt,
 input::placeholder,
+option:first-of-type,
 .media .page-intro p,
-textarea::placeholder,
 ul.c-profile li span,
-option:first-of-type {
+textarea::placeholder,
+.lang-nav ul li a:hover,
+.footer-nav ul li a:hover,
+.lang-wrapper ul.lang-nav li a:hover {
   color: #969696;
 }
 .badge,
@@ -142,7 +144,9 @@ ul.lang-nav,
 .footer-nav ul li,
 .lang-container h5,
 .footer-nav ul li a,
-.footer-nav .credits {
+.footer-nav .credits,
+.lang-wrapper ul.lang-nav li a,
+#header .nav-wrap ul li a.careers-btn {
   color: #FFFFFF;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
@@ -158,7 +162,8 @@ textarea {
 .card,
 .primary-btn,
 a.outline-btn,
-.primary-black-btn {
+.primary-black-btn,
+#header .nav-wrap ul li a.careers-btn {
   transition: box-shadow 0.3s ease-out;
 }
 a,
@@ -167,7 +172,8 @@ a,
 a.read-btn,
 a.apply.btn,
 .heading-xs a,
-.footer-nav ul li a {
+.footer-nav ul li a,
+.lang-wrapper ul.lang-nav li a {
   transition: color 0.15s ease-out;
 }
 .card:hover,
@@ -177,7 +183,8 @@ select:focus,
 textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
-.primary-black-btn:hover {
+.primary-black-btn:hover,
+#header .nav-wrap ul li a.careers-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
 /* -------------------------- Media Query for Mobile -------------------------- */

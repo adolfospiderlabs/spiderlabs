@@ -11,6 +11,48 @@
 
 /* -------------------------- Structure -------------------------- */
 
+
+#header {
+    top: 0;
+    z-index:1;
+    height: 100px;
+    position: sticky;
+    background-color: @white;
+    padding: @s-spacing @m-spacing 0 @m-spacing;
+}
+
+#header .logo-container {
+    float: left;
+    padding-left: 0;
+}
+
+#header .nav-wrap {
+    float: right;
+    padding-right: 0;
+}
+
+#header .nav-wrap ul {
+    text-align: right;
+    line-height: 36px;
+}
+
+#header .nav-wrap ul li {
+    display: inline-block;
+    margin-left: @s-spacing;
+}
+
+#header .nav-wrap ul li:first-child {
+    margin-left: 0;
+}
+
+#header .nav-wrap ul li a.careers-btn {
+    line-height: 36px;
+    display: block;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .header-site {
     height: 100px;
     padding-top: @s-spacing;
@@ -50,11 +92,11 @@ ul.nav-list li {
 }
 
 .main_bg > .banner-container {
-    padding-bottom: 220px;
+    padding-bottom: 280px;
 }
 
 .main-banner {
-    margin-top: @xl-spacing;
+    margin-top: calc(@xl-spacing + 60px);
 }
 
 .main-banner p {
@@ -110,8 +152,19 @@ ul.nav-list li {
     padding: @xs-spacing;
     background-position: top;
     background-repeat: no-repeat;
-    margin-top: calc(@m-spacing - 20px);
     background-image: url("../imgs/Triangles_BG.svg");
+}
+
+.clients,
+.resources,
+.guidelines
+{
+    margin-top: calc(@m-spacing - 20px);
+}
+
+.resources
+{
+    margin-top: @xl-spacing;
 }
 
 /*.clients::after,
@@ -138,11 +191,21 @@ ul.nav-list li {
     padding-left: 90px;
 }
 
-.security-banner {
+.security-banner,
+.spideraf-banner
+{
     border-radius: 8px;
-    margin-top: @xl-spacing;
     padding-top: @l-spacing;
     padding-bottom: @l-spacing;
+}
+
+.security-banner {
+    margin-top: @m-spacing;
+    background-color: @pink15;
+}
+
+.spideraf-banner {
+    margin-top: @xl-spacing;
     background-color: @violet10;
 }
 
@@ -267,7 +330,8 @@ ul.awards li img {
 
 .cv-banner,
 .careers-banner {
-    background-color: @s-green30;
+    /*background-color: @s-green30;*/
+    background-color: @violet10;
     border-radius: 8px;
     padding-top: @l-spacing;
     padding-bottom: @l-spacing;
@@ -339,7 +403,7 @@ ul.schedule-info {
 /* -------------------------- Footer -------------------------- */
 
 .footer {
-    background-color: @black;
+    background-color: @gray;
     margin-top: @xl-spacing;
     padding: @l-spacing 0 calc(@xl-spacing + 40px) 0;
 }
@@ -382,7 +446,7 @@ ul.social-nav li:first-child {
 
 .lang-container {
     margin-top: @l-spacing;
-    border-top: 1px solid @gray;
+    border-top: 1px solid @gray2;
 }
 
 .lang-container .lang-wrapper {
@@ -566,7 +630,9 @@ a.apply-btn {
         margin-top: 90px;
     }
 
-    .security-banner {
+    .security-banner,
+    .spideraf-banner
+    {
         margin-top: @s-spacing;
     }
 
@@ -691,7 +757,8 @@ a.apply-btn {
     }
 
     .careers-banner,
-    .security-banner
+    .security-banner,
+    .spideraf-banner
     {
         padding: @m-spacing 0 @m-spacing 0;
     }
@@ -921,7 +988,9 @@ a.apply-btn {
         margin: @m-spacing auto 0 auto;
     }
 
-    .security-banner {
+    .security-banner,
+    .spideraf-banner
+    {
         border-radius: 8px;
         margin-top: @m-spacing;
         padding: @m-spacing 0 !important;
@@ -953,6 +1022,10 @@ a.apply-btn {
 
 @media only screen and (max-width: 1600px) {
 
+    .main-banner {
+        margin-top: calc(@xl-spacing + 20px);
+    }
+
     .main_bg {
         background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
         background-size: 1480px;
@@ -961,7 +1034,7 @@ a.apply-btn {
     }
 
     .main_bg > .banner-container {
-        padding-bottom: @xl-spacing;
+        padding-bottom: calc(@xl-spacing + @m-spacing);
     }
 
 }

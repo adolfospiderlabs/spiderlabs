@@ -1,17 +1,51 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>Spider Labs - Building a safer and happier future with automation.</title>
+    <meta name="keywords" content="Spider AF, spider labs, ad fraud prevention, tools, advertiser, web advertisement, ad network, publisher, shared blacklist">
+    <meta name="description" content="Spider AF: A fast, effective AI algorithm to counter ad fraud. Easily identify & prevent ad fraud. Protect your revenue & reputation with SpiderAF.">
+    <meta name="author" content="Spider Labs Ltd.">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="shortcut icon" type="image/png" href="imgs/favicon.png" />
 </head>
 <body>
     <div class="wrapper main_bg">
+        <header class="container-fluid" id="header">
+            <div class="logo-container">
+                <a class="navbar-brand" href="#" alt="Spider Labs - Home" title="Spider Labs - Home">
+                    <img src="imgs/SpiderLabs_Logo.svg" alt="Spider Labs" title="Spider Labs" />
+                </a>
+            </div>
+            <nav class="nav-wrap nav-item">
+                <ul>
+                    <li>
+                        <a href="index.html" class="selected" alt="Home" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#products" alt="Home" title="Home">Products</a>
+                    </li>
+                    <li>
+                        <a href="#news" alt="News" title="News">News</a>
+                    </li>
+                    <li>
+                        <a href="#about-us" alt="About Us" title="About Us">About Us</a>
+                    </li>
+                    <li>
+                        <a href="mediakit.html" title="Media Kit" alt="Media Kit">Media Kit</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" title="Contacts" alt="Contacts">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="careers.html" class="careers-btn" alt="Careers" title="Careers">We're hiring!</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <div class="container-lg banner-container">
-            <header class="header-site">
+          <!-- <header class="header-site">
                 <nav class="container nav-wrapper p-0" role="navigation">
                     <div class="col-lg-3 p-0 f-left">
                         <a class="navbar-brand" href="#" alt="Spider Labs - Home" title="Spider Labs - Home">
@@ -29,12 +63,14 @@
                         </ul>
                     </div>
                 </nav>
-            </header>
+            </header>-->
             <!-- Spider Labs - Main Banner -->
             <div class="container main-banner">
                 <h1 class="col-lg-12 heading-xl">Building a <span>safer</span> future with automation.</h1>
                 <p class="col-lg-6 offset-lg-3 sub-header">Let's Fight Ad Fraud Together!</p>
-                <div class="col-lg-6 offset-lg-3">
+                <a href="careers.html" class="primary-btn button-txt mtop-30" alt="See our open positions" title="See our open positions">See our open positions</a>
+                <!-- Get Info - Form
+                    <div class="col-lg-6 offset-lg-3">
                     <form id="slabs-info">
                         <div class="row">
                             <div class="field-c"><input type="email" name="email_txt" id="email_txt" class="body-txt" placeholder="Your email address"></div>
@@ -43,11 +79,12 @@
                         <p class="col-lg-8 offset-lg-2 helper-txt">By proceeding, you cornfirm that you have read and agree with our Terms of Service and Privacy Policy.</p>
                     </form>
                 </div>
+                -->
             </div>
         </div>
         <div class="container-fluid clients">
             <div class="container">
-                <h2 class="col-lg-8 offset-lg-2 heading-m">We’re proud to work with such companies as</h2>
+                <h2 class="col-lg-8 offset-lg-2 heading-m gray">We’re proud to work with such companies as</h2>
                 <div class="row logos-list">
                     <!-- Row 1-->
                     <div class="col-6 col-sm-4 col-lg-2" style="margin-bottom: 30px;">
@@ -90,22 +127,35 @@
                 </div>
             </div>
         </div>
+        <!-- Spider AF - Banner -->
+        <div class="container">
+            <div class="col-lg-12 spideraf-banner">
+                <div class="row">
+                    <div class="col-lg-7 mright-30 security-txt">
+                        <h2 class="heading-m gray">Fight Ad Fraud with Spider AF</h2>
+                        <p class="intro-txt gray">Spider AF, is the first Japanese-made dashboard that employs AI to protect your media against Ad Fraud. Join the SHARED BLACKLIST and cooperate with our trusted members to create a better future of advertising.<br/><br/>Prevent ad fraud from ever contaminating your data by blocking in real time.</p>
+                        <a href="https://www.spideraf.com" class="primary-black-btn button-txt mtop-30" alt="Spider AF Website" title="Spider AF Website">Learn more about Spider AF</a>
+                    </div>
+                    <div class="security-img">
+                        <img src="imgs/SpiderAF_Fight_Ad-Fraud.svg" alt="Fight Ad Fraud with Spider AF" title="Fight Ad Fraud with Spider AF" />
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Spider Labs - Security Banner -->
         <div class="container">
             <div class="col-lg-12 security-banner">
                 <div class="row">
                     <div class="col-lg-7 mright-30 security-txt">
-                        <h2 class="heading-m">Introducing Spider Security</h2>
-                        <p class="intro-txt">Help keep your data secure. Detect and block bots from buying products,
+                        <h2 class="heading-m gray">Introducing Spider Security</h2>
+                        <p class="intro-txt gray">Help keep your data secure. Detect and block bots from buying products,
                             signing up for memberships, stealing your IP, and damaging the integrity of your
                             product.<br /><br />Speak with one of our team members to learn how to become a beta client
                             for our new security service.</p>
                         <div class="slabs-form-wrapper">
                             <form id="security-info">
-                                <input type="text" name="email" id="email" class="body-txt"
-                                    placeholder="Your email address">
-                                <button class="primary-black-btn button-txt" type="submit" value="Get more info">Get
-                                    more info</button>
+                                <input type="text" name="email" id="email" class="body-txt" placeholder="Your email address">
+                                <button class="primary-black-btn button-txt" type="submit" value="Get more info">Get more info</button>
                             </form>
                         </div>
                     </div>
@@ -115,8 +165,8 @@
                 </div>
             </div>
         </div>
-        <!-- Spider Labs - Mission & Values -->
-        <!-- Left Text Block -->
+        <!-- Spider Labs - Mission & Values
+        // Left Text Block
         <div class="container block-left-txt mtop-90">
             <div class="row">
                 <div class="col-lg-6 p-0 img-wrapper img-mobile">
@@ -124,8 +174,8 @@
                 </div>
                 <div class="col-lg-6 p-0">
                     <div class="col-lg-12 txt-block">
-                        <h2 class="heading-l">Make the first step in preventing Ad Fraud</h2>
-                        <p class="intro-txt mtop-30 gray">SpiderAF, is the first Japanese-made dashboard that employs AI
+                        <h2 class="heading-l gray">Make the first step in preventing Ad Fraud</h2>
+                        <p class="intro-txt mtop-30 gray2">SpiderAF, is the first Japanese-made dashboard that employs AI
                             to protect your media against Ad Fraud. Join the SHARED BLACKLIST and cooperate with our
                             trusted members to create a better future of advertising. Prevent ad fraud from ever
                             contaminating your data by blocking in real time.</p>
@@ -136,7 +186,7 @@
                 </div>
             </div>
         </div>
-        <!-- Right Text Block -->
+        // Right Text Block
         <div class="container block-right-txt mtop-90 mbottom-120">
             <div class="row">
                 <div class="col-lg-6 p-0 img-wrapper">
@@ -144,15 +194,15 @@
                 </div>
                 <div class="col-lg-6 p-0">
                     <div class="col-lg-12 txt-block">
-                        <h2 class="heading-l">A future we can all believe in</h2>
-                        <p class="intro-txt mtop-30 gray">Spider Labs is committed to building a safer and happier
+                        <h2 class="heading-l gray">A future we can all believe in</h2>
+                        <p class="intro-txt mtop-30 gray2">Spider Labs is committed to building a safer and happier
                             future with automation. Careers at Spider Labs offer flexible, growth focused, and well
                             balanced working life.<br /><br />Our partners include the world's most trusted networks and
                             advertisers that are shaping the future of advertising.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Spider Labs - News & Resources -->
         <div class="container-fluid resources" id="news-resources">
             <div class="container-lg">
@@ -165,10 +215,10 @@
                         <div class="card">
                             <div class="container inner-card">
                                 <span class="badge">Use Case</span>
-                                <h3 class="heading-xs black mtop-30">
+                                <h3 class="heading-xs gray mtop-30">
                                     <a href="#" alt="Title goes here" title="Title goes here" target="_blank">Contributing to building a sound ecosystem by securing quality and transparency of...</a>
                                 </h3>
-                                <p class="body-txt gray mtop-30 mbottom-30">Japan’s biggest SSP operator. Today we talked with Mr. Nagata, a supply operations manager, about how he uses SpiderAF to combat Ad Fraud...</p>
+                                <p class="body-txt gray2 mtop-30 mbottom-30">Japan’s biggest SSP operator. Today we talked with Mr. Nagata, a supply operations manager, about how he uses SpiderAF to combat Ad Fraud...</p>
                                 <a class="read-btn body-txt green" href="#" alt="Title goes here" title="Title goes here" target="_blank">Read More</a>
                             </div>
                         </div>
@@ -177,10 +227,10 @@
                         <div class="card">
                             <div class="container inner-card">
                                 <span class="badge">Press Release</span>
-                                <h3 class="heading-xs black mtop-30">
+                                <h3 class="heading-xs gray mtop-30">
                                     <a href="https://www.spideraf.com/blog" alt="Title goes here" title="Title goes here" target="_blank">According to Phybbit’s New Ad Fraud Whitepaper, 18.9% of Traffic in Japan was Fraud in...</a>
                                 </h3>
-                                <p class="body-txt gray mtop-30 mbottom-30">Phybbit Ltd. (Tokyo Minato-ku, CEO: Satoko Ohtsuki) has just released it’s latest Ad Fraud Whitepaper for July 2019. As the market leader in Japan...</p>
+                                <p class="body-txt gray2 mtop-30 mbottom-30">Phybbit Ltd. (Tokyo Minato-ku, CEO: Satoko Ohtsuki) has just released it’s latest Ad Fraud Whitepaper for July 2019. As the market leader in Japan...</p>
                                 <a href="https://www.spideraf.com/blog" class="read-btn body-txt green" alt="Title goes here" title="Title goes here" target="_blank">Read More</a>
                             </div>
                         </div>
@@ -189,10 +239,10 @@
                         <div class="card">
                             <div class="container inner-card">
                                 <span class="badge">Press Release</span>
-                                <h3 class="heading-xs black mtop-30">
+                                <h3 class="heading-xs gray mtop-30">
                                     <a href="https://www.spideraf.com/blog" alt="Title goes here" title="Title goes here" target="_blank">Tokyo-Based Phybbit, Ltd., Partners with Digital Forensics and Legal Firm TMI Privacy...</a>
                                 </h3>
-                                <p class="body-txt gray mtop-30 mbottom-30">TMI will Provide the Expertise Needed to
+                                <p class="body-txt gray2 mtop-30 mbottom-30">TMI will Provide the Expertise Needed to
                                     Ensure Evidence Meets Legal Court Requirements Tokyo-based Phybbit, Ltd., developer of SpiderAF anti-...</p>
                                 <a href="https://www.spideraf.com/blog" class="read-btn body-txt green" alt="Title goes here" title="Title goes here" target="_blank">Read More</a>
                             </div>
@@ -209,23 +259,6 @@
                 <p class="col-lg-8 offset-lg-2 intro-txt gray2 mtop-30 intro-p">Spider Labs aims to become the best company ever in anti-fraud solutions. Our values include ownership, speed, challenge, customer satisfaction, and technical excellence.</p>
             </div>
         </div>
-        <!-- Left Text Block -->
-        <div class="container block-left-txt mtop-90">
-            <div class="row">
-                <div class="col-lg-6 p-0 img-wrapper img-mobile">
-                    <img src="imgs/SpiderLabs_OurMission_IMG.svg" alt="Our mission is to make a safe and happy future with automation" title="Our mission is to make a safe and happy future with automation." />
-                </div>
-                <div class="col-lg-6 p-0">
-                    <div class="col-lg-12 txt-block">
-                        <h2 class="heading-l">Our Mission</h2>
-                        <p class="intro-txt mtop-30 gray">Our mission is to make a safe and happy future with automation. We're looking for new team members who can sympathize with our mission and help us accelerate growth in this organization.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 p-0 img-wrapper no-show">
-                    <img src="imgs/SpiderLabs_OurMission_IMG.svg" alt="Our mission is to make a safe and happy future with automation" title="Our mission is to make a safe and happy future with automation." />
-                </div>
-            </div>
-        </div>
         <!-- Right Text Block -->
         <div class="container block-right-txt mtop-90 mbottom-120">
             <div class="row">
@@ -234,7 +267,7 @@
                 </div>
                 <div class="col-lg-6 p-0">
                     <div class="col-lg-12 txt-block">
-                        <h2 class="heading-l">Company Profile</h2>
+                        <h2 class="heading-l gray">Company Profile</h2>
                         <ul class="c-profile body-txt mtop-30">
                             <li>
                                 <span>Company:</span> Spider Labs Ltd.
@@ -259,13 +292,11 @@
                             <ul class="awards body-txt">
                                 <li>
                                     <h4 class="body-txt gray2">Certification</h4>
-                                    <img src="imgs/Certification_logos.png" alt="TAG - Certified Against Fraud"
-                                        title="TAG - Certified Against Fraud" />
+                                    <img src="imgs/Certification_logos.png" alt="TAG - Certified Against Fraud" title="TAG - Certified Against Fraud" />
                                 </li>
                                 <li>
                                     <h4 class="body-txt gray2">Awards</h4>
-                                    <img src="imgs/Awards_logos.png" alt="Get In The Ring & TIE Con 2019"
-                                        title="Get In The Ring & TIE Con 2019" />
+                                    <img src="imgs/Awards_logos.png" alt="Get In The Ring & TIE Con 2019" title="Get In The Ring & TIE Con 2019" />
                                 </li>
                             </ul>
                         </div>
@@ -275,17 +306,17 @@
         </div>
         <!--- Our Offices -->
         <div class="container offices mtop-90">
-            <h3 class="col-lg-6 offset-lg-3 heading-m">Our Offices</h3>
+            <h3 class="col-lg-6 offset-lg-3 heading-m gray">Our Offices</h3>
             <div class="row mtop-60 offices-list">
                 <div class="col-lg-6" id="tokyo">
                     <div class="office-card">
-                        <div class="inner-office">
+                        <div class="inner-office gray">
                             <div class="office-icon">
                                 <img src="imgs/tokyo_office_icon.svg" alt="Spider Labs - Tokyo" title="Spider Labs - Tokyo" />
                             </div>
                             <div class="f-left mleft-60 office-info">
-                                <h4 class="heading-s">Tokyo</h4>
-                                <p class="body-txt gray">Minamiaoyama ST Bldg. 4F<br />7-10-3 Minamiaoyama<br />Minato City, Tokyo 107-0062</p>
+                                <h4 class="heading-s gray">Tokyo</h4>
+                                <p class="body-txt gray2">Minamiaoyama ST Bldg. 4F<br />7-10-3 Minamiaoyama<br />Minato City, Tokyo 107-0062</p>
                                 <a href="#" class="primary-black-btn button-txt mtop-30" alt="Get Directions" title="Get Directions" target="_blank">Get Directions</a>
                             </div>
                         </div>
@@ -293,13 +324,13 @@
                 </div>
                 <div class="col-lg-6" id="lisbon">
                     <div class="office-card">
-                        <div class="inner-office">
+                        <div class="inner-office gray">
                             <div class="office-icon">
                                 <img src="imgs/lisbon_office_icon.svg" alt="Spider Labs - Lisbon" title="Spider Labs - Lisbon" />
                             </div>
                             <div class="f-left mleft-60 office-info">
-                                <h4 class="heading-s">Lisbon</h4>
-                                <p class="body-txt gray">Rua Abranches Ferrão 23, 3º B<br />1600-892 Lisboa<br />Portugal</p>
+                                <h4 class="heading-s gray">Lisbon</h4>
+                                <p class="body-txt gray2">Rua Abranches Ferrão 23, 3º B<br />1600-892 Lisboa<br />Portugal</p>
                                 <a href="#" class="primary-black-btn button-txt mtop-30" alt="Get Directions" title="Get Directions" target="_blank">Get Directions</a>
                             </div>
                         </div>
@@ -307,9 +338,43 @@
                 </div>
             </div>
         </div>
+        <!-- Left Text Block -->
+        <div class="container block-left-txt mtop-90">
+            <div class="row">
+                <div class="col-lg-6 p-0 img-wrapper img-mobile">
+                    <img src="imgs/SpiderLabs_OurMission_IMG.svg" alt="Our mission is to make a safe and happy future with automation" title="Our mission is to make a safe and happy future with automation." />
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="col-lg-12 txt-block">
+                        <h2 class="heading-l gray">Our Mission</h2>
+                        <p class="intro-txt mtop-30 gray2">Our mission is to make a safe and happy future with automation. We're looking for new team members who can sympathize with our mission and help us accelerate growth in this organization.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0 img-wrapper no-show">
+                    <img src="imgs/SpiderLabs_OurMission_IMG.svg" alt="Our mission is to make a safe and happy future with automation" title="Our mission is to make a safe and happy future with automation." />
+                </div>
+            </div>
+        </div>
+        <!-- Left Text Block -->
+        <div class="container block-right-txt mtop-30 mbottom-120">
+            <div class="row">
+                <div class="col-lg-6 p-0 img-wrapper">
+                    <img src="imgs/SpiderLabs_AboutUs_IMG.svg" alt="A future we can all believe in" title="A future we can all believe in" />
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="col-lg-12 txt-block">
+                        <h2 class="heading-l gray">A future we can all believe in</h2>
+                        <p class="intro-txt mtop-30 gray2">Spider Labs is committed to building a safer and happier
+                            future with automation. Careers at Spider Labs offer flexible, growth focused, and well
+                            balanced working life.<br /><br />Our partners include the world's most trusted networks and
+                            advertisers that are shaping the future of advertising.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Spider Labs - Work with us -->
         <div class="container mtop-90">
-            <div class="col-lg-12 careers-banner">
+            <div class="col-lg-12 careers-banner gray">
                 <div class="row">
                     <div class="col-lg-5 txt-wrapper">
                         <h2 class="heading-m">Work with us</h2>
@@ -325,17 +390,17 @@
         <!-- Spider Labs - Contacts -->
         <div class="container mtop-90 contacts" id="contacts">
             <div class="container-lg">
-                <h2 class="col-lg-8 offset-lg-2 heading-l">Talk to an expert</h2>
+                <h2 class="col-lg-8 offset-lg-2 heading-l gray">Talk to an expert</h2>
                 <p class="col-lg-6 offset-lg-3 intro-txt gray2 mtop-30 intro-p">Get help with technical issues and
                     general questions by sending us a message or chatting with our team.</p>
                 <div class="row mtop-90">
                     <div class="col-lg-6 p-0 mtop-60 lets-talk">
-                        <h3 class="heading-m">Let's talk</h3>
-                        <p class="col-sm4 col-lg-8 pl-0 body-txt gray mbottom-30">Our Customer Success team is available
+                        <h3 class="heading-m gray">Let's talk</h3>
+                        <p class="col-sm4 col-lg-8 pl-0 body-txt gray2 mbottom-30">Our Customer Success team is available
                             to help you by chat.</p>
                         <a href="#" class="outline-btn button-txt">Chat with us</a>
                         <div class="mtop-60">
-                            <h4 class="body-bold black">Live chat available from Monday to Friday</h4>
+                            <h4 class="body-bold gray">Live chat available from Monday to Friday</h4>
                             <ul class="gray2 body-txt schedule-info">
                                 <li>- 10am to 7pm (JST)</li>
                                 <li>- 1am to 10am (UTC)</li>
@@ -344,7 +409,7 @@
                     </div>
                     <div class="col-lg-6 p-0 form-box">
                         <div class="form-wrapper">
-                            <h3 class="heading-s">Send us your message</h4>
+                            <h3 class="heading-s gray">Send us your message</h4>
                                 <form class="" name="contact" action="#" method="post">
                                     <fieldset>
                                         <div class="field-wrapper">
@@ -690,10 +755,10 @@
                             <h5 class="body-bold">Choose your language:</h5>
                             <ul class="lang-nav">
                                 <li>
-                                    <img src="imgs/japan_flag.svg">Japanese
+                                    <img src="imgs/japan_flag.svg"><a href="#" alt="日本語" title="日本語">日本語</a>
                                 </li>
                                 <li>
-                                    <img src="imgs/us_flag.svg">English (United States)
+                                    <img src="imgs/us_flag.svg"><a href="#" alt="English (United States)" title="English (United States)">English (United States)</a>
                                 </li>
                             </ul>
                         </div>
@@ -702,5 +767,4 @@
             </div>
         </footer>
 </body>
-
 </html>

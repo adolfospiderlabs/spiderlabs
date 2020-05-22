@@ -4,14 +4,14 @@
 /* -------------------------- Color Palette (Primary) -------------------------- */
 
 @spider-green: #00D4A4;
-@black: #000000;
+@gray: #3C3B40;
 @white: #FFFFFF;
 
 
 /* -------------------------- Color Palette (Secondary) -------------------------- */
 
-@pink: #B146C2;
-@gray: #444444;
+@pink: #FF7F8D;
+/*@gray: #444444;*/
 @gray2 : #969696;
 @yellow: #FFD300;
 @violet: #440099;
@@ -24,6 +24,7 @@
 
 @violet10: rgba(68,0,153,0.1);
 @s-green30: rgba(0,212,165,0.3);
+@pink15: rgba(255,127,141,0.15);
 
 /* -------------------------- Spacings and Margins -------------------------- */
 
@@ -147,18 +148,20 @@ select,
 }
 
 .badge,
-.primary-btn {
+.primary-btn,
+#header .nav-wrap ul li a.careers-btn
+{
     background-color: @spider-green;
 }
 
 .primary-black-btn {
-    background-color: @black;
+    background-color: @gray;
 }
 
 
 /* -------------------------- Text Colors -------------------------- */
 
-.black,
+.gray,
 .nav-item,
 .intro-txt,
 .green-link,
@@ -173,7 +176,7 @@ a.read-btn:hover,
 a.apply-btn:hover,
 .intro-txt a:hover
 {
-    color: @black;
+    color: @gray;
 }
 
 a,
@@ -184,29 +187,27 @@ a.apply-btn,
 .nav-item a:hover,
 .heading-xs a:hover,
 .main-banner h1 span,
-ul.nav-item li.nav-selected
+ul.nav-item li.nav-selected,
+.nav-item ul li .selected
 {
     color: @spider-green;
-}
-
-.gray,
-a:hover,
-.footer-nav ul li a:hover
-{
-    color: @gray;
 }
 
 label,
 .gray2,
 select,
+.a:hover,
 .sub-header,
 .textfield,
 .helper-txt,
 input::placeholder,
+option:first-of-type,
 .media .page-intro p,
-textarea::placeholder,
 ul.c-profile li span,
-option:first-of-type
+textarea::placeholder,
+.lang-nav ul li a:hover,
+.footer-nav ul li a:hover,
+.lang-wrapper ul.lang-nav li a:hover
 {
     color: @gray2;
 }
@@ -219,7 +220,9 @@ ul.lang-nav,
 .footer-nav ul li,
 .lang-container h5,
 .footer-nav ul li a,
-.footer-nav .credits
+.footer-nav .credits,
+.lang-wrapper ul.lang-nav li a,
+#header .nav-wrap ul li a.careers-btn
 {
     color: @white;
 }
@@ -243,7 +246,8 @@ textarea
 .card,
 .primary-btn,
 a.outline-btn,
-.primary-black-btn
+.primary-black-btn,
+#header .nav-wrap ul li a.careers-btn
 {
     transition: box-shadow .3s ease-out;
 }
@@ -254,7 +258,8 @@ a,
 a.read-btn,
 a.apply.btn,
 .heading-xs a,
-.footer-nav ul li a
+.footer-nav ul li a,
+.lang-wrapper ul.lang-nav li a
 {
     transition: color .15s ease-out;
 }
@@ -266,7 +271,8 @@ select:focus,
 textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
-.primary-black-btn:hover
+.primary-black-btn:hover,
+#header .nav-wrap ul li a.careers-btn:hover
 {
     box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }

@@ -12,7 +12,7 @@
   width: 100%;
 }
 #security-info input {
-  width: 320px;
+  width: 290px;
 }
 input,
 select {
@@ -29,13 +29,13 @@ textarea {
 input:hover,
 select:hover,
 textarea:hover {
-  border: 1px solid #444444;
+  border: 1px solid #3C3B40;
 }
 input:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid #000000;
-  color: #000000;
+  border: 1px solid #3C3B40;
+  color: #3C3B40;
 }
 input:hover,
 input:focus,
@@ -446,6 +446,7 @@ a.apply-btn,
 /* Spider Labs - Settings */
 /* -------------------------- Color Palette (Primary) -------------------------- */
 /* -------------------------- Color Palette (Secondary) -------------------------- */
+/*@gray: #444444;*/
 /* -------------------------- Color Palette (Opacity Tints) -------------------------- */
 /* -------------------------- Spacings and Margins -------------------------- */
 /* -------------------------- Margin Top -------------------------- */
@@ -527,14 +528,15 @@ select,
   background-color: #F4F0EB;
 }
 .badge,
-.primary-btn {
+.primary-btn,
+#header .nav-wrap ul li a.careers-btn {
   background-color: #00D4A4;
 }
 .primary-black-btn {
-  background-color: #000000;
+  background-color: #3C3B40;
 }
 /* -------------------------- Text Colors -------------------------- */
-.black,
+.gray,
 .nav-item,
 .intro-txt,
 .green-link,
@@ -548,7 +550,7 @@ ul.c-profile,
 a.read-btn:hover,
 a.apply-btn:hover,
 .intro-txt a:hover {
-  color: #000000;
+  color: #3C3B40;
 }
 a,
 .green,
@@ -558,25 +560,25 @@ a.apply-btn,
 .nav-item a:hover,
 .heading-xs a:hover,
 .main-banner h1 span,
-ul.nav-item li.nav-selected {
+ul.nav-item li.nav-selected,
+.nav-item ul li .selected {
   color: #00D4A4;
-}
-.gray,
-a:hover,
-.footer-nav ul li a:hover {
-  color: #444444;
 }
 label,
 .gray2,
 select,
+.a:hover,
 .sub-header,
 .textfield,
 .helper-txt,
 input::placeholder,
+option:first-of-type,
 .media .page-intro p,
-textarea::placeholder,
 ul.c-profile li span,
-option:first-of-type {
+textarea::placeholder,
+.lang-nav ul li a:hover,
+.footer-nav ul li a:hover,
+.lang-wrapper ul.lang-nav li a:hover {
   color: #969696;
 }
 .badge,
@@ -587,7 +589,9 @@ ul.lang-nav,
 .footer-nav ul li,
 .lang-container h5,
 .footer-nav ul li a,
-.footer-nav .credits {
+.footer-nav .credits,
+.lang-wrapper ul.lang-nav li a,
+#header .nav-wrap ul li a.careers-btn {
   color: #FFFFFF;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
@@ -603,7 +607,8 @@ textarea {
 .card,
 .primary-btn,
 a.outline-btn,
-.primary-black-btn {
+.primary-black-btn,
+#header .nav-wrap ul li a.careers-btn {
   transition: box-shadow 0.3s ease-out;
 }
 a,
@@ -612,7 +617,8 @@ a,
 a.read-btn,
 a.apply.btn,
 .heading-xs a,
-.footer-nav ul li a {
+.footer-nav ul li a,
+.lang-wrapper ul.lang-nav li a {
   transition: color 0.15s ease-out;
 }
 .card:hover,
@@ -622,7 +628,8 @@ select:focus,
 textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
-.primary-black-btn:hover {
+.primary-black-btn:hover,
+#header .nav-wrap ul li a.careers-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
 }
 /* -------------------------- Media Query for Mobile -------------------------- */
@@ -632,6 +639,40 @@ a.outline-btn:hover,
   }
 }
 /* -------------------------- Structure -------------------------- */
+#header {
+  top: 0;
+  z-index: 1;
+  height: 100px;
+  position: sticky;
+  background-color: #FFFFFF;
+  padding: 30px 60px 0 60px;
+}
+#header .logo-container {
+  float: left;
+  padding-left: 0;
+}
+#header .nav-wrap {
+  float: right;
+  padding-right: 0;
+}
+#header .nav-wrap ul {
+  text-align: right;
+  line-height: 36px;
+}
+#header .nav-wrap ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+#header .nav-wrap ul li:first-child {
+  margin-left: 0;
+}
+#header .nav-wrap ul li a.careers-btn {
+  line-height: 36px;
+  display: block;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .header-site {
   height: 100px;
   padding-top: 30px;
@@ -662,10 +703,10 @@ ul.nav-list li {
   background-position-y: 360px;
 }
 .main_bg > .banner-container {
-  padding-bottom: 220px;
+  padding-bottom: 280px;
 }
 .main-banner {
-  margin-top: 120px;
+  margin-top: calc(120px + 60px);
 }
 .main-banner p {
   margin-top: 30px;
@@ -708,8 +749,15 @@ ul.nav-list li {
   padding: 15px;
   background-position: top;
   background-repeat: no-repeat;
-  margin-top: calc(60px - 20px);
   background-image: url("../imgs/Triangles_BG.svg");
+}
+.clients,
+.resources,
+.guidelines {
+  margin-top: calc(60px - 20px);
+}
+.resources {
+  margin-top: 120px;
 }
 /*.clients::after,
 .resources::after
@@ -730,11 +778,18 @@ ul.nav-list li {
 .security-txt {
   padding-left: 90px;
 }
-.security-banner {
+.security-banner,
+.spideraf-banner {
   border-radius: 8px;
-  margin-top: 120px;
   padding-top: 90px;
   padding-bottom: 90px;
+}
+.security-banner {
+  margin-top: 60px;
+  background-color: rgba(255, 127, 141, 0.15);
+}
+.spideraf-banner {
+  margin-top: 120px;
   background-color: rgba(68, 0, 153, 0.1);
 }
 .security-txt h2 {
@@ -826,7 +881,8 @@ ul.awards li img {
 }
 .cv-banner,
 .careers-banner {
-  background-color: rgba(0, 212, 165, 0.3);
+  /*background-color: @s-green30;*/
+  background-color: rgba(68, 0, 153, 0.1);
   border-radius: 8px;
   padding-top: 90px;
   padding-bottom: 90px;
@@ -878,7 +934,7 @@ ul.schedule-info {
 }
 /* -------------------------- Footer -------------------------- */
 .footer {
-  background-color: #000000;
+  background-color: #3C3B40;
   margin-top: 120px;
   padding: 90px 0 calc(120px + 40px) 0;
 }
@@ -912,7 +968,7 @@ ul.social-nav li:first-child {
 }
 .lang-container {
   margin-top: 90px;
-  border-top: 1px solid #444444;
+  border-top: 1px solid #969696;
 }
 .lang-container .lang-wrapper {
   margin-top: 30px;
@@ -1052,7 +1108,8 @@ a.apply-btn {
     background-color: brown;
     margin-top: 90px;
   }
-  .security-banner {
+  .security-banner,
+  .spideraf-banner {
     margin-top: 30px;
   }
   .clients,
@@ -1149,7 +1206,8 @@ a.apply-btn {
     margin: 0 auto 15px auto;
   }
   .careers-banner,
-  .security-banner {
+  .security-banner,
+  .spideraf-banner {
     padding: 60px 0 60px 0;
   }
   .cv-banner {
@@ -1324,7 +1382,8 @@ a.apply-btn {
     width: 100%;
     margin: 60px auto 0 auto;
   }
-  .security-banner {
+  .security-banner,
+  .spideraf-banner {
     border-radius: 8px;
     margin-top: 60px;
     padding: 60px 0 !important;
@@ -1346,6 +1405,9 @@ a.apply-btn {
 }
 /* -------------------------- Media Query 1600px -------------------------- */
 @media only screen and (max-width: 1600px) {
+  .main-banner {
+    margin-top: calc(120px + 20px);
+  }
   .main_bg {
     background: url("../imgs/SpiderLabs_Home_BG.svg") no-repeat;
     background-size: 1480px;
@@ -1353,7 +1415,7 @@ a.apply-btn {
     background-position-y: 360px;
   }
   .main_bg > .banner-container {
-    padding-bottom: 120px;
+    padding-bottom: calc(120px + 60px);
   }
 }
 /* -------------------------- Media Query 1200px -------------------------- */

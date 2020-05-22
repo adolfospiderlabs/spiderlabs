@@ -23,6 +23,7 @@
 /* -------------------------- Color Palette (Opacity Tints) -------------------------- */
 
 @violet10: rgba(68,0,153,0.1);
+@violet30: rgba(68,0,153,0.3);
 @s-green30: rgba(0,212,165,0.3);
 @pink15: rgba(255,127,141,0.15);
 
@@ -164,11 +165,12 @@ select,
 .gray,
 .nav-item,
 .intro-txt,
+a.text-line,
 .green-link,
 .nav-item a,
-.intro-txt a,
 ul.c-profile,
 .heading-xs a,
+.cv-banner p a,
 .main-banner h1,
 .about-us div h2,
 .resources div h2,
@@ -183,6 +185,7 @@ a,
 .green,
 a.read-btn,
 a.apply-btn,
+.intro-txt a,
 .green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
@@ -227,6 +230,10 @@ ul.lang-nav,
     color: @white;
 }
 
+.cv-banner p a:hover {
+    color: @violet;
+}
+
 
 /* -------------------------- Transitions & Effects -------------------------- */
 
@@ -258,6 +265,7 @@ a,
 a.read-btn,
 a.apply.btn,
 .heading-xs a,
+.cv-banner p a,
 .footer-nav ul li a,
 .lang-wrapper ul.lang-nav li a
 {

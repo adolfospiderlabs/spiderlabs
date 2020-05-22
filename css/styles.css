@@ -377,12 +377,13 @@ ul.c-profile,
   text-align: left !important;
 }
 a:hover,
-a.outline-btn,
-.heading-xs a,
-.nav-item a,
 a.read-btn,
 a.apply-btn,
+.nav-item a,
 .green-link,
+a.text-line,
+a.outline-btn,
+.heading-xs a,
 .footer-nav ul li a:hover {
   text-decoration: none;
 }
@@ -539,11 +540,12 @@ select,
 .gray,
 .nav-item,
 .intro-txt,
+a.text-line,
 .green-link,
 .nav-item a,
-.intro-txt a,
 ul.c-profile,
 .heading-xs a,
+.cv-banner p a,
 .main-banner h1,
 .about-us div h2,
 .resources div h2,
@@ -556,6 +558,7 @@ a,
 .green,
 a.read-btn,
 a.apply-btn,
+.intro-txt a,
 .green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
@@ -594,6 +597,9 @@ ul.lang-nav,
 #header .nav-wrap ul li a.careers-btn {
   color: #FFFFFF;
 }
+.cv-banner p a:hover {
+  color: #440099;
+}
 /* -------------------------- Transitions & Effects -------------------------- */
 a.read-btn::after,
 a.apply-btn::after {
@@ -617,6 +623,7 @@ a,
 a.read-btn,
 a.apply.btn,
 .heading-xs a,
+.cv-banner p a,
 .footer-nav ul li a,
 .lang-wrapper ul.lang-nav li a {
   transition: color 0.15s ease-out;
@@ -638,7 +645,7 @@ a.outline-btn:hover,
     margin-top: calc(60px - 20px);
   }
 }
-/* -------------------------- Structure -------------------------- */
+/* -------------------------- Header & Nav -------------------------- */
 #header {
   top: 0;
   z-index: 1;
@@ -795,6 +802,12 @@ ul.nav-list li {
 .spideraf-banner {
   margin-top: 120px;
   background-color: rgba(68, 0, 153, 0.1);
+}
+a.text-line {
+  color: #3C3B40 !important;
+  border-width: 8px;
+  border-color: rgba(68, 0, 153, 0.3);
+  border-style: none none solid;
 }
 .security-txt h2 {
   margin-bottom: 20px;

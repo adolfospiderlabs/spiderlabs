@@ -1090,6 +1090,15 @@ a.apply-btn {
 }*/
 /* -------------------------- Media Query for Mobile -------------------------- */
 @media only screen and (max-width: 480px) {
+  #header {
+    padding: 30px 15px 0 15px;
+  }
+  #header .logo-container {
+    padding-left: 0 !important;
+  }
+  #header .logo-container img {
+    margin-left: 0 !important;
+  }
   .navbar-brand img {
     width: 188px;
     margin-left: 15px;

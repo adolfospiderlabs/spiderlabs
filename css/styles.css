@@ -98,7 +98,7 @@ a.apply-btn:hover::after {
 }
 a.outline-btn {
   padding: 0 20px 0 20px;
-  border: 1px solid #00D4A4;
+  border: 1px solid #F0595D;
   border-radius: 8px;
   background-color: white;
   color: #00D4A4;
@@ -575,7 +575,6 @@ a,
 a.read-btn,
 a.apply-btn,
 .intro-txt a,
-.outline-btn,
 .green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
@@ -583,6 +582,9 @@ a.apply-btn,
 ul.nav-item li.nav-selected,
 .nav-item ul li .selected {
   color: #00D4A4;
+}
+.outline-btn {
+  color: #F0595D !important;
 }
 label,
 .gray2,

@@ -93,7 +93,6 @@ select,
 .primary-black-btn {
   background-color: #3C3B40;
 }
-.primary-yellow-btn,
 #header .nav-wrap ul li a.careers-btn {
   background-color: #FFD300;
 }
@@ -128,6 +127,9 @@ a.apply-btn,
 ul.nav-item li.nav-selected,
 .nav-item ul li .selected {
   color: #00D4A4;
+}
+.outline-btn {
+  color: #F0595D;
 }
 label,
 .gray2,
@@ -178,7 +180,6 @@ textarea {
 a.outline-btn,
 .primary-red-btn,
 .primary-black-btn,
-.primary-yellow-btn,
 #header .nav-wrap ul li a.careers-btn {
   transition: box-shadow 0.3s ease-out;
 }
@@ -202,7 +203,6 @@ textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
 .primary-red-btn:hover,
-.primary-yellow-btn:hover,
 .primary-black-btn:hover,
 #header .nav-wrap ul li a.careers-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
@@ -308,7 +308,7 @@ a.apply-btn:hover::after {
 }
 a.outline-btn {
   padding: 0 20px 0 20px;
-  border: 1px solid #00D4A4;
+  border: 1px solid #F0595D;
   border-radius: 8px;
   background-color: white;
   color: #00D4A4;

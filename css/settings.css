@@ -119,7 +119,6 @@ a,
 a.read-btn,
 a.apply-btn,
 .intro-txt a,
-.outline-btn,
 .green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
@@ -127,6 +126,9 @@ a.apply-btn,
 ul.nav-item li.nav-selected,
 .nav-item ul li .selected {
   color: #00D4A4;
+}
+.outline-btn {
+  color: #F0595D !important;
 }
 label,
 .gray2,

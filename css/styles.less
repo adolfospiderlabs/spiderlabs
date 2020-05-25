@@ -54,8 +54,8 @@
     line-height: 36px;
     display: block;
     border-radius: 4px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: @xs-spacing;
+    padding-right: @xs-spacing;
 }
 
 .header-site {
@@ -200,19 +200,27 @@ ul.nav-list li {
 
 .security-banner {
     margin-top: @m-spacing;
-    background-color: @pink15;
+    background-color: @violet10;
 }
 
 .spideraf-banner {
     margin-top: @xl-spacing;
-    background-color: @violet10;
+    background-color: @red10;
 }
 
 a.text-line {
-    color: @gray !important;
-    border-width: 8px;
-    border-color: @violet30;
-    border-style: none none solid;
+    color: @gray;
+    background-position: 0 0.84em;
+    background-repeat: repeat-x;
+    background-size: 1px 15px;
+}
+
+.security-banner a.text-line {
+    background-image: linear-gradient(to right, @violet30 0%, @violet30 100%);
+}
+
+.spideraf-banner a.text-line {
+    background-image: linear-gradient(to right, @red30 0%, @red30 100%);
 }
 
 .security-txt h2 {
@@ -336,8 +344,7 @@ ul.awards li img {
 
 .cv-banner,
 .careers-banner {
-    /*background-color: @s-green30;*/
-    background-color: @violet10;
+    background-color: @s-green30;
     border-radius: 8px;
     padding-top: @l-spacing;
     padding-bottom: @l-spacing;
@@ -485,7 +492,7 @@ ul.lang-nav li img {
 
 .sec-banner {
     display: flex;
-    height: 50vw;
+    height: 40vw;
     align-items: center;
     justify-content: center;
     background-image: url('../imgs/SpiderLabs_Careers_BG.png');
@@ -646,7 +653,6 @@ a.apply-btn {
     }
 
     .info-form {
-        background-color: brown;
         margin-top: 90px;
     }
 

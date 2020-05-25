@@ -17,7 +17,7 @@
 @violet: #440099;
 @light-gray: #F6F6F6;
 @light-brown: #F4F0EB;
-@red: #E74C3C;
+@red: #F0595D;
 
 
 /* -------------------------- Color Palette (Opacity Tints) -------------------------- */
@@ -26,6 +26,8 @@
 @violet30: rgba(68,0,153,0.3);
 @s-green30: rgba(0,212,165,0.3);
 @pink15: rgba(255,127,141,0.15);
+@red10: rgba(240,89,93,0.1);
+@red30: rgba(240,89,93,0.3);
 
 /* -------------------------- Spacings and Margins -------------------------- */
 
@@ -149,14 +151,21 @@ select,
 }
 
 .badge,
-.primary-btn,
-#header .nav-wrap ul li a.careers-btn
+.primary-btn
 {
     background-color: @spider-green;
 }
 
+.primary-red-btn {
+    background-color: @red;
+}
+
 .primary-black-btn {
     background-color: @gray;
+}
+
+#header .nav-wrap ul li a.careers-btn {
+    background-color: @yellow;
 }
 
 
@@ -176,7 +185,8 @@ ul.c-profile,
 .resources div h2,
 a.read-btn:hover,
 a.apply-btn:hover,
-.intro-txt a:hover
+.intro-txt a:hover,
+#header .nav-wrap ul li a.careers-btn
 {
     color: @gray;
 }
@@ -186,6 +196,7 @@ a,
 a.read-btn,
 a.apply-btn,
 .intro-txt a,
+.outline-btn,
 .green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
@@ -224,8 +235,8 @@ ul.lang-nav,
 .lang-container h5,
 .footer-nav ul li a,
 .footer-nav .credits,
-.lang-wrapper ul.lang-nav li a,
-#header .nav-wrap ul li a.careers-btn
+.primary-red-btn,
+.lang-wrapper ul.lang-nav li a
 {
     color: @white;
 }
@@ -251,8 +262,10 @@ textarea
 }
 
 .card,
+.yellow-btn,
 .primary-btn,
 a.outline-btn,
+.primary-red-btn,
 .primary-black-btn,
 #header .nav-wrap ul li a.careers-btn
 {
@@ -272,6 +285,7 @@ a.apply.btn,
     transition: color .15s ease-out;
 }
 
+.yellow-btn,
 .card:hover,
 input:focus,
 select:focus,
@@ -279,6 +293,7 @@ select:focus,
 textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
+.primary-red-btn:hover,
 .primary-black-btn:hover,
 #header .nav-wrap ul li a.careers-btn:hover
 {

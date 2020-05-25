@@ -84,12 +84,17 @@ select,
   background-color: #F4F0EB;
 }
 .badge,
-.primary-btn,
-#header .nav-wrap ul li a.careers-btn {
+.primary-btn {
   background-color: #00D4A4;
+}
+.primary-red-btn {
+  background-color: #F0595D;
 }
 .primary-black-btn {
   background-color: #3C3B40;
+}
+#header .nav-wrap ul li a.careers-btn {
+  background-color: #FFD300;
 }
 /* -------------------------- Text Colors -------------------------- */
 .gray,
@@ -98,21 +103,23 @@ select,
 a.text-line,
 .green-link,
 .nav-item a,
-.intro-txt a,
 ul.c-profile,
 .heading-xs a,
+.cv-banner p a,
 .main-banner h1,
 .about-us div h2,
 .resources div h2,
 a.read-btn:hover,
 a.apply-btn:hover,
-.intro-txt a:hover {
+.intro-txt a:hover,
+#header .nav-wrap ul li a.careers-btn {
   color: #3C3B40;
 }
 a,
 .green,
 a.read-btn,
 a.apply-btn,
+.intro-txt a,
 .green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
@@ -147,9 +154,12 @@ ul.lang-nav,
 .lang-container h5,
 .footer-nav ul li a,
 .footer-nav .credits,
-.lang-wrapper ul.lang-nav li a,
-#header .nav-wrap ul li a.careers-btn {
+.primary-red-btn,
+.lang-wrapper ul.lang-nav li a {
   color: #FFFFFF;
+}
+.cv-banner p a:hover {
+  color: #440099;
 }
 /* -------------------------- Transitions & Effects -------------------------- */
 a.read-btn::after,
@@ -162,8 +172,10 @@ textarea {
   transition: border 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 .card,
+.yellow-btn,
 .primary-btn,
 a.outline-btn,
+.primary-red-btn,
 .primary-black-btn,
 #header .nav-wrap ul li a.careers-btn {
   transition: box-shadow 0.3s ease-out;
@@ -174,10 +186,12 @@ a,
 a.read-btn,
 a.apply.btn,
 .heading-xs a,
+.cv-banner p a,
 .footer-nav ul li a,
 .lang-wrapper ul.lang-nav li a {
   transition: color 0.15s ease-out;
 }
+.yellow-btn,
 .card:hover,
 input:focus,
 select:focus,
@@ -185,6 +199,7 @@ select:focus,
 textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
+.primary-red-btn:hover,
 .primary-black-btn:hover,
 #header .nav-wrap ul li a.careers-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
@@ -282,8 +297,8 @@ body {
 .heading-m {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  /* Medium */
+  font-weight: 700;
+  /* Bold */
   font-size: 20px;
   font-size: 2rem;
   line-height: 42px;
@@ -373,7 +388,8 @@ input::selection {
   font-size: 1rem;
   line-height: 28px;
 }
-.button-txt {
+.button-txt,
+.outline-btn {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -392,6 +408,10 @@ label,
   font-size: 0.75rem;
   line-height: 18px;
   letter-spacing: 0.32px;
+}
+.bold {
+  font-weight: 700 !important;
+  /* Bold */
 }
 /* -------------------------- Text Alignment and Decoration -------------------------- */
 ::selection {
@@ -430,6 +450,7 @@ a.apply-btn,
 a.text-line,
 a.outline-btn,
 .heading-xs a,
+.primary-red-btn,
 .footer-nav ul li a:hover {
   text-decoration: none;
 }

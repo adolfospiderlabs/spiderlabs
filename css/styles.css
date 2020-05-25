@@ -72,6 +72,8 @@ select {
   cursor: pointer;
   margin-left: 26px;
 }
+.primary-red-btn,
+.primary-yellow-btn,
 .primary-black-btn {
   height: 50px;
   padding: 0 20px 0 20px;
@@ -109,6 +111,8 @@ a.outline-btn::before {
   padding-right: 10px;
 }
 a.primary-btn,
+.primary-red-btn,
+.primary-yellow-btn,
 a.primary-black-btn {
   line-height: 50px;
   margin: 60px auto 0 auto;
@@ -236,8 +240,8 @@ body {
 .heading-m {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  /* Medium */
+  font-weight: 700;
+  /* Bold */
   font-size: 20px;
   font-size: 2rem;
   line-height: 42px;
@@ -327,7 +331,8 @@ input::selection {
   font-size: 1rem;
   line-height: 28px;
 }
-.button-txt {
+.button-txt,
+.outline-btn {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -346,6 +351,10 @@ label,
   font-size: 0.75rem;
   line-height: 18px;
   letter-spacing: 0.32px;
+}
+.bold {
+  font-weight: 700 !important;
+  /* Bold */
 }
 /* -------------------------- Text Alignment and Decoration -------------------------- */
 ::selection {
@@ -384,6 +393,7 @@ a.apply-btn,
 a.text-line,
 a.outline-btn,
 .heading-xs a,
+.primary-red-btn,
 .footer-nav ul li a:hover {
   text-decoration: none;
 }
@@ -529,12 +539,17 @@ select,
   background-color: #F4F0EB;
 }
 .badge,
-.primary-btn,
-#header .nav-wrap ul li a.careers-btn {
+.primary-btn {
   background-color: #00D4A4;
+}
+.primary-red-btn {
+  background-color: #F0595D;
 }
 .primary-black-btn {
   background-color: #3C3B40;
+}
+#header .nav-wrap ul li a.careers-btn {
+  background-color: #FFD300;
 }
 /* -------------------------- Text Colors -------------------------- */
 .gray,
@@ -551,7 +566,8 @@ ul.c-profile,
 .resources div h2,
 a.read-btn:hover,
 a.apply-btn:hover,
-.intro-txt a:hover {
+.intro-txt a:hover,
+#header .nav-wrap ul li a.careers-btn {
   color: #3C3B40;
 }
 a,
@@ -559,6 +575,7 @@ a,
 a.read-btn,
 a.apply-btn,
 .intro-txt a,
+.outline-btn,
 .green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
@@ -593,8 +610,8 @@ ul.lang-nav,
 .lang-container h5,
 .footer-nav ul li a,
 .footer-nav .credits,
-.lang-wrapper ul.lang-nav li a,
-#header .nav-wrap ul li a.careers-btn {
+.primary-red-btn,
+.lang-wrapper ul.lang-nav li a {
   color: #FFFFFF;
 }
 .cv-banner p a:hover {
@@ -611,8 +628,10 @@ textarea {
   transition: border 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 .card,
+.yellow-btn,
 .primary-btn,
 a.outline-btn,
+.primary-red-btn,
 .primary-black-btn,
 #header .nav-wrap ul li a.careers-btn {
   transition: box-shadow 0.3s ease-out;
@@ -628,6 +647,7 @@ a.apply.btn,
 .lang-wrapper ul.lang-nav li a {
   transition: color 0.15s ease-out;
 }
+.yellow-btn,
 .card:hover,
 input:focus,
 select:focus,
@@ -635,6 +655,7 @@ select:focus,
 textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
+.primary-red-btn:hover,
 .primary-black-btn:hover,
 #header .nav-wrap ul li a.careers-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
@@ -790,17 +811,23 @@ ul.nav-list li {
 }
 .security-banner {
   margin-top: 60px;
-  background-color: rgba(255, 127, 141, 0.15);
+  background-color: rgba(68, 0, 153, 0.1);
 }
 .spideraf-banner {
   margin-top: 120px;
-  background-color: rgba(68, 0, 153, 0.1);
+  background-color: rgba(240, 89, 93, 0.1);
 }
 a.text-line {
-  color: #3C3B40 !important;
-  border-width: 8px;
-  border-color: rgba(68, 0, 153, 0.3);
-  border-style: none none solid;
+  color: #3C3B40;
+  background-position: 0 0.84em;
+  background-repeat: repeat-x;
+  background-size: 1px 15px;
+}
+.security-banner a.text-line {
+  background-image: linear-gradient(to right, rgba(68, 0, 153, 0.3) 0%, rgba(68, 0, 153, 0.3) 100%);
+}
+.spideraf-banner a.text-line {
+  background-image: linear-gradient(to right, rgba(240, 89, 93, 0.3) 0%, rgba(240, 89, 93, 0.3) 100%);
 }
 .security-txt h2 {
   margin-bottom: 20px;
@@ -891,8 +918,7 @@ ul.awards li img {
 }
 .cv-banner,
 .careers-banner {
-  /*background-color: @s-green30;*/
-  background-color: rgba(68, 0, 153, 0.1);
+  background-color: rgba(0, 212, 165, 0.3);
   border-radius: 8px;
   padding-top: 90px;
   padding-bottom: 90px;
@@ -1003,7 +1029,7 @@ ul.lang-nav li img {
 /* -------------------------- Secondary Pages -------------------------- */
 .sec-banner {
   display: flex;
-  height: 50vw;
+  height: 40vw;
   align-items: center;
   justify-content: center;
   background-image: url('../imgs/SpiderLabs_Careers_BG.png');
@@ -1124,7 +1150,6 @@ a.apply-btn {
     margin-left: 0;
   }
   .info-form {
-    background-color: brown;
     margin-top: 90px;
   }
   .security-banner,

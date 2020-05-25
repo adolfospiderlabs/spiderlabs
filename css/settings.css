@@ -83,12 +83,17 @@ select,
   background-color: #F4F0EB;
 }
 .badge,
-.primary-btn,
-#header .nav-wrap ul li a.careers-btn {
+.primary-btn {
   background-color: #00D4A4;
+}
+.primary-red-btn {
+  background-color: #F0595D;
 }
 .primary-black-btn {
   background-color: #3C3B40;
+}
+#header .nav-wrap ul li a.careers-btn {
+  background-color: #FFD300;
 }
 /* -------------------------- Text Colors -------------------------- */
 .gray,
@@ -105,7 +110,8 @@ ul.c-profile,
 .resources div h2,
 a.read-btn:hover,
 a.apply-btn:hover,
-.intro-txt a:hover {
+.intro-txt a:hover,
+#header .nav-wrap ul li a.careers-btn {
   color: #3C3B40;
 }
 a,
@@ -113,6 +119,7 @@ a,
 a.read-btn,
 a.apply-btn,
 .intro-txt a,
+.outline-btn,
 .green-link:hover,
 .nav-item a:hover,
 .heading-xs a:hover,
@@ -147,8 +154,8 @@ ul.lang-nav,
 .lang-container h5,
 .footer-nav ul li a,
 .footer-nav .credits,
-.lang-wrapper ul.lang-nav li a,
-#header .nav-wrap ul li a.careers-btn {
+.primary-red-btn,
+.lang-wrapper ul.lang-nav li a {
   color: #FFFFFF;
 }
 .cv-banner p a:hover {
@@ -165,8 +172,10 @@ textarea {
   transition: border 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 .card,
+.yellow-btn,
 .primary-btn,
 a.outline-btn,
+.primary-red-btn,
 .primary-black-btn,
 #header .nav-wrap ul li a.careers-btn {
   transition: box-shadow 0.3s ease-out;
@@ -182,6 +191,7 @@ a.apply.btn,
 .lang-wrapper ul.lang-nav li a {
   transition: color 0.15s ease-out;
 }
+.yellow-btn,
 .card:hover,
 input:focus,
 select:focus,
@@ -189,6 +199,7 @@ select:focus,
 textarea:focus,
 .primary-btn:hover,
 a.outline-btn:hover,
+.primary-red-btn:hover,
 .primary-black-btn:hover,
 #header .nav-wrap ul li a.careers-btn:hover {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);

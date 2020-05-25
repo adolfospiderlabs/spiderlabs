@@ -45,7 +45,7 @@
 .heading-m {
     font-family: 'Archivo', sans-serif;
     font-style: normal;
-    font-weight: 500; /* Medium */
+    font-weight: 700; /* Bold */
     .font-size(2);
     line-height: 42px;
 }
@@ -134,7 +134,9 @@ input::selection
     line-height: 28px;
 }
 
-.button-txt {
+.button-txt,
+.outline-btn
+{
     font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 700; /* Bold */
@@ -151,6 +153,10 @@ label,
     .font-size(0.75);
     line-height: 18px;
     letter-spacing: 0.32px;
+}
+
+.bold {
+    font-weight: 700 !important; /* Bold */
 }
 
 
@@ -197,6 +203,7 @@ a.apply-btn,
 a.text-line,
 a.outline-btn,
 .heading-xs a,
+.primary-red-btn,
 .footer-nav ul li a:hover
 {
     text-decoration: none;

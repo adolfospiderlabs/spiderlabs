@@ -742,11 +742,16 @@ ul.nav-list li {
   margin-top: calc(60px - 20px);
 }
 .clients {
-  /*height: 577px;*/
   padding-bottom: 120px !important;
 }
 .clients .logos-list {
   margin-top: 60px;
+}
+.clients .logos-list .logo-card {
+  margin-bottom: 30px;
+}
+.clients .logos-list .logo-card img {
+  width: 100%;
 }
 .resources,
 .guidelines {
@@ -770,18 +775,6 @@ ul.nav-list li {
 .resources {
   margin-top: 120px;
 }
-/*.clients::after,
-.resources::after
-{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    width: 100%;
-    height: 25px;
-    background-image: url("../imgs/Triangles_BG.svg");
-}*/
 .clients div h2,
 .resources div h2 {
   margin-top: 120px;
